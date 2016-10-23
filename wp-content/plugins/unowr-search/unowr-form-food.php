@@ -38,25 +38,25 @@ function unowr_search() {
 	global $wpdb; // this is how you get access to the database
   $search = array();
 	if(isset($_POST)){
-		if(isset($_POST['ambiance'])){
+		if(isset($_POST['ambiance']) && !empty($_POST['ambiance'])){
 			$search['ambiance'] = array(
         'taxonomy' => 'ambiance',
         'terms'    => $_POST['ambiance']
       );
 		}
-		if(isset($_POST['localisation'])){
+		if(isset($_POST['localisation']) && !empty($_POST['localisation'])){
 			$search['localisation'] = array(
         'taxonomy' => 'localisation',
         'terms'    => $_POST['localisation']
       );
 		}
-		if(isset($_POST['occasion'])){
+		if(isset($_POST['occasion']) && !empty($_POST['occasion'])){
 			$search['occasion'] = array(
         'taxonomy' => 'occasion',
         'terms'    => $_POST['occasion']
       );
 		}
-		if(isset($_POST['type_de_cuisine'])){
+		if(isset($_POST['type_de_cuisine']) && !empty($_POST['type_de_cuisine'])){
 			$search['type_de_cuisine'] = array(
         'taxonomy' => 'type_de_cuisine',
         'terms'    => $_POST['type_de_cuisine']

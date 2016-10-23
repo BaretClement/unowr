@@ -71,10 +71,22 @@ function unowr_search() {
   );
 
   global $post;
-  $myposts = get_posts( $args );
-  echo json_encode($myposts);
+  $myposts = get_posts($args);
 
-	wp_die(); // this is required to terminate immediately and return a proper response
+  $res = array();
+  for ($i = 0; $i < count($myposts); $i++) {
+  	if(isset($myposts[$i]->post_title)){
+	  	$res[] = array(
+	  		'title' => $myposts[$i]->post_title,
+	  		'guid' => $myposts[$i]->guid,
+	  		'id' => $myposts[$i]->ID,
+	  		'content' => $myposts[$i]->post_content
+			);
+  	}
+  }
+
+  echo json_encode($res);
+	wp_die();
 }
 
 ?>

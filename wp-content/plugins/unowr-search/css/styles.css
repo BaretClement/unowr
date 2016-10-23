@@ -17,3 +17,28 @@
 .unowr-error {
 	border: 1px solid red;
 }
+
+.unowr-result-wrapper {
+	color: #fff;
+	background: #000;
+	margin: 10px 0px;
+}
+
+.unowr-result-wrapper div {
+	padding: 5px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.unowr-result-wrapper .title {
+	width: 100%;
+	text-transform: uppercase;
+}
+
+.unowr-result-wrapper .unowr_result {
+	width: 33.3333333%;
+	text-transform: uppercase;
+    border: 2px solid #fff;
+    margin: 10px;
+    box-sizing: border-box;
+}

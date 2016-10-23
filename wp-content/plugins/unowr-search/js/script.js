@@ -1,7 +1,9 @@
 var unowr_form = {
 	init: function () {
 		if (document.querySelector('[data-unowr-form]').length > 0) {
+			this._resto = [];
 			this._pos = 0;
+			this._resultWrapper = document.querySelector('[data-unowr-result-wrapper]');
 			this._inputsWrapper = document.querySelectorAll('[data-unowr-form-wrapper]');
 			this._selects = document.querySelectorAll('[data-unowr-taxonomy]');
 			this._submit = document.querySelector('[data-unowr-submit]');
@@ -18,49 +20,73 @@ var unowr_form = {
 	},
 	_submitEvent: function (e) {
 		e.preventDefault();
-		this._check()
+		this._check();
 		return false;
 	},
 	_check: function () {
-		var canContinue = false
+		var canContinue = false;
 		var wrapper = document.querySelector('[data-unowr-form-wrapper]:not(.unowr-done)');
 		var response = wrapper.querySelector('[data-unowr-response]');
 		var select = wrapper.querySelector('select');
 		if (select.value === '') {
-			select.classList.add('unowr-error')
+			select.classList.add('unowr-error');
 		}else {
-			select.classList.remove('unowr-error')
-			wrapper.classList.add('unowr-done')
-			this._ajax(select.value, response)
+			select.classList.remove('unowr-error');
+			wrapper.classList.add('unowr-done');
+			this._ajax(select.value, response);
 		}
 	},
 	_ajax: function (val, output) {
 		var data = {
 			"action": "unowr_search"
-		}
+		};
 		Array.prototype.forEach.call(this._selects, function(select) {
 			var type = select.getAttribute('data-unowr-taxonomy');
-			data[type] = select.value
-		})
+			data[type] = select.value;
+		});
 
-		jQuery.ajax({type: 'POST',
+		jQuery.ajax({
+			type: 'POST',
 			url: unowr_config.ajax_url,
 			data: data,
 			success: function(response) {
-				output.innerHTML = response.length + ' found'
-				this._next();
+				var json = JSON.parse(response);
+				if (json.length < 3) {
+					this._resto = json.concat(this._resto.slice(0, 3-json.length));
+					this._finish();
+				}else if (json.length === 3) {
+					this._resto = json;
+					this._finish();
+				}else {
+					this._resto = json
+					this._next();
+				}
 			}.bind(this)
 		});
 	},
 	_next: function () {
 		var currentPos = 0;
 		this._pos++;
-		Array.prototype.forEach.call(this._inputsWrapper, function(wrapper) {
-			if (currentPos === this._pos) {
-				wrapper.classList.remove('unowr-hidden')
-			}
-			currentPos++;
-		}.bind(this))
+		if (this._pos === this._inputsWrapper.length) {
+			this._finish();
+		}else {
+			Array.prototype.forEach.call(this._inputsWrapper, function(wrapper) {
+				if (currentPos === this._pos) {
+					wrapper.classList.remove('unowr-hidden');
+				}
+				currentPos++;
+			}.bind(this))
+		}
+	},
+	_finish: function () {
+		var html = "<div class='title'>Resultats:</div>";
+		Array.prototype.forEach.call(this._resto, (resto) => {
+			html += "<div class='unowr_result'>";
+			html += "	<span>" + resto.title + "</span>";
+			html += "</div>";
+		})
+
+		this._resultWrapper.innerHTML = html
 	}
 }
 

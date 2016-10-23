@@ -20,6 +20,7 @@ function load_unowr_css_and_js() {
 function html_form_code() {
 	ob_start();
 		include('views/form.php');
+		include('views/results.php');
 		$includedhtml = ob_get_contents();
 	ob_end_clean();
 	echo $includedhtml;
@@ -65,22 +66,32 @@ function unowr_search() {
 	}
 
 	$args = array (
+		'post_type' => 'restaurant',
 		'posts_per_page' => -1,
 		'order' => 'DESC',
 		'tax_query' => array($search)
     );
 
 	global $post;
-	$myposts = get_posts($args);
+	// $myposts = get_posts($args);
+	$query = new WP_Query($args);
+	$posts = $query->get_posts();
+
+	// $args = array( 'post_type' => 'restaurant', 'posts_per_page' => 10 );
+	// $the_query = new WP_Query( $args ); 
+	// if ( $the_query->have_posts() ) {
+	// 	var_dump($the_query); die();
+	// }
+	// while ( $the_query->have_posts() ) : $the_query->the_post();
 
 	$res = array();
-	for ($i = 0; $i < count($myposts); $i++) {
-		if(isset($myposts[$i]->post_title)){
+	foreach ($posts as $key => $post) {
+		if(isset($post->post_title)){
 			$res[] = array(
-				'title' => $myposts[$i]->post_title,
-				'guid' => $myposts[$i]->guid,
-				'id' => $myposts[$i]->ID,
-				'content' => $myposts[$i]->post_content
+				'title' => $post->post_title,
+				'guid' => $post->guid,
+				'id' => $post->ID,
+				'content' => $post->post_content
   			);
   		}
 	}

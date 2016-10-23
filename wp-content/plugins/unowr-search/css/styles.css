@@ -1,0 +1,19 @@
+.unowr-hidden {
+	display: none;
+}
+
+.unowr-done input {
+	display: none;
+}
+
+.unowr-response {
+	display: none;
+}
+
+.unowr-done .unowr-response {
+	display: block;
+}
+
+.unowr-error {
+	border: 1px solid red;
+}

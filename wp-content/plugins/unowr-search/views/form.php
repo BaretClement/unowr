@@ -1,63 +1,37 @@
-<form action="<?php echo esc_url( $_SERVER['REQUEST_URI'] ); ?>" method="post">
-	<p class="" data-unowr-form-wrapper="true">
-	Ou <br/>
-	<input type="text" class="" name="unowr-input" data-unowr-form="unowr-where" value="<?php
-	if ( isset( $_POST["cf-name"] )) {
-		echo esc_attr($_POST["cf-name"]);
-	}
-	?>" size="40" />
-	<span class="unowr-response" data-unowr-response="true"></span>
-	</p>
+<form action="<?php echo esc_url( $_SERVER['REQUEST_URI'] ); ?>" method="post" data-unowr-form="true">
 
-	<p class="unowr-hidden" data-unowr-form-wrapper="true">
-	Quand<br/>
-	<input type="text" class="" name="unowr-input" data-unowr-form="unowr-when" value="<?php
-	if ( isset( $_POST["cf-name"] )) {
-		echo esc_attr($_POST["cf-name"]);
-	}
-	?>" size="40" />
-	<span class="unowr-response" data-unowr-response="true"></span>
-	</p>
+<?php
+// $taxonomies = get_taxonomies();
+$taxonomies = array('ambiance', 'localisation', 'occasion', 'type_de_cuisine');
+$first = true;
+foreach ($taxonomies as $tkey => $taxonomy) {
 
-	<p class="unowr-hidden" data-unowr-form-wrapper="true">
-	Quelle occasion <br/>
-	<input type="text" class="" name="unowr-input" data-unowr-form="unowr-which" value="<?php
-	if ( isset( $_POST["cf-name"] )) {
-		echo esc_attr($_POST["cf-name"]);
-	}
-	?>" size="40" />
-	<span class="unowr-response" data-unowr-response="true"></span>
-	</p>
+	$args = array(
+	    'hide_empty' => false, 
+	);
 
-	<p class="unowr-hidden" data-unowr-form-wrapper="true">
-	Quelle budget <br/>
-	<input type="text" class="" name="unowr-input" data-unowr-form="unowr-how-much" value="<?php
-	if ( isset( $_POST["cf-name"] )) {
-		echo esc_attr($_POST["cf-name"]);
-	}
-	?>" size="40" />
-	<span class="unowr-response" data-unowr-response="true"></span>
-	</p>
+	$terms = get_terms($taxonomy, $args);
+	?>
+	<p class="<?php echo ($first) ? '' : 'unowr-hidden'; ?>" data-unowr-form-wrapper="true">
 
-	<p class="unowr-hidden" data-unowr-form-wrapper="true">
-	Quel ambiance <br/>
-	<input type="text" class="" name="unowr-input" data-unowr-form="unowr-ambiance" value="<?php
-	if ( isset( $_POST["cf-name"] )) {
-		echo esc_attr($_POST["cf-name"]);
+	<?php echo $taxonomy; ?> <br/>
+	<select name="<?php echo $taxonomy; ?>" id="">
+	
+	<?php
+	foreach ($terms as $terkey => $term) {
+	?>
+		<option value="<?php echo $term->term_id; ?>"><?php echo $term->name; ?></option>
+	<?php
 	}
-	?>" size="40" />
+	?>
+	</select>
 	<span class="unowr-response" data-unowr-response="true"></span>
 	</p>
+	<?php
+	$first = false;
+}
 
-	<p class="unowr-hidden" data-unowr-form-wrapper="true">
-	Quelle cuisine <br/>
-	<input type="text" class="" name="unowr-input" data-unowr-form="unowr-food-type" value="<?php
-	if ( isset( $_POST["cf-name"] )) {
-		echo esc_attr($_POST["cf-name"]);
-	}
-	?>" size="40" />
-	<span class="unowr-response" data-unowr-response="true"></span>
-	</p>
+?>
 
 	<input type="button" value="envoyer" data-unowr-submit="true" />
 </form>

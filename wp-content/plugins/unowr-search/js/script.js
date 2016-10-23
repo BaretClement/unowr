@@ -1,10 +1,12 @@
 var unowr_form = {
 	init: function () {
-		this._pos = 0;
-		this._inputsWrapper = document.querySelectorAll('[data-unowr-form-wrapper]');
-		this._submit = document.querySelector('[data-unowr-submit]');
+		if (document.querySelector('[data-unowr-form]').length > 0) {
+			this._pos = 0;
+			this._inputsWrapper = document.querySelectorAll('[data-unowr-form-wrapper]');
+			this._submit = document.querySelector('[data-unowr-submit]');
 
-		this._bindEvents();
+			this._bindEvents();
+		}
 	},
 	_bindEvents: function () {
 		this._submit.addEventListener('click', this._submitEvent.bind(this));
@@ -22,14 +24,14 @@ var unowr_form = {
 		var canContinue = false
 		var wrapper = document.querySelector('[data-unowr-form-wrapper]:not(.unowr-done)');
 		var response = wrapper.querySelector('[data-unowr-response]');
-		var input = wrapper.querySelector('input');
-		if (input.value === '') {
-			input.classList.add('unowr-error')
+		var select = wrapper.querySelector('select');
+		if (select.value === '') {
+			select.classList.add('unowr-error')
 		}else {
-			input.classList.remove('unowr-error')
+			select.classList.remove('unowr-error')
 			wrapper.classList.add('unowr-done')
-			response.innerHTML = input.value
-			this._ajax(input.value)
+			response.innerHTML = select.value
+			this._ajax(select.value)
 		}
 	},
 	_ajax: function (val) {

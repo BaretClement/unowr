@@ -31,11 +31,10 @@ var unowr_form = {
 		}else {
 			select.classList.remove('unowr-error')
 			wrapper.classList.add('unowr-done')
-			response.innerHTML = select.value
-			this._ajax(select.value)
+			this._ajax(select.value, response)
 		}
 	},
-	_ajax: function (val) {
+	_ajax: function (val, output) {
 		var data = {
 			"action": "unowr_search"
 		}
@@ -48,6 +47,7 @@ var unowr_form = {
 			url: unowr_config.ajax_url,
 			data: data,
 			success: function(response) {
+				output.innerHTML = response.length + ' found'
 				this._next();
 			}.bind(this)
 		});

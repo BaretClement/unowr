@@ -36,56 +36,56 @@ function cf_shortcode() {
 add_action( 'wp_ajax_unowr_search', 'unowr_search' );
 function unowr_search() {
 	global $wpdb; // this is how you get access to the database
-  $search = array();
+	$search = array();
 	if(isset($_POST)){
 		if(isset($_POST['ambiance']) && !empty($_POST['ambiance'])){
 			$search['ambiance'] = array(
-        'taxonomy' => 'ambiance',
-        'terms'    => $_POST['ambiance']
-      );
+	        	'taxonomy' => 'ambiance',
+	        	'terms'    => $_POST['ambiance']
+        	);
 		}
 		if(isset($_POST['localisation']) && !empty($_POST['localisation'])){
 			$search['localisation'] = array(
-        'taxonomy' => 'localisation',
-        'terms'    => $_POST['localisation']
-      );
+				'taxonomy' => 'localisation',
+	        	'terms'    => $_POST['localisation']
+        	);
 		}
 		if(isset($_POST['occasion']) && !empty($_POST['occasion'])){
 			$search['occasion'] = array(
-        'taxonomy' => 'occasion',
-        'terms'    => $_POST['occasion']
-      );
+				'taxonomy' => 'occasion',
+				'terms'    => $_POST['occasion']
+        	);
 		}
 		if(isset($_POST['type_de_cuisine']) && !empty($_POST['type_de_cuisine'])){
 			$search['type_de_cuisine'] = array(
-        'taxonomy' => 'type_de_cuisine',
-        'terms'    => $_POST['type_de_cuisine']
-      );
+				'taxonomy' => 'type_de_cuisine',
+				'terms'    => $_POST['type_de_cuisine']
+			);
 		}
 	}
 
-  $args = array (
-	  'posts_per_page' => -1,
-	  'order' => 'DESC',
-    'tax_query' => array($search)
-  );
+	$args = array (
+		'posts_per_page' => -1,
+		'order' => 'DESC',
+		'tax_query' => array($search)
+    );
 
-  global $post;
-  $myposts = get_posts($args);
+	global $post;
+	$myposts = get_posts($args);
 
-  $res = array();
-  for ($i = 0; $i < count($myposts); $i++) {
-  	if(isset($myposts[$i]->post_title)){
-	  	$res[] = array(
-	  		'title' => $myposts[$i]->post_title,
-	  		'guid' => $myposts[$i]->guid,
-	  		'id' => $myposts[$i]->ID,
-	  		'content' => $myposts[$i]->post_content
-			);
-  	}
-  }
+	$res = array();
+	for ($i = 0; $i < count($myposts); $i++) {
+		if(isset($myposts[$i]->post_title)){
+			$res[] = array(
+				'title' => $myposts[$i]->post_title,
+				'guid' => $myposts[$i]->guid,
+				'id' => $myposts[$i]->ID,
+				'content' => $myposts[$i]->post_content
+  			);
+  		}
+	}
 
-  echo json_encode($res);
+	echo json_encode($res);
 	wp_die();
 }
 

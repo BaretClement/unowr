@@ -36,12 +36,43 @@ function cf_shortcode() {
 add_action( 'wp_ajax_unowr_search', 'unowr_search' );
 function unowr_search() {
 	global $wpdb; // this is how you get access to the database
+  $search = array();
+	if(isset($_POST)){
+		if(isset($_POST['ambiance'])){
+			$search['ambiance'] = array(
+        'taxonomy' => 'ambiance',
+        'terms'    => $_POST['ambiance']
+      );
+		}
+		if(isset($_POST['localisation'])){
+			$search['localisation'] = array(
+        'taxonomy' => 'localisation',
+        'terms'    => $_POST['localisation']
+      );
+		}
+		if(isset($_POST['occasion'])){
+			$search['occasion'] = array(
+        'taxonomy' => 'occasion',
+        'terms'    => $_POST['occasion']
+      );
+		}
+		if(isset($_POST['type_de_cuisine'])){
+			$search['type_de_cuisine'] = array(
+        'taxonomy' => 'type_de_cuisine',
+        'terms'    => $_POST['type_de_cuisine']
+      );
+		}
+	}
 
-	$whatever = intval( $_POST['whatever'] );
+  $args = array (
+	  'posts_per_page' => -1,
+	  'order' => 'DESC',
+    'tax_query' => array($search)
+  );
 
-	$whatever += 10;
-
-        echo $whatever;
+  global $post;
+  $myposts = get_posts( $args );
+  echo json_encode($myposts);
 
 	wp_die(); // this is required to terminate immediately and return a proper response
 }

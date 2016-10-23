@@ -3,6 +3,7 @@ var unowr_form = {
 		if (document.querySelector('[data-unowr-form]').length > 0) {
 			this._pos = 0;
 			this._inputsWrapper = document.querySelectorAll('[data-unowr-form-wrapper]');
+			this._selects = document.querySelectorAll('[data-unowr-taxonomy]');
 			this._submit = document.querySelector('[data-unowr-submit]');
 
 			this._bindEvents();
@@ -35,16 +36,21 @@ var unowr_form = {
 		}
 	},
 	_ajax: function (val) {
-		jQuery.post(
-			unowr_config.ajax_url,
-			{
-				'action': 'unowr_search',
-				'param': val
-			},
-			function(response){
+		var data = {
+			"action": "unowr_search"
+		}
+		Array.prototype.forEach.call(this._selects, function(select) {
+			var type = select.getAttribute('data-unowr-taxonomy');
+			data[type] = select.value
+		})
+
+		jQuery.ajax({type: 'POST',
+			url: unowr_config.ajax_url,
+			data: data,
+			success: function(response) {
 				this._next();
 			}.bind(this)
-		);
+		});
 	},
 	_next: function () {
 		var currentPos = 0;

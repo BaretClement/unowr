@@ -15,8 +15,10 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 	<p class="<?php echo ($first) ? '' : 'unowr-hidden'; ?>" data-unowr-form-wrapper="true">
 
 	<?php echo $taxonomy; ?> <br/>
-	<select name="<?php echo $taxonomy; ?>" id="">
+	<select name="<?php echo $taxonomy; ?>" name="unowr-select"
+		data-unowr-taxonomy="<?php echo $taxonomy; ?>">
 	
+		<option value=""></option>
 	<?php
 	foreach ($terms as $terkey => $term) {
 	?>

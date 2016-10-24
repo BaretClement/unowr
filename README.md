@@ -1,12 +1,12 @@
-# unowr
+# UNOWR
 
-## LOCAL ISO PROD
+## Local iso production
 - Exporter la base de données de production.
 - Remplacer les urls de prod par les urls locales dans le fichier .sql. 
 - Importer le fichier .sql dans la base de données locale.
 
 
-## DÉPLOIEMENT
+## Déploiement
 - Command line : 
 ``` shell 
 git pull

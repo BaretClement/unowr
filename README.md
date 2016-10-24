@@ -2,7 +2,7 @@
 
 ## Command lines 
 
-### lister les fichiers modifiés : 
+### Lister les fichiers modifiés : 
 ```shell
 git status
 ```
@@ -24,7 +24,7 @@ git commit -m “[description du commit]”
 git push
 ```
 
-- Récupérer les modifications sur Github pour son local : 
+### Récupérer les modifications sur Github pour son local : 
 ```shell
 git pull origin master
 ```

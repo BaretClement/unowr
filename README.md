@@ -1,30 +1,32 @@
 # UNOWR
 
 ## Command lines 
-- lister les fichiers modifiés : 
+
+### lister les fichiers modifiés : 
 ```shell
 git status
 ```
 
-- Pousser les modifications locales sur Github : 
-Ajouter tous les fichiers : 
+### Pousser les modifications locales sur Github : 
+
+- Ajouter tous les fichiers : 
 ```shell
 git add . 
 ```
 
-Puis commiter les fichiers sur Github : 
+- Puis commiter les fichiers sur Github : 
 ```shell
 git commit -m “[description du commit]”
 ```
 
-Enfin :
+- Enfin :
 ```shell
 git push
 ```
 
 - Récupérer les modifications sur Github pour son local : 
 ```shell
-git pull origine master
+git pull origin master
 ```
 
 ## Local iso production
@@ -35,11 +37,17 @@ git pull origine master
 - Importer le fichier .sql dans la base de données locale.
 
 ### Récupérer le code 
-- git pull.
+- Command git pull
 
 ### Récupérer les assets 
 - Télécharger le dossier wp_content/uploads.
 
+### Wp_config 
+
+- Indiquer les infos locales
+`
+Ce fichier est propre à chaque environnement
+`
 
 ## Déploiement
 - Command line : 

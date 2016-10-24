@@ -45,6 +45,7 @@ git pull origin master
 ### Wp_config 
 
 - Indiquer les infos locales
+
 `
 Ce fichier est propre à chaque environnement
 `

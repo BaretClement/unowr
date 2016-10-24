@@ -1,5 +1,32 @@
 # UNOWR
 
+## Command lines 
+- lister les fichiers modifiés : 
+```shell
+git status
+```
+
+- Pousser les modifications locales sur Github : 
+Ajouter tous les fichiers : 
+```shell
+git add . 
+```
+
+Puis commiter les fichiers sur Github : 
+```shell
+git commit -m “[description du commit]”
+```
+
+Enfin :
+```shell
+git push
+```
+
+- Récupérer les modifications sur Github pour son local : 
+```shell
+git pull origine master
+```
+
 ## Local iso production
 
 ### Récupérer la base de données

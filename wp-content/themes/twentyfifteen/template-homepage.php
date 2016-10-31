@@ -27,11 +27,11 @@ Template Name: Homepage
 
 </head>
 <body>
-<?php get_header( 'custom' ); ?>
+
 	<!-- start content part -->
 	<div class="container body">
     <!-- start user part -->
-    <div class="row utilisateur margin-top" style="background: <?php the_field('background_utilisateur'); ?>; background-image: url(<?php the_field('background_image_utilisateur'); ?>); ">
+    <div class="row utilisateur" style="background: <?php the_field('background_utilisateur'); ?>; background-image: url(<?php the_field('background_image_utilisateur'); ?>); ">
       <div class="twelve columns user <?php the_field('couleur_texte_utilisateur'); ?>">
         <div class="container content">
           <h2><?php the_field('titre_utilisateur'); ?> <sup class="<?php the_field('pictogramme_utilisateur') ?> picto"></sup></h2>

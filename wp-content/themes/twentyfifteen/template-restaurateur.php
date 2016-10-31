@@ -27,7 +27,6 @@ Template Name: Restaurateur
 
 </head>
 <body>
-<?php get_header( 'custom' ); ?>
   <div class="container-body">
     <div class="container">
       <div class="row">

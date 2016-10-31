@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Restaurateur
+Template Name: Concept
 */
 ?>
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ Template Name: Restaurateur
 <head>
 
   <meta charset="utf-8">
-  <title>UNOWR | Trouvez le restaurant qu'il vous faut !</title>
+  <title>UNOWR | Un service rapide et pratique !</title>
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,15 +27,18 @@ Template Name: Restaurateur
 
 </head>
 <body>
-<?php get_header( 'custom' ); ?>
-  <div class="container-body">
-    <div class="container">
-      <div class="row">
-        <div class="twelve columns">
-          <?php the_field('formulaire_de_contact') ?>
-        </div>
-      </div>
-    </div>
+  <div class="container article">
+  <!-- Start banner -->
+  <!-- End banner-->
+
+  <!-- Start title -->
+  <!-- End title-->
+
+  <!-- Start content -->
+  <!-- End content-->
+
+  <!-- Start info restaurant -->
+  <!-- End info restaurant-->
   </div>
 </body>
 </html>

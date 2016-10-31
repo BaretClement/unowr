@@ -27,7 +27,7 @@ Template Name: Concept
 
 </head>
 <body>
-<?php get_header( 'custom' ); ?>
+
   <!-- start content part -->
   <div class="container body">
     <!-- start unowr part -->

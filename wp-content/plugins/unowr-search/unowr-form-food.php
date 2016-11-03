@@ -63,19 +63,9 @@ function unowr_search() {
 				'terms'    => $_POST['type_de_cuisine']
 			);
 		}
-		if(isset($_POST['nombre_de_personnes']) && !empty($_POST['nombre_de_personnes'])){
-			$search['nombre_de_personnes'] = array(
-				'taxonomy' => 'nombre_de_personnes',
-				'terms'    => $_POST['nombre_de_personnes']
-			);
-		}
-		if(isset($_POST['agenda']) && !empty($_POST['agenda'])){
-			$search['agenda'] = array(
-				'taxonomy' => 'agenda',
-				'terms'    => $_POST['agenda']
-			);
-		}
 	}
+
+	var_dump($search);
 
 	$args = array (
 		'post_type' => 'restaurant',

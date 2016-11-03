@@ -1,11 +1,24 @@
+@font-face {
+    font-family: 'Coves Light';
+    src: url(font/Coves_Light.otf);
+}
+@font-face {
+    font-family: 'Coves Bold';
+    src: url(font/Coves_Bold.otf);
+}
+
 html{
 	height: 100%;
 	color: #263238;
 	margin-top: 0 !important;
 }
 body{
+	font-family: 'Coves Light' !important;
 	height: 100%;
 	margin-top: 0 !important;
+}
+h1, h2, h3, h4{
+	font-family: 'Coves Bold' !important;
 }
 h1{
 	font-weight: 700 !important;

@@ -65,8 +65,6 @@ function unowr_search() {
 		}
 	}
 
-	var_dump($search);
-
 	$args = array (
 		'post_type' => 'restaurant',
 		'posts_per_page' => -1,

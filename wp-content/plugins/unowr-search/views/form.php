@@ -2,7 +2,7 @@
 
 <?php
 // $taxonomies = get_taxonomies();
-$taxonomies = array('ambiance', 'localisation', 'occasion', 'type_de_cuisine', 'nombre_de_personnes', 'agenda', 'mise_en_avant');
+$taxonomies = array('ambiance', 'localisation', 'occasion', 'type_de_cuisine', 'nombre_de_personnes', 'agenda');
 $first = true;
 foreach ($taxonomies as $tkey => $taxonomy) {
 

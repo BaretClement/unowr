@@ -1,0 +1,146 @@
+@font-face {font-family: 'Coves Light'; src: url(font/Coves_Light.otf);}
+@font-face {font-family: 'Coves Bold'; src: url(font/Coves_Bold.otf);}
+
+html, body{
+	font-family: 'Coves Light' !important;
+	display: inline-block !important;
+	width: 100%;
+	height: 100%;
+	font-family: 'Roboto';
+	font-size: 16px;
+	font-weight: 300;
+}
+p{font-size: 20px !important;}
+h1, h2, h3, h4, h5{
+	font-family: 'Coves Bold';
+	font-weight: 100 !important;
+}
+
+/******************************************************/
+/******************** DIV HEIGHT **********************/
+/******************************************************/
+
+/* mobile */
+@media (max-width: 600px){
+	.height25{height: auto}
+	.height50{height: auto}
+	.height75{height: auto}
+	.height100{height: 75vh}
+}
+
+/* tablet */
+@media (min-width: 601px) and (max-width: 992px) {
+	.height25{height: auto}
+	.height50{height: auto}
+	.height75{height: auto}
+	.height100{height: 100vh}
+}
+
+/* desktop */
+@media (min-width: 992px) {
+	.height25{height: 25vh}
+	.height50{height: 50vh}
+	.height75{height: 75vh}
+	.height100{height: 100vh}
+}
+
+/******************************************************/
+/********************* DIV ORDER **********************/
+/******************************************************/
+
+.center{text-align: center}
+.right{text-align: right}
+
+/******************************************************/
+/********************** BUTTONS ***********************/
+/******************************************************/
+
+.btn-flat{border: 1px solid grey !important;}
+
+/******************************************************/
+/*********************** TITLES ***********************/
+/******************************************************/
+
+/* mobile */
+@media (max-width: 600px) {
+	h1{font-size: 3rem !important;}
+	h2{font-size: 2.5rem !important;}
+	h3{font-size: 2.2rem !important;}
+	h4{font-size: 2rem !important;}
+	h5{font-size: 1.5rem;}
+}
+
+/* tablet */
+@media (min-width: 601px) and (max-width: 992px) {}
+
+/* desktop */
+@media (min-width: 992px) {}
+
+/******************************************************/
+/********************* CONTAINERS *********************/
+/******************************************************/
+
+.row{margin-bottom: 0 !important; border-bottom: 1px solid #E0E0E0; }
+/* mobile */
+@media (max-width: 600px){
+	.container{padding: 50px 0 50px 0 !important}
+	#blog{border-bottom: 1px solid #E0E0E0; border-right: none;}
+}
+
+/* tablet */
+@media (min-width: 601px) and (max-width: 992px) {
+	.container{padding: 50px 0 50px 0 !important}
+	#blog{border-bottom: 1px solid #E0E0E0;}
+}
+
+/* desktop */
+@media (min-width: 992px) {
+	.container{padding: 100px 0 100px 0 !important}
+	#blog{border-right: 1px solid #E0E0E0;}
+}
+
+/******************************************************/
+/********************* BACKGROUND *********************/
+/******************************************************/
+
+#utilisateur{background-size: 50% !important; background-repeat: no-repeat; background-position: bottom center !important;}
+
+/******************************************************/
+/*********************** COLORS ***********************/
+/******************************************************/
+
+.color_white{color: #FFF !important}
+.btn-flat.color_white{border: 1px solid #FFF !important}
+.color_black{color: #000}
+
+/******************************************************/
+/************************ ICONS ***********************/
+/******************************************************/
+
+.social-icon{font-size: 3rem; margin: 25px 25px !important; color: black;}
+
+
+/******************************************************/
+/*********************** HOVERS ***********************/
+/******************************************************/
+
+
+/* desktop */
+@media (min-width: 992px) {
+	/* Grow */
+	.hvr-grow {
+	  display: inline-block;
+	  vertical-align: middle;
+	  -webkit-transform: perspective(1px) translateZ(0);
+	  transform: perspective(1px) translateZ(0);
+	  box-shadow: 0 0 1px transparent;
+	  -webkit-transition-duration: 0.3s;
+	  transition-duration: 0.3s;
+	  -webkit-transition-property: transform;
+	  transition-property: transform;
+	}
+	.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+	  -webkit-transform: scale(1.1);
+	  transform: scale(1.1);
+	}
+}

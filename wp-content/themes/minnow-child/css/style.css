@@ -105,6 +105,10 @@ hr{
 	padding-top: 50px !important;
 	padding-bottom: 50px !important;
 }
+.container-form{
+	width: 50%;
+	margin: auto;
+}
 
 /********************** COLOUMNS **************************/
 
@@ -146,6 +150,9 @@ hr{
 .margin-top{
 	margin-top: 50px;
 }
+.big-margin-top{
+	margin-top: 100px;
+}
 .no-margin-bottom{
 	margin-bottom: 0;
 }
@@ -186,7 +193,7 @@ hr{
 /**********************************************************/
 
 .medium-icon{
-	font-size: 3rem;
+	font-size: 3rem !important;
 }
 .big-icon{
 	font-size: 7rem;
@@ -318,6 +325,13 @@ nav{
     display: inline;
 }
 /* Effect of showing the sidebar - ends */
+
+/**********************************************************/
+/************************ FORM ****************************/
+/**********************************************************/
+
+
+
 
 
 /**********************************************************/

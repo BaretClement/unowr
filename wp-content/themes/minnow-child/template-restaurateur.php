@@ -3,9 +3,9 @@
 Template Name: Restaurateur
 */
 
-get_header( 'custom' ); ?>
+get_header( 'custom-restaurateurs' ); ?>
 
-  <div class="container-body">
+  <div class="container-form big-margin-top">
     <div class="container">
       <div class="row">
         <div class="twelve columns">

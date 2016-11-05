@@ -26,7 +26,7 @@
 	<nav>
 	    <div class="nav-wrapper">
     		<a href="#!" class="brand-logo"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/css/img/unowr_black.png"></a>
-      		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="ion-navicon color_black"></i></a>
+      		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="ion-navicon color_black valign"></i></a>
       		<ul class="right hide-on-med-and-down">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
       		</ul>

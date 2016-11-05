@@ -84,10 +84,11 @@ img.logo{
 
 /* desktop */
 @media (min-width: 992px) {
-	.height25{height: 25vh}
-	.height50{height: 50vh}
-	.height75{height: 75vh}
-	.height100{height: 100vh}
+	.height25{min-height: 25vh !important}
+	.height33{min-height: 33vh !important}
+	.height50{min-height: 50vh !important}
+	.height75{min-height: 75vh !important}
+	.height100{min-height: 100vh !important}
 }
 
 /******************************************************/
@@ -127,22 +128,41 @@ img.logo{
 /******************************************************/
 
 .row{margin-bottom: 0 !important; border-bottom: 1px solid #E0E0E0; }
+
 /* mobile */
 @media (max-width: 600px){
 	.container{padding: 50px 0 50px 0 !important}
+	.container.principle, .objective{padding: 0 0 50px 0 !important;}
+	.container.objective{padding: 25px 0 !important;}
 	#blog{border-bottom: 1px solid #E0E0E0; border-right: none;}
+	.top-left{border-top: 1px solid #E0E0E0;}
+	.top-right{border-top: 1px solid #E0E0E0;}
+	.bottom-left{border-top: 1px solid #E0E0E0;}
+	.bottom-right{border-top: 1px solid #E0E0E0;}
 }
 
 /* tablet */
 @media (min-width: 601px) and (max-width: 992px) {
 	.container{padding: 50px 0 50px 0 !important}
+	.container.principle, .objective{padding: 0 0 50px 0 !important;}
+	.container.objective{padding: 25px 0 !important;}
 	#blog{border-bottom: 1px solid #E0E0E0;}
+	.top-left{border-top: 1px solid #E0E0E0;}
+	.top-right{border-top: 1px solid #E0E0E0;}
+	.bottom-left{border-top: 1px solid #E0E0E0;}
+	.bottom-right{border-top: 1px solid #E0E0E0;}
 }
 
 /* desktop */
 @media (min-width: 992px) {
 	.container{padding: 100px 0 100px 0 !important}
+	.container.principle, .objective{padding: 0 0 100px 0 !important;}
+	.container.objective{padding: 25px 0 !important;}
 	#blog{border-right: 1px solid #E0E0E0;}
+	.top-left{border-right: 1px solid #E0E0E0;border-top: 1px solid #E0E0E0;}
+	.top-right{border-top: 1px solid #E0E0E0;}
+	.bottom-left{border-right: 1px solid #E0E0E0;border-top: 1px solid #E0E0E0;}
+	.bottom-right{border-top: 1px solid #E0E0E0;}
 }
 
 /******************************************************/
@@ -164,6 +184,7 @@ img.logo{
 /******************************************************/
 
 .social-icon{font-size: 3rem; margin: 25px 25px !important; color: black;}
+.big-icon{font-size: 5rem}
 
 
 /******************************************************/

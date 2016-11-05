@@ -39,7 +39,7 @@ get_header( 'custom-material' ); ?>
 			<div class="container valign center">
 				<h2><?php the_field('titre_blog'); ?></h2>
 				<p><?php the_field('sous_titre_blog'); ?></p>
-				  <a href="<?php the_field('link_cta_blog'); ?>" class="waves-effect waves-teal btn-flat disabled<?php the_field('couleur_texte_blog') ?>">
+				  <a href="<?php the_field('link_cta_blog'); ?>" class="waves-effect waves-teal btn disabled <?php the_field('couleur_texte_blog') ?>">
 				  	<?php the_field('cta_blog'); ?>
 				  </a>
 			</div>

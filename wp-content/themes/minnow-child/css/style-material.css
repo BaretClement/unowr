@@ -68,18 +68,20 @@ img.logo{
 
 /* mobile */
 @media (max-width: 600px){
-	.height25{height: auto}
-	.height50{height: auto}
-	.height75{height: auto}
-	.height100{height: 100vh}
+	.height25{min-height: 25vh !important}
+	.height33{min-height: 33vh !important}
+	.height50{min-height: 50vh !important}
+	.height75{min-height: 75vh !important}
+	.height100{min-height: 100vh !important}
 }
 
 /* tablet */
 @media (min-width: 601px) and (max-width: 992px) {
-	.height25{height: auto}
-	.height50{height: auto}
-	.height75{height: auto}
-	.height100{height: 100vh}
+	.height25{min-height: 25vh !important}
+	.height33{min-height: 33vh !important}
+	.height50{min-height: 50vh !important}
+	.height75{min-height: 75vh !important}
+	.height100{min-height: 100vh !important}
 }
 
 /* desktop */

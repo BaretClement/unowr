@@ -3,7 +3,7 @@
 Template Name: Homepage - material
 */
 
-get_header( 'custom-material' ); ?>
+get_header( 'custom-material' ); ?> 
 
 	<!-- BLOC UTILISATEUR -->
 	<div id="utilisateur" class="row <?php the_field('couleur_texte_utilisateur') ?>" style="background-color: <?php the_field('background_utilisateur'); ?>; background-image: url(<?php the_field('background_image_utilisateur'); ?>);">

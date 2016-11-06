@@ -16,6 +16,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/style-material.css">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/materialize.css">
 <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body <?php body_class(); ?>>
 	
@@ -25,13 +26,13 @@
 
 	<nav>
 	    <div class="nav-wrapper">
-    		<a href="#!" class="brand-logo"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/css/img/unowr_black.png"></a>
+    		<a href="<?php echo get_home_url(); ?>" class="brand-logo"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/css/img/unowr_black.png"></a>
       		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="ion-navicon color_black valign"></i></a>
       		<ul class="right hide-on-med-and-down">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+				    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
       		</ul>
       		<ul class="side-nav" id="mobile-demo">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+				    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
       		</ul>
     	</div>
   	</nav>

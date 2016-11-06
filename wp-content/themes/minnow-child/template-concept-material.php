@@ -115,15 +115,3 @@ get_header( 'custom-material' ); ?>
 
 
 
-
-
-
-
-
-<?php the_field('pictogramme_idea') ?>
-<?php the_field('pictogramme_principle') ?>
-<?php the_field('pictogramme_objectif') ?>
-<?php the_field('pictogramme_equipe') ?>
-
-
-

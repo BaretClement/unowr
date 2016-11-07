@@ -207,16 +207,18 @@ get_header( 'custom-material' ); ?>
             					<input type="checkbox" class="filled-in" id="chill"/>
             					<label for="chill">Chill</label>
             				</td>
+            			</tr>
+            			<tr>
             				<td>      
             					<input type="checkbox" class="filled-in" id="costume_trois_pièces"/>
             					<label for="costume_trois_pièces">Costume trois pièces</label>
             				</td>
-            			</tr>
-            			<tr>
             				<td>      
             					<input type="checkbox" class="filled-in" id="bonne_franquette"/>
             					<label for="bonne_franquette">Bonne franquette</label>
             				</td>
+            			</tr>
+            			<tr>
             				<td>      
             					<input type="checkbox" class="filled-in" id="rdv_en_terre_inconnue"/>
             					<label for="rdv_en_terre_inconnue">Rendez-vous en terre inconnue</label>

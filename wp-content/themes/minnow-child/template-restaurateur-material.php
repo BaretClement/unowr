@@ -56,7 +56,7 @@ get_header( 'custom-material' ); ?>
 	        	<table class="formulaire">
         			<thead>
           				<tr>
-				            <th data-field="id">Horaires d'ouverture ( à cocher )</th>
+				            <th data-field="id">Horaires d'ouverture</th>
 				        </tr>
         			</thead>
         			<tbody>
@@ -187,14 +187,14 @@ get_header( 'custom-material' ); ?>
 			<!-- PRIX MOYEN -->
 	        <div class="input-field col s6">
 	          	<input id="prix_moyen" type="text" class="validate">
-	          	<label for="prix_moyen">Prix moyen ( entrée / plat / dessert )</label>
+	          	<label for="prix_moyen">Prix moyen ( menu )</label>
 	        </div>
 			<!-- START AMBIANCE -->
 			<div class="col s12">
 	        	<table class="formulaire">
         			<thead>
           				<tr>
-				            <th data-field="id">Type d'ambiance ( à cocher )</th>
+				            <th data-field="id">Type d'ambiance</th>
 				        </tr>
         			</thead>
         			<tbody>

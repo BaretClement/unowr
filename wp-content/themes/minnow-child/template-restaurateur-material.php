@@ -64,7 +64,7 @@ get_header( 'custom-material' ); ?>
       			<!-- SPECIALITÉ -->
   	        <div class="input-field col s6">
   	          	<input id="specialite" type="text" class="validate">
-  	          	<label for="specialite">Spécialité du restaurant</label>
+  	          	<label for="specialite">Spécialité</label>
   	        </div>
       			<!-- PRIX MOYEN -->
   	        <div class="input-field col s6">

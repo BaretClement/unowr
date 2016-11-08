@@ -25,7 +25,7 @@ nav{
 	box-sizing: border-box !important;
 }
 nav ul a{
-	color: black !important;
+	color: #263238 !important;
 }
 nav ul a:hover {
     background-color: #FFF !important;
@@ -63,6 +63,20 @@ img.logo{
 		padding: 0 50px;
 	}
 }
+
+/******************************************************/
+/*********************** IMG **************************/
+/******************************************************/
+
+.responsive-img{  
+	max-width: 50% !important;
+  	max-height: 100% !important;
+}
+
+#blog, #concept{background-size: 50% !important; background-repeat: no-repeat !important;}
+#blog{background-position: center!important;}
+#concept{background-position: top !important}
+
 /******************************************************/
 /******************** DIV HEIGHT **********************/
 /******************************************************/
@@ -124,7 +138,7 @@ img.logo{
 /******************************************************/
 
 .btn-flat{border: 1px solid grey !important; margin: 25px 0;}
-.btn-flat:hover{background: #F5F5F5 !important}
+.btn-flat:hover{background: #F5F5F5 !important; color: #263238 !important;}
 
 /******************************************************/
 /*********************** TITLES ***********************/
@@ -201,6 +215,82 @@ thead{border-color: #9e9e9e !important; border: none !important}
 
 .select-wrapper input.select-dropdown{color: #9e9e9e}
 
+.validate.valid{color: #9e9e9e !important; border-color: #9e9e9e !important}
+.validate.focus{color: #9e9e9e !important; border-color: #9e9e9e !important}
+.validate.invalid{color: #F44336 !important; border-color: #F44336 !important}
+
+label.left{left: 0 !important}
+
+input:not([type]), 
+input[type=text], 
+input[type=password], 
+input[type=email], 
+input[type=url], 
+input[type=time], 
+input[type=date], 
+input[type=datetime], 
+input[type=datetime-local], 
+input[type=tel], 
+input[type=number], 
+input[type=search], 
+textarea.materialize-textarea {
+	border: 1px solid #9e9e9e !important;
+    padding: 0 10px !important;
+    box-sizing: border-box !important;
+    box-shadow: 0 !important;
+    height: 3.5rem !important;
+}
+
+.input-field.col label {
+    left: 1.75rem !important;
+}
+
+.input-field label {
+    top: 1rem !important;
+    background: white !important;
+    width: auto !important;
+    padding: 0 10px !important;
+}
+
+input:not([type]).valid, 
+input:not([type]):focus.valid, 
+input[type=text].valid, 
+input[type=text]:focus.valid, 
+input[type=password].valid, 
+input[type=password]:focus.valid, 
+input[type=email].valid, 
+input[type=email]:focus.valid, 
+input[type=url].valid, 
+input[type=url]:focus.valid, 
+input[type=time].valid, 
+input[type=time]:focus.valid, 
+input[type=date].valid, 
+input[type=date]:focus.valid, 
+input[type=datetime].valid, 
+input[type=datetime]:focus.valid, 
+input[type=datetime-local].valid, 
+input[type=datetime-local]:focus.valid, 
+input[type=tel].valid, 
+input[type=tel]:focus.valid, 
+input[type=number].valid, 
+input[type=number]:focus.valid, 
+input[type=search].valid, 
+input[type=search]:focus.valid, 
+textarea.materialize-textarea.valid, 
+textarea.materialize-textarea:focus.valid {
+    border-bottom: 1px solid #9e9e9e !important;
+    box-shadow: 0 0 0 0 transparent !important;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #26a69a;
+    box-shadow: 0 0px 0 0 #26a69a !important;
+}
+
+.select-wrapper span.caret {
+    right: 10px !important;
+    top: 20px !important;
+}
 /******************************************************/
 /********************* BACKGROUND *********************/
 /******************************************************/
@@ -213,15 +303,15 @@ thead{border-color: #9e9e9e !important; border: none !important}
 
 .color_white{color: #FFF !important}
 .btn-flat.color_white{border: 1px solid #FFF !important}
-.color_black{color: #000}
+.color_black{color: #263238}
 
 /******************************************************/
 /************************ ICONS ***********************/
 /******************************************************/
 
-.social-icon{font-size: 3rem; margin: 25px 25px !important; color: black;}
+.social-icon{font-size: 3rem; margin: 25px 25px !important; color: #263238;}
 .big-icon{font-size: 5rem}
-.picto-social{color: black; padding: 25px}	
+.picto-social{color: #263238; padding: 25px}	
 
 @media (max-width: 600px){
 	.picto-social{font-size: 2rem !important;}	

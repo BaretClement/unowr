@@ -42,20 +42,16 @@ get_header( 'custom-material' ); ?>
 				  </a>
 			</div>
 		</div>
-		<div id="rtl" class="col s12 m6 height75-img valign-wrapper blog">
-			<div class="valign">
-				<img class="responsive-img" src="<?php the_field('background_image_blog'); ?>">  
-			</div>
+
+		<div id="blog" class="col s12 m6 height75-img valign-wrapper" style="background: url(<?php the_field('background_image_blog'); ?>);">
 		</div>
+
 	</div>
 
 	<!-- BLOC CONCEPT  -->
 	<div class="row <?php the_field('couleur_texte_concept') ?>"" style="background-color: <?php the_field('background_concept'); ?>">
 
-		<div class="col s12 m6 height75-img valign-wrapper concept">
-			<div class="valign">
-				<img class="responsive-img" src="<?php the_field('background_image_concept'); ?>"> 
-			</div>
+		<div id="concept" class="col s12 m6 height75-img valign-wrapper" style="background: url(<?php the_field('background_image_concept'); ?>);">
 		</div>
 
 		<div class="col s12 l6 height75 valign-wrapper">

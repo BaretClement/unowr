@@ -31,12 +31,10 @@ get_header( 'custom-material' ); ?>
 		</div>
 	</div>
 
-	<!-- BLOC BLOG & CONCEPT -->
-	<div class="row">
-
-		<!-- BLOC BLOG -->
-		<div id="blog" class="col s12 l6 height75 valign-wrapper <?php the_field('couleur_texte_blog') ?>" style="background-color: <?php the_field('background_blog'); ?>; background-image: url(<?php the_field('background_image_blog'); ?>);">
-			<div class="container valign center">
+	<!-- BLOC BLOG  -->
+	<div id="rtl" class="row <?php the_field('couleur_texte_blog') ?>" style="background-color: <?php the_field('background_blog'); ?>;">
+		<div id="ltr" class="col s12 m6 height75 valign-wrapper">
+			<div id="ltr" class="container valign center">
 				<h2><?php the_field('titre_blog'); ?></h2>
 				<p><?php the_field('sous_titre_blog'); ?></p>
 				  <a href="<?php the_field('link_cta_blog'); ?>" class="waves-effect waves-teal btn disabled <?php the_field('couleur_texte_blog') ?>">
@@ -44,9 +42,23 @@ get_header( 'custom-material' ); ?>
 				  </a>
 			</div>
 		</div>
+		<div id="rtl" class="col s12 m6 height75-img valign-wrapper blog">
+			<div class="valign">
+				<img class="responsive-img" src="<?php the_field('background_image_blog'); ?>">  
+			</div>
+		</div>
+	</div>
 
-		<!-- BLOC CONCEPT -->
-		<div class="col s12 l6 height75 valign-wrapper <?php the_field('couleur_texte_concept') ?>" style="background-color: <?php the_field('background_concept'); ?>; background-image: url(<?php the_field('background_image_concept'); ?>);">
+	<!-- BLOC CONCEPT  -->
+	<div class="row <?php the_field('couleur_texte_concept') ?>"" style="background-color: <?php the_field('background_concept'); ?>">
+
+		<div class="col s12 m6 height75-img valign-wrapper concept">
+			<div class="valign">
+				<img class="responsive-img" src="<?php the_field('background_image_concept'); ?>"> 
+			</div>
+		</div>
+
+		<div class="col s12 l6 height75 valign-wrapper">
 			<div class="container valign center">
 				<h2><?php the_field('titre_concept'); ?></h2>
 				<p><?php the_field('sous_titre_concept'); ?></p>
@@ -57,16 +69,18 @@ get_header( 'custom-material' ); ?>
 		</div>
 	</div>
 
+
 	<!-- BLOC SOCIAL -->
 	<div class="row <?php the_field('couleur_texte_social') ?>" style="background-color: <?php the_field('background_social'); ?>; background-image: url(<?php the_field('background_image_social'); ?>);">
 		<div class="col s12 height50 valign-wrapper">
 			<div class="container center valign">	
 				<h2><?php the_field('titre_social'); ?></h2>
-				<p><?php the_field('sous_titre_social'); ?></p>
-				<a href="<?php the_field('lien_social_1'); ?>" class="social-icon <?php the_field('pictogramme_social_1'); ?>"></a>
-				<a href="<?php the_field('lien_social_2'); ?>" class="social-icon <?php the_field('pictogramme_social_2'); ?>"></a>
-				<a href="<?php the_field('lien_social_3'); ?>" class="social-icon <?php the_field('pictogramme_social_3'); ?>"></a>
-				<a href="<?php the_field('lien_social_4'); ?>" class="social-icon <?php the_field('pictogramme_social_4'); ?>"></a>
+				<p class="margin-bottom"><?php the_field('sous_titre_social'); ?></p>
+
+					<a href="<?php the_field('lien_social_1'); ?>" class="picto-social <?php the_field('pictogramme_social_1'); ?>"></a>
+					<a href="<?php the_field('lien_social_2'); ?>" class="picto-social <?php the_field('pictogramme_social_2'); ?>"></a>
+					<a href="<?php the_field('lien_social_3'); ?>" class="picto-social <?php the_field('pictogramme_social_3'); ?>"></a>
+					<a href="<?php the_field('lien_social_4'); ?>" class="picto-social <?php the_field('pictogramme_social_4'); ?>"></a>
 			</div>
 		</div>
 	</div>

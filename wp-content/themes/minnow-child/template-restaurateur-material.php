@@ -149,6 +149,29 @@ get_header( 'custom-material' ); ?>
 	        </div>
 	        <!-- END HORAIRES D'OUVERTURE -->
 	        <!-- START TYPE DE CUISINE -->
+	        <div class="col s12">
+	        	<table class="formulaire">
+        			<thead>
+          				<tr>
+				            <th data-field="id">Type de cuisine</th>
+				        </tr>
+        			</thead>
+        			<tbody>
+        				<tr>
+            				<td></td>
+            				<td>      
+            					<input type="checkbox" class="filled-in" id="lundi_midi"/>
+      							<label for="lundi_midi">midi</label>
+      						</td>
+            				<td>      
+            					<input type="checkbox" class="filled-in" id="lundi_soir"/>
+            					<label for="lundi_soir">soir</label>
+            				</td>
+          				</tr>
+        			</tbody>
+        		</table>
+        	</div>
+
        		<div class="input-field col s12">
 		    	<select multiple>
 		    		<option value="" disabled selected>Type de cuisine ( à cocher )</option>

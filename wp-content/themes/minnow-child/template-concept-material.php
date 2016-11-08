@@ -7,7 +7,7 @@ get_header( 'custom-material' ); ?>
 
   <!-- BLOC UNOWR -->
   <div class="row <?php the_field('couleur_texte_unowr'); ?>" style="background-color: <?php the_field('background_unowr'); ?>; background-img: url(<?php the_field('background_image_unowr'); ?>);">
-    <div class="col s12 height100 valign-wrapper">
+    <div class="col s12 min-height100 valign-wrapper">
       <div class="container valign center">
         <h1><?php the_field('titre_unowr'); ?></h1>
         <p><?php the_field('sous_titre_unowr'); ?></p>
@@ -17,7 +17,7 @@ get_header( 'custom-material' ); ?>
 
   <!-- BLOC IDEA -->
   <div class="row <?php the_field('couleur_texte_idea'); ?>" style="background-color: <?php the_field('background_idea'); ?>; background-image: url(<?php the_field('background_image_idea'); ?>);">
-    <div class="col s12 height100 valign-wrapper">
+    <div class="col s12 min-height100 valign-wrapper">
       <div class="container valign center">
         <h2><?php the_field('titre_idea'); ?></h2>
         <p><?php the_field('sous_titre_idea') ?></p>
@@ -72,28 +72,28 @@ get_header( 'custom-material' ); ?>
       </div>
     </div>
 
-    <div class="col s12 l6 height33 valign-wrapper top-left">
+    <div class="col s12 l6 min-height33 valign-wrapper top-left">
       <div class="container objective valign">
         <h3><?php the_field('titre_objectif_1') ?></h3>
         <p><?php the_field('contenu_objectif_1') ?></p>
       </div>
     </div>
 
-    <div class="col s12 l6 height33 valign-wrapper top-right">
+    <div class="col s12 l6 min-height33 valign-wrapper top-right">
       <div class="container objective valign">
         <h3><?php the_field('titre_objectif_2') ?></h3>
         <p><?php the_field('contenu_objectif_2') ?></p>
       </div>
     </div>
 
-    <div class="col s12 l6 height33 valign-wrapper bottom-left">
+    <div class="col s12 l6 min-height33 valign-wrapper bottom-left">
       <div class="container objective valign">
         <h3><?php the_field('titre_objectif_3') ?></h3>
         <p><?php the_field('contenu_objectif_3') ?></p>
       </div>
     </div>
 
-    <div class="col s12 l6 height33 valign-wrapper bottom-right">
+    <div class="col s12 l6 min-height33 valign-wrapper bottom-right">
       <div class="container objective valign">
         <h3><?php the_field('titre_objectif_4') ?></h3>
         <p><?php the_field('contenu_objectif_4') ?></p>
@@ -104,7 +104,7 @@ get_header( 'custom-material' ); ?>
 
   <!-- BLOC TEAM -->
   <div class="row <?php the_field('couleur_texte_equipe'); ?>" style="background-color: <?php the_field('background_equipe'); ?>; background-image: url(<?php the_field('background_image_equipe'); ?>);"> 
-    <div class="col s12 height100 valign-wrapper">
+    <div class="col s12 min-height100 valign-wrapper">
       <div class="container valign center">
         <h2><?php the_field('titre_equipe') ?></h2>
         <p><?php the_field('sous_titre_equipe') ?></p>

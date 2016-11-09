@@ -14,42 +14,42 @@ get_header( 'custom-material' ); ?>
       			<!-- NOM DU RESTAURANT -->
             <div class="input-field col s12">
               	<input id="nom_du_restaurant" type="text" class="validate">
-              	<label required="required" for="nom_du_restaurant">Nom du restaurant *</label>
+              	<label required for="nom_du_restaurant">Nom du restaurant *</label>
             </div>
       			<!-- ADRESSE DU RESTAURANT -->
             <div class="input-field col s12 m6">
               	<input id="adresse" type="text" class="validate">
-              	<label required="required" for="adresse">Adresse *</label>
+              	<label required for="adresse">Adresse *</label>
             </div>
       			<!-- CODE POSTAL DU RESTAURANT -->
             <div class="input-field col s6 m3">
               	<input id="code_postal" type="text" class="validate" maxlength="5" pattern="[0-9]{5}">
-              	<label required="required" for="code_postal" data-error="code postal non valide">Code postal *</label>
+              	<label required for="code_postal" data-error="code postal non valide">Code postal *</label>
             </div>
       			<!-- VILLE DU RESTAURANT -->
             <div class="input-field col s6 m3">
               	<input id="ville" type="text" class="validate">
-              	<label required="required" for="ville">Ville *</label>
+              	<label required for="ville">Ville *</label>
             </div>
       			<!-- TÉLÉPHONE -->
             <div class="input-field col s6">
               	<input id="telephone" type="tel" class="validate" maxlength="10" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$">
-              	<label required="required" for="telephone" data-error="numéro non valide">Téléphone *</label>
+              	<label required for="telephone" data-error="numéro non valide">Téléphone *</label>
             </div>
       			<!-- EMAIL -->
             <div class="input-field col s6">
               	<input id="email" type="email" class="validate">
-              	<label required="required" for="email" data-error="email non valide">Email *</label>
+              	<label required for="email" data-error="email non valide">Email *</label>
             </div>
       			<!-- PRÉNOM DU CONTACT -->
             <div class="input-field col s6">
               	<input id="prenom_du_contact" type="text" class="validate">
-              	<label required="required" for="prenom_du_contact">Prénom du contact *</label>
+              	<label required for="prenom_du_contact">Prénom du contact *</label>
             </div>
       			<!-- NOM DU CONTACT -->
             <div class="input-field col s6">
               	<input id="nom_du_contact" type="text" class="validate">
-              	<label required="required" for="nom_du_contact">Nom du contact *</label>
+              	<label required for="nom_du_contact">Nom du contact *</label>
             </div>
       			<!-- START HORAIRES D'OUVERTURE -->
             <div class="input-field col s12">

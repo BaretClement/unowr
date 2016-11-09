@@ -39,7 +39,7 @@ get_header( 'custom-material' ); ?>
       <div class="col s12 l4 valign-wrapper">
         <div class="container principle valign center">
           <i class="big-icon <?php the_field('pictogramme_principle_1') ?>"></i>
-          <h3><?php the_field('titre_principle_1') ?></h3>
+          <h3 class="after-picto"><?php the_field('titre_principle_1') ?></h3>
           <p><?php the_field('contenu_principle_1') ?></p>
         </div>
       </div>
@@ -47,7 +47,7 @@ get_header( 'custom-material' ); ?>
       <div class="col s12 l4 valign-wrapper">
         <div class="container principle valign center">
           <i class="big-icon <?php the_field('pictogramme_principle_2') ?>"></i>
-          <h3><?php the_field('titre_principle_2') ?></h3>
+          <h3 class="after-picto"><?php the_field('titre_principle_2') ?></h3>
           <p><?php the_field('contenu_principle_2') ?></p>
         </div>
       </div>
@@ -55,7 +55,7 @@ get_header( 'custom-material' ); ?>
       <div class="col s12 l4 valign-wrapper">
         <div class="container principle valign center">
           <i class="big-icon <?php the_field('pictogramme_principle_3') ?>"></i>
-          <h3><?php the_field('titre_principle_3') ?></h3>
+          <h3 class="after-picto"><?php the_field('titre_principle_3') ?></h3>
           <p><?php the_field('contenu_principle_3') ?></p>
         </div>
       </div>

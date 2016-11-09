@@ -19,6 +19,7 @@ h1, h2, h3, h4, h5{
 	font-family: 'Coves Bold';
 	font-weight: 100 !important;
 }
+h3.after-picto{margin-top: 0 !important}
 nav{
 	height: 64px !important;
 	position: fixed !important;

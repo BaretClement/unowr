@@ -32,9 +32,14 @@ get_header( 'custom-material' ); ?>
 	</div>
 
 	<!-- BLOC BLOG  -->
-	<div id="rtl" class="row <?php the_field('couleur_texte_blog') ?>" style="background-color: <?php the_field('background_blog'); ?>;">
-		<div id="ltr" class="col s12 m6 height75 valign-wrapper">
-			<div id="ltr" class="container valign center">
+	<div class="row <?php the_field('couleur_texte_blog') ?>" style="background-color: <?php the_field('background_blog'); ?>;">
+
+		<div class="col s12 m6 push-m6 height75-img valign-wrapper">
+			<img class="responsive-img" src="<?php the_field('background_image_blog'); ?>" style="margin: auto">
+		</div>
+
+		<div class="col s12 m6 pull-m6 height75 valign-wrapper">
+			<div id="blog-text" class="container valign center">
 				<h2><?php the_field('titre_blog'); ?></h2>
 				<p><?php the_field('sous_titre_blog'); ?></p>
 				  <a href="<?php the_field('link_cta_blog'); ?>" class="waves-effect waves-teal btn disabled <?php the_field('couleur_texte_blog') ?>">
@@ -43,19 +48,19 @@ get_header( 'custom-material' ); ?>
 			</div>
 		</div>
 
-		<div id="blog" class="col s12 m6 height75-img valign-wrapper" style="background: url(<?php the_field('background_image_blog'); ?>);">
-		</div>
+
 
 	</div>
 
 	<!-- BLOC CONCEPT  -->
 	<div class="row <?php the_field('couleur_texte_concept') ?>"" style="background-color: <?php the_field('background_concept'); ?>">
 
-		<div id="concept" class="col s12 m6 height75-img valign-wrapper" style="background: url(<?php the_field('background_image_concept'); ?>);">
+		<div id="blog" class="col s12 m6 height75-img valign-wrapper">
+			<img class="responsive-img" src="<?php the_field('background_image_concept'); ?>" style="margin: auto">
 		</div>
 
 		<div class="col s12 l6 height75 valign-wrapper">
-			<div class="container valign center">
+			<div id="concept-text" class="container valign center">
 				<h2><?php the_field('titre_concept'); ?></h2>
 				<p><?php the_field('sous_titre_concept'); ?></p>
 				  <a href="<?php the_field('link_cta_concept'); ?>" class="waves-effect waves-teal btn-flat <?php the_field('couleur_texte_concept') ?>">

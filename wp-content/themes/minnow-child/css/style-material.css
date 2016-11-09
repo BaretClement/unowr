@@ -1,6 +1,10 @@
 @font-face {font-family: 'Coves Light'; src: url(font/Coves_Light.otf);}
 @font-face {font-family: 'Coves Bold'; src: url(font/Coves_Bold.otf);}
 
+html{
+	-webkit-text-size-adjust: none
+}
+
 html, body{
 	font-family: 'Coves Light' !important;
 	display: inline-block !important;

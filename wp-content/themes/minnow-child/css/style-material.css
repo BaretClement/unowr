@@ -244,7 +244,6 @@ textarea.materialize-textarea {
 
 .input-field.col label {
     left: 1.75rem !important;
-    -webkit-appearance: none !important;
 }
 
 .input-field label {
@@ -252,7 +251,6 @@ textarea.materialize-textarea {
     background: white !important;
     width: auto !important;
     padding: 0 10px !important;
-    -webkit-appearance: none !important;
 }
 
 input:not([type]).valid, 
@@ -293,7 +291,6 @@ input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
 .select-wrapper span.caret {
     right: 10px !important;
     top: 20px !important;
-    -webkit-appearance: none !important;
 }
 /******************************************************/
 /********************* BACKGROUND *********************/

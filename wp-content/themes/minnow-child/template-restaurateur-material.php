@@ -23,7 +23,7 @@ get_header( 'custom-material' ); ?>
             </div>
       			<!-- CODE POSTAL DU RESTAURANT -->
             <div class="input-field col s6 m3">
-              	<input id="code_postal" type="tel" class="validate" maxlength="5" pattern="[0-9]{5}">
+              	<input id="code_postal" type="text" class="validate" maxlength="5" pattern="[0-9]{5}">
               	<label required="required" for="code_postal" data-error="code postal non valide">Code postal *</label>
             </div>
       			<!-- VILLE DU RESTAURANT -->

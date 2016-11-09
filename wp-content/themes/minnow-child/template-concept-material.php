@@ -112,6 +112,7 @@ get_header( 'custom-material' ); ?>
     </div>
   </div>
 
+    <?php get_footer( 'custom-material' ); ?>
 
 
 

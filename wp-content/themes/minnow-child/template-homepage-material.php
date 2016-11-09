@@ -84,3 +84,4 @@ get_header( 'custom-material' ); ?>
 
 
 	</div> 
+    <?php get_footer( 'custom-material' ); ?>

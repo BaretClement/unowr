@@ -174,3 +174,5 @@ get_header( 'custom-material' ); ?>
         
         $('select').material_select('destroy');
   	</script>
+
+    <?php get_footer( 'custom-material' ); ?>

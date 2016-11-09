@@ -89,6 +89,14 @@ img.logo{
 	float: right
 }
 
+footer{
+	height: 64px !important;
+	background: #263238;
+	color: #FFF;
+	text-align: center !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
 /******************************************************/
 /*********************** IMG **************************/
 /******************************************************/
@@ -155,7 +163,7 @@ img.logo{
 /********************* DIV ORDER **********************/
 /******************************************************/
 
-.center{text-align: center}
+.center{text-align: center; width: 100%}
 .right{text-align: right}
 
 /******************************************************/

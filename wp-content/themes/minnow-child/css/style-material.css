@@ -413,3 +413,18 @@ input{height: 3.5rem !important; padding: 0 !important}
 	  transform: scale(1.1);
 	}
 }
+
+/******************************************************/
+/********************* BACKGROUND *********************/
+/******************************************************/
+#concept{background-size: contain; background-repeat: no-repeat;}
+
+@media (max-width: 600px){
+	#concept{background-position: bottom;}
+}
+@media (min-width: 601px) and (max-width: 992px) {
+	#concept{background-position: bottom}
+}
+@media (min-width: 992px) {
+	#concept{background-position: left}
+}

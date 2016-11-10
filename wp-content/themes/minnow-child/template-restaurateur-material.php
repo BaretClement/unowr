@@ -6,7 +6,7 @@ Template Name: Restaurateur - material
 get_header( 'custom-material' ); ?>
 
       <div class="container formulaire">
-      	<form>
+      	<form class="col s12 color-white" action="#contact" method="POST" autocomplete="off">
       		<div class="row">
       			<!-- TITLE -->
       			<div class="col s12"><h1 class="center">Formulaire d'inscription</h1></div>

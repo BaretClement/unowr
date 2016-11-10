@@ -204,6 +204,7 @@ footer{
 .row{margin-bottom: 0 !important; border-bottom: 1px solid #E0E0E0; }
 .blog{border-bottom: 1px solid #E0E0E0; border-right: none; background-size: contain !important; background-repeat: no-repeat !important; background-position: middle !important;}
 .concept{background-size: contain !important; background-repeat: no-repeat !important; background-position: middle !important;}
+.margin-top{margin-top: 50px;}
 
 /* mobile */
 @media (max-width: 600px){
@@ -353,6 +354,9 @@ textarea.materialize-textarea {
     resize: none;
     min-height: 3rem;
 }
+
+.screen-reader-response{display: none !important}
+input{height: 3.5rem !important; padding: 0 !important}
 
 /******************************************************/
 /********************* BACKGROUND *********************/

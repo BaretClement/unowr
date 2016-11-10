@@ -23,10 +23,8 @@ get_header( 'custom-material' ); ?>
 		<div class="col s12 height100 valign-wrapper">
 			<div class="container valign center">
 				<h2><?php the_field('titre_restaurateur'); ?></h2>
-				<p><?php the_field('sous_titre_restaurateur'); ?></p>
-				  <a href="<?php the_field('link_cta_restaurateur'); ?>" class="waves-effect waves-teal btn-flat <?php the_field('couleur_texte_restaurant') ?>">
-				  	<?php the_field('cta_restaurateur'); ?>
-				  </a>
+				<p class="margin-bottom"><?php the_field('sous_titre_restaurateur'); ?></p>
+				<p><?php the_field('formulaire_de_contact'); ?></p>	
 			</div>
 		</div>
 	</div>

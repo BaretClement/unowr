@@ -86,95 +86,76 @@ get_header( 'custom-material' ); ?>
 
             <!-- Google Captcha -->
             <div class="col s12 small-margin">  
-                <div align="center" class="g-recaptcha" data-sitekey="6LdwqgkUAAAAADJhz_RcoTKTdEnYw8mC1IuXuHeA"></div>
+                <div class="g-recaptcha" data-sitekey="6LePrgkUAAAAADJ3EmlqXxgyaXJ2TyZi01NfwL3T"></div>
             </div>
 
           	<!-- BOUTON ENVOYER -->
           	<div class="col s12 center margin-bottom">
-				      <button class="btn-flat waves-effect waves-light right" type="submit" name="action">
-                  Envoyer
-  				    </button>
+                <button class="btn-flat waves-effect" type="submit" name="action">Envoyer</button>
 			     </div>
         </div>
 
-        <!-- Captcha Google -->
+        
+        <?php 
+          $_POST['https://www.google.com/recaptcha/api/siteverify']
+        ?>
+        
         <?php
-          if(isset($_POST['submit']) && !empty($_POST['submit'])):
-              if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
-                  //your site secret key
-                  $secret = '6LdwqgkUAAAAAOG7g2oLvZ7D9y7moXhtf5jjmqlK';
-              // On récupère l'IP de l'utilisateur
-              $remoteip = $_SERVER['REMOTE_ADDR'];
-                  //get verify response data
-                  $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
-                  $responseData = json_decode($verifyResponse);
-                  if($responseData->success):
-                      //contact form submission code
-                      $nom_du_restaurant = !empty($_POST['nom_du_restaurant'])?$_POST['nom_du_restaurant']:'';
-                      $adresse = !empty($_POST['adresse'])?$_POST['adresse']:'';
-                      $code_postal = !empty($_POST['code_postal'])?$_POST['code_postal']:'';
-                      $ville = !empty($_POST['ville'])?$_POST['ville']:'';
-                      $telephone = !empty($_POST['telephone'])?$_POST['telephone']:'';
-                      $email = !empty($_POST['email'])?$_POST['email']:'';
-                      $prenom_du_contact = !empty($_POST['prenom_du_contact'])?$_POST['prenom_du_contact']:'';
-                      $nom_du_contact = !empty($_POST['nom_du_contact'])?$_POST['nom_du_contact']:'';
-                      $horaires = !empty($_POST['horaires'])?$_POST['horaires']:'';
-                      $type_de_cuisine = !empty($_POST['type_de_cuisine'])?$_POST['type_de_cuisine']:'';
-                      $specialite = !empty($_POST['specialite'])?$_POST['specialite']:'';
-                      $prix_moyen = !empty($_POST['prix_moyen'])?$_POST['prix_moyen']:'';
-                      $message = !empty($_POST['message'])?$_POST['message']:'';
-                      
-                      $to = 'contact@unowr.fr';
-                      $subject = 'New contact form have been submitted';
-                      $htmlContent = "
-                          <h2>Contact request details</h2>
-                          
-                          <h3>À propos du restaurateur : </h3>
-                          <p>
-                          <b>Prénom : </b>".$prenom_du_contact."<br>
-                          <b>Nom : </b>".$nom_du_contact."<br>
-                          
-                          <h3>À propos du restaurant : </h3>
-                          <p><b>Nom du restaurant : </b>".$restaurant_name."<br>
-                          <b>Téléphone : </b>".$telephone."<br>
-                          <b>Email : </b>".$email."<br>
-                          <b>Adresse : </b>".$adresse.", ".$code_postal." ".$ville."<br></p>
-                          <b>Horaires : </b>".$horaires."<br>
-                          <b>Type_de_cuisine : </b>".$type_de_cuisine."<br>
-                          <b>Spécialité : </b>".$specialite."<br>
-                          <b>Prix moyen pour un menu : </b>".$prix_moyen."<br>
+        if(isset($_POST['action'])){
+            $prenom_du_contact=$_POST['prenom_du_contact'];
+            $nom_du_contact=$_POST['nom_du_contact'];
+            $telephone=$_POST['telephone'];
+            $email=$_POST['email'];
+            $nom_du_restaurant=$_POST['nom_du_restaurant'];
+            $adresse=$_POST['adresse'];
+            $message=$_POST['message'];
+           
+            $mailToSend = 'Hello team UNOWR, ' . $prenom_du_contact . ' '. $nom_du_contact . ' vous a envoyé un message !<br><br><p>À propos restaurateur :</p><b>Prénom</b> : '. $prenom_du_contact . '<br><b>Nom</b> : '. $nom_du_contact . '<br> <b>Téléphone</b> : ' . $telephone .'<br><b>Email</b> : '. $email .'<br><p>À propos de son restaurant</p><b>Nom du restaurant :</b> : '. $nom_du_restaurant . '<br><b>adresse</b> : '. $adresse . '<br><br><b>Message</b> : '. $message . ' ';
+        }
+        ?>
 
-                          <h3>À propos du restaurant : </h3>
-                          <p>".$message."</p>
-                      ";
-                      // Always set content-type when sending HTML email
-                      $headers = "MIME-Version: 1.0" . "\r\n";
-                      $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-                      // More headers
-                      $headers .= 'From : '.$prenom_du_contact.' '.$nom_du_contact.' <'.$email.'>' . "\r\n";
-                      //send email
-                      @mail($to,$subject,$htmlContent,$headers);
-                      
-                      $succMsg = 'Votre message a bien été envoyé !';
-                      echo '<p style="color: #26a69a"><b>';
-                      echo $succMsg;
-                      echo "</b></p>";
-                  else:
-                      $errMsg = 'Échec de vérification du captcha, essayez à nouveau...';
-                      echo '<p style="color: #F44336; text-align: center"><b>';
-                      echo $errMsg;
-                      echo "</b></p>";
-                  endif;
-              else:
-                  $errMsg = "Pensez à valider le captcha avant d'envoyer votre message.";
-                echo '<p style="color: #F44336"; text-align: center><b>';
-                      echo $errMsg;
-                      echo "</b></p>";
-              endif;
-          else:
-              $errMsg = '';
-              $succMsg = '';
-          endif;
+        <?php
+        $TO = "clement.baret@gmail.com";
+
+        $h = "From: communication@unowr.fr";
+
+        mail($TO, $nom_du_restaurant, $mailToSend, "Content-type: text/html");
+
+        ?>
+
+        <?php
+function isValid($code, $ip = null)
+{
+    if (empty($code)) {
+        return false; // Si aucun code n'est entré, on ne cherche pas plus loin
+    }
+    $params = [
+        'secret'    => "6LePrgkUAAAAAF9VVGzkbWsYE-aQ-6fmgySrJZ7R",
+        'response'  => $code
+    ];
+    if( $ip ){
+        $params['remoteip'] = $ip;
+    }
+    $url = "https://www.google.com/recaptcha/api/siteverify?" . http_build_query($params);
+    if (function_exists('curl_version')) {
+        $curl = curl_init($url);
+        curl_setopt($curl, CURLOPT_HEADER, false);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($curl, CURLOPT_TIMEOUT, 1);
+        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false); // Evite les problèmes, si le ser
+        $response = curl_exec($curl);
+    } else {
+        // Si curl n'est pas dispo, un bon vieux file_get_contents
+        $response = file_get_contents($url);
+    }
+
+    if (empty($response) || is_null($response)) {
+        return false;
+    }
+
+    $json = json_decode($response);
+    return $json->success;
+}
         ?>
         </form>
       <!-- form -->

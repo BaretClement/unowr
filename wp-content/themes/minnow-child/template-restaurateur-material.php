@@ -84,6 +84,11 @@ get_header( 'custom-material' ); ?>
                 <label for="message">Dites-nous en plus !</label>
             </div>
 
+            <!-- Google Captcha -->
+            <div class="col s12 small-margin">  
+                <div align="center" class="g-recaptcha" data-sitekey="6LdwqgkUAAAAADJhz_RcoTKTdEnYw8mC1IuXuHeA"></div>
+            </div>
+
           	<!-- BOUTON ENVOYER -->
           	<div class="col s12 center margin-bottom">
 				      <button class="btn-flat waves-effect waves-light right" type="submit" name="action">
@@ -92,7 +97,8 @@ get_header( 'custom-material' ); ?>
 			     </div>
         </div>
 
-                    <?php 
+        <!-- Captcha Google -->
+        <?php
           if(isset($_POST['submit']) && !empty($_POST['submit'])):
               if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
                   //your site secret key
@@ -103,7 +109,7 @@ get_header( 'custom-material' ); ?>
                   $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
                   $responseData = json_decode($verifyResponse);
                   if($responseData->success):
-                    //contact form submission code
+                      //contact form submission code
                       $nom_du_restaurant = !empty($_POST['nom_du_restaurant'])?$_POST['nom_du_restaurant']:'';
                       $adresse = !empty($_POST['adresse'])?$_POST['adresse']:'';
                       $code_postal = !empty($_POST['code_postal'])?$_POST['code_postal']:'';
@@ -116,28 +122,36 @@ get_header( 'custom-material' ); ?>
                       $type_de_cuisine = !empty($_POST['type_de_cuisine'])?$_POST['type_de_cuisine']:'';
                       $specialite = !empty($_POST['specialite'])?$_POST['specialite']:'';
                       $prix_moyen = !empty($_POST['prix_moyen'])?$_POST['prix_moyen']:'';
+                      $message = !empty($_POST['message'])?$_POST['message']:'';
                       
                       $to = 'contact@unowr.fr';
                       $subject = 'New contact form have been submitted';
                       $htmlContent = "
                           <h2>Contact request details</h2>
+                          
                           <h3>À propos du restaurateur : </h3>
                           <p>
-                          <b>Prénom : </b>".$first_name."<br>
-                          <b>Nom : </b>".$last_name."<br>
-                          <b>Téléphone : </b>".$telephone."<br>
-                          <b>Email : </b>".$email."<br>
+                          <b>Prénom : </b>".$prenom_du_contact."<br>
+                          <b>Nom : </b>".$nom_du_contact."<br>
+                          
                           <h3>À propos du restaurant : </h3>
                           <p><b>Nom du restaurant : </b>".$restaurant_name."<br>
-                          <b>Adresse : </b>".$adress."<br></p>
-                          <b>Code postal : </b>".$post_code."<br></p>
-                          <p><b>Message : </b>".$message."<br></p>
+                          <b>Téléphone : </b>".$telephone."<br>
+                          <b>Email : </b>".$email."<br>
+                          <b>Adresse : </b>".$adresse.", ".$code_postal." ".$ville."<br></p>
+                          <b>Horaires : </b>".$horaires."<br>
+                          <b>Type_de_cuisine : </b>".$type_de_cuisine."<br>
+                          <b>Spécialité : </b>".$specialite."<br>
+                          <b>Prix moyen pour un menu : </b>".$prix_moyen."<br>
+
+                          <h3>À propos du restaurant : </h3>
+                          <p>".$message."</p>
                       ";
                       // Always set content-type when sending HTML email
                       $headers = "MIME-Version: 1.0" . "\r\n";
                       $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
                       // More headers
-                      $headers .= 'From : '.$first_name.' '.$last_name.' <'.$email.'>' . "\r\n";
+                      $headers .= 'From : '.$prenom_du_contact.' '.$nom_du_contact.' <'.$email.'>' . "\r\n";
                       //send email
                       @mail($to,$subject,$htmlContent,$headers);
                       
@@ -162,6 +176,12 @@ get_header( 'custom-material' ); ?>
               $succMsg = '';
           endif;
         ?>
+        </form>
+      <!-- form -->
+      </div>
+    </div>
+
+
 		</form>
 	</div>
 

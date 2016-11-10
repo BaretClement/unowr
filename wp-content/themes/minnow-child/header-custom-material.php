@@ -17,7 +17,10 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/style-material.css">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/materialize.css">
 <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<!-- captcha Google-->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 <body <?php body_class(); ?>>
 	

@@ -417,7 +417,7 @@ input{height: 3.5rem !important; padding: 0 !important}
 /******************************************************/
 /********************* BACKGROUND *********************/
 /******************************************************/
-#concept{background-size: cover; background-repeat: no-repeat;}
+#concept{background-size: cover !important; background-repeat: no-repeat;}
 
 @media (max-width: 600px){
 	#concept{background-position: bottom;}

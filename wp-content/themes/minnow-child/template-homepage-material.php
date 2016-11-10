@@ -30,11 +30,9 @@ get_header( 'custom-material' ); ?>
 	</div>
 
 	<!-- BLOC CONCEPT  -->
-	<div class="row <?php the_field('couleur_texte_concept') ?>"" style="background-color: <?php the_field('background_concept'); ?>">
+	<div class="row <?php the_field('couleur_texte_concept') ?>"" style="background-color: <?php the_field('background_concept'); ?>; background-image: url(<?php the_field('background_image_concept'); ?>); background-size: contain; background-repeat: no-repeat; background-position: left">
 
-		<div id="blog" class="col s12 m6 height75-img valign-wrapper">
-			<img class="responsive-img" src="<?php the_field('background_image_concept'); ?>" style="margin: auto">
-		</div>
+		<div id="blog" class="col s12 m6 height75-img valign-wrapper"></div>
 
 		<div class="col s12 l6 height75 valign-wrapper">
 			<div id="concept-text" class="container valign center">

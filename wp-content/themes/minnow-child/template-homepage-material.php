@@ -48,8 +48,6 @@ get_header( 'custom-material' ); ?>
 	<!-- BLOC BLOG  -->
 	<div class="row <?php the_field('couleur_texte_blog') ?>" style="background-color: <?php the_field('background_blog'); ?>;">
 
-		<div class="col s12 m6 height75-img valign-wrapper" style="background-image: url(<?php the_field('background_image_blog'); ?>); background-repeat: no-repeat; background-position: center; background-size: contain;"></div>
-
 		<div class="col s12 m6 pull-m6 height75 valign-wrapper">
 			<div id="blog-text" class="container valign center">
 				<h2><?php the_field('titre_blog'); ?></h2>
@@ -59,6 +57,8 @@ get_header( 'custom-material' ); ?>
 				  </a>
 			</div>
 		</div>
+
+		<div class="col s12 m6 height75-img valign-wrapper" style="background-image: url(<?php the_field('background_image_blog'); ?>); background-repeat: no-repeat; background-position: center; background-size: contain;"></div>
 	</div>
 
 	<!-- BLOC SOCIAL -->

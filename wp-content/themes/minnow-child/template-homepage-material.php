@@ -32,7 +32,7 @@ get_header( 'custom-material' ); ?>
 	<!-- BLOC CONCEPT  -->
 	<div id="concept" class="row <?php the_field('couleur_texte_concept') ?>"" style="background-color: <?php the_field('background_concept'); ?>;">
 
-		<div class="col s12 m6 height75-img valign-wrapper" style="background-image: url(<?php the_field('background_image_concept'); ?>)"></div>
+		<div class="col s12 m6 height75-img valign-wrapper" style="background-image: url(<?php the_field('background_image_concept'); ?>); background-repeat: no-repeat; background-position: center; background-size: contain;"></div>
 
 		<div class="col s12 l6 height75 valign-wrapper">
 			<div id="concept-text" class="container valign center">
@@ -48,9 +48,7 @@ get_header( 'custom-material' ); ?>
 	<!-- BLOC BLOG  -->
 	<div class="row <?php the_field('couleur_texte_blog') ?>" style="background-color: <?php the_field('background_blog'); ?>;">
 
-		<div class="col s12 m6 push-m6 height75-img valign-wrapper">
-			<img class="responsive-img" src="<?php the_field('background_image_blog'); ?>" style="margin: auto">
-		</div>
+		<div class="col s12 m6 height75-img valign-wrapper" style="background-image: url(<?php the_field('background_image_blog'); ?>); background-repeat: no-repeat; background-position: center; background-size: contain;"></div>
 
 		<div class="col s12 m6 pull-m6 height75 valign-wrapper">
 			<div id="blog-text" class="container valign center">

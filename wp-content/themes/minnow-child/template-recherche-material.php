@@ -10,7 +10,6 @@ get_header( 'custom-material' ); ?>
 	<div class="col s12 height100">
 		<div class="container">
 						
-
 			  <!-- Modal Trigger -->
 			  <a class="waves-effect waves-light btn" href="#modal1">Modal</a>
 

@@ -2,19 +2,40 @@
 
 <?php
 $taxonomies = array('agenda', 'localisation', 'occasion', 'ambiance', 'type_de_cuisine');
+$questions = array(
+		'agenda'=> array(
+			"agents du shield",
+			"agen du shiel"
+		),
+		'localisation' => array(
+			"ou",
+			"where",
+			"donde esta la cuisina"
+		),
+		'occasion' => array(
+			"por que ?",
+			"pourquoi faire"
+		),
+		'ambiance' => array(
+			"type"
+		),
+		'type_de_cuisine' => array(
+			"type"
+		)
+	);
 $first = true;
 foreach ($taxonomies as $tkey => $taxonomy) {
 
 	$args = array(
 	    'hide_empty' => false, 
 	);
-
+// echo $taxonomy; die();
 	$terms = get_terms($taxonomy, $args);
 	?>
 	<div name="<?php echo $taxonomy; ?>" name="unowr-response-title"
 		data-unowr-taxonomy="<?php echo $taxonomy; ?>" class="<?php echo ($first) ? '' : 'unowr-hidden'; ?> unowr-taxonomy">
 
-	<?php echo $taxonomy; ?> <br/>
+	<?php echo $questions[$taxonomy][count($questions[$taxonomy]) - 1]; ?> <br/>
 	<div>
 
 	<?php
@@ -48,3 +69,7 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 
 ?>
 </form>
+
+<script>
+	var questions = <?php echo json_encode($questions); ?>;
+</script>

@@ -1,4 +1,4 @@
-<form action="<?php echo esc_url( $_SERVER['REQUEST_URI'] ); ?>" method="post" data-unowr-form="true">
+<form action="<?php echo esc_url( $_SERVER['REQUEST_URI'] ); ?>" method="post" class="data-unowr-form" data-unowr-form="true">
 
 <?php
 $taxonomies = array('agenda', 'localisation', 'occasion', 'ambiance', 'type_de_cuisine');

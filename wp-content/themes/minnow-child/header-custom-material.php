@@ -18,6 +18,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/materialize.css">
 <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
+<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 	

@@ -93,11 +93,35 @@ function unowr_search() {
 	$res = array();
 	foreach ($posts as $key => $post) {
 		if(isset($post->post_title)){
+
+			$cat = get_the_terms($post->ID, 'type_de_cuisine');
+			$ambiances = get_the_terms($post->ID, 'ambiance');
+			$array_ambiances = array();
+
+			foreach ($ambiances as $k => $val) {
+				$array_ambiances[] = $val->name;
+			}
+
+			$customFieds = get_post_custom($post->ID);
 			$res[] = array(
 				'title' => $post->post_title,
+				'name' => $post->post_name,
 				'guid' => $post->guid,
 				'id' => $post->ID,
-				'content' => $post->post_content
+				'content' => $post->post_content,
+				'prenom_du_contact' => $customFieds['prenom_du_contact'][0],
+				'nom_du_contact' => $customFieds['nom_du_contact'][0],
+				'nom_du_restaurant' => $customFieds['nom_du_restaurant'][0],
+				'adresse' => $customFieds['adresse'][0],
+				'code_postal' => $customFieds['code_postal'][0],
+				'ville' => $customFieds['ville'][0],
+				'telephone' => $customFieds['telephone'][0],
+				'email' => $customFieds['email'][0],
+				'specialite' => $customFieds['specialite'][0],
+				'prix_moyen' => $customFieds['prix_moyen'][0],
+				'category' => $cat[0]->name,
+				'subcategory' => $cat[1]->name,
+				"ambiances" => $array_ambiances,
   			);
   		}
 	}

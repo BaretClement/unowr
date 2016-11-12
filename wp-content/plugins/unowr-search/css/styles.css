@@ -36,7 +36,7 @@
 }
 
 .unowr-result-wrapper .unowr_result {
-	width: 33.3333333%;
+	width: calc(100% - 20px);
 	text-transform: uppercase;
     border: 2px solid #fff;
     margin: 10px;

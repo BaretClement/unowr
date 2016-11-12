@@ -30,7 +30,7 @@ nav{
 	box-sizing: border-box !important;
 }
 nav ul a{
-	color: #263238 !important;
+	color: #000 !important;
 }
 nav ul a:hover {
     background-color: #FFF !important;
@@ -96,7 +96,7 @@ img.logo{
 
 footer{
 	height: 64px !important;
-	background: #263238;
+	background: #000;
 	color: #FFF;
 	text-align: center !important;
 	margin: 0 !important;
@@ -176,7 +176,7 @@ footer{
 /******************************************************/
 
 .btn-flat{border: 1px solid grey !important; margin: 25px 0;}
-.btn-flat:hover{background: #F5F5F5 !important; color: #263238 !important;}
+.btn-flat:hover{background: #F5F5F5 !important; color: #000 !important;}
 
 /******************************************************/
 /*********************** TITLES ***********************/
@@ -205,6 +205,7 @@ footer{
 .blog{border-bottom: 1px solid #E0E0E0; border-right: none; background-size: contain !important; background-repeat: no-repeat !important; background-position: middle !important;}
 .concept{background-size: contain !important; background-repeat: no-repeat !important; background-position: middle !important;}
 .margin-top{margin-top: 50px;}
+
 
 /* mobile */
 @media (max-width: 600px){
@@ -368,17 +369,18 @@ input{height: 3.5rem !important; padding: 0 !important}
 /*********************** COLORS ***********************/
 /******************************************************/
 
-.color_white{color: #FFF !important}
-.btn-flat.color_white{border: 1px solid #FFF !important}
-.color_black{color: #263238}
+.color_white{color: #FFF !important; border-color: #FFF;}
+.btn-flat.color_white{border: 1px solid #FFF !important;}
+.color_black{color: #000; border-color: #000;}
 
 /******************************************************/
 /************************ ICONS ***********************/
 /******************************************************/
 
-.social-icon{font-size: 3rem; margin: 25px 25px !important; color: #263238;}
+.social-icon{font-size: 3rem; margin: 25px 25px !important; color: #000;}
 .big-icon{font-size: 5rem}
-.picto-social{color: #263238; padding: 25px}	
+.picto-social{color: #000; padding: 25px}	
+#scroll-down{border-radius: 50%; position: relative !important; bottom: 25px !important; width: 100%; text-align: center}
 
 @media (max-width: 600px){
 	.picto-social{font-size: 2rem !important;}	

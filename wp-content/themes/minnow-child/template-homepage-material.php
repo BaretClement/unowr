@@ -14,6 +14,7 @@ get_header( 'custom-material' ); ?>
 				  <a href="<?php the_field('link_cta_utilisateur'); ?>" class="waves-effect waves-teal btn-flat <?php the_field('couleur_texte_utilisateur') ?>">
 				  	<?php the_field('cta_utilisateur'); ?>
 				  </a>
+				  <div><i class="ion-ios-arrow-down <?php the_field('couleur_texte_utilisateur') ?>" style="font-size: 2rem"></i></div>
 			</div>
 		</div>
 	</div>

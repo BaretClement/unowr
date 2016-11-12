@@ -4,8 +4,8 @@
 $taxonomies = array('agenda', 'localisation', 'occasion', 'ambiance', 'type_de_cuisine');
 $questions = array(
 		'agenda'=> array(
-			"agents du shield",
-			"agen du shiel"
+			"1111",
+			"22222"
 		),
 		'localisation' => array(
 			"ou",
@@ -25,8 +25,8 @@ $questions = array(
 	);
 $questions_child = array(
 		'agenda'=> array(
-			"agents du shield",
-			"agen du shiel"
+			"bla bla bla",
+			"test"
 		),
 		'localisation' => array(
 			"ou",
@@ -56,7 +56,7 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 	<div name="<?php echo $taxonomy; ?>" name="unowr-response-title"
 		data-unowr-taxonomy="<?php echo $taxonomy; ?>" class="<?php echo ($first) ? '' : 'unowr-hidden'; ?> unowr-taxonomy">
 
-	<?php echo $questions[$taxonomy][count($questions[$taxonomy]) - 1]; ?> <br/>
+	<?php echo $questions[$taxonomy][rand(0, count($questions[$taxonomy]) - 1)]; ?> <br/>
 	<div>
 
 	<?php
@@ -77,7 +77,7 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 
 	foreach ($parentHtml as $key => $value) {
 		echo "<div class='children unowr-hidden' data-parent='" . $key . "'>";
-		echo $questions_child[$taxonomy][count($questions_child[$taxonomy]) - 1] . "<br/>";
+		echo $questions_child[$taxonomy][rand(0, count($questions_child[$taxonomy]) - 1)] . "<br/>";
 		echo $value;
 		echo "</div>";
 	}

@@ -1,48 +1,30 @@
 var unowr_form = {
 	init: function () {
-		if (document.querySelector('[data-unowr-form]').length > 0) {
+		if (document.querySelectorAll('[data-unowr-form]').length > 0) {
+
+			this._choices = document.querySelectorAll('[data-unowr-choice]');
+			this._taxonomies = document.querySelectorAll('[data-unowr-taxonomy]');
+
 			this._resto = [];
 			this._pos = 0;
 			this._resultWrapper = document.querySelector('[data-unowr-result-wrapper]');
-			this._inputsWrapper = document.querySelectorAll('[data-unowr-form-wrapper]');
-			this._selects = document.querySelectorAll('[data-unowr-taxonomy]');
-			this._submit = document.querySelector('[data-unowr-submit]');
 
 			this._bindEvents();
 		}
 	},
 	_bindEvents: function () {
-		this._submit.addEventListener('click', this._submitEvent.bind(this));
-
-		Array.prototype.forEach.call(this._inputsWrapper, function(wrapper) {
-			
+		Array.prototype.forEach.call(this._choices, function(choice) {
+			choice.addEventListener('click', this._next.bind(this));			
 		}.bind(this))
-	},
-	_submitEvent: function (e) {
-		e.preventDefault();
-		this._check();
-		return false;
-	},
-	_check: function () {
-		var canContinue = false;
-		var wrapper = document.querySelector('[data-unowr-form-wrapper]:not(.unowr-done)');
-		var response = wrapper.querySelector('[data-unowr-response]');
-		var select = wrapper.querySelector('select');
-		if (select.value === '') {
-			select.classList.add('unowr-error');
-		}else {
-			select.classList.remove('unowr-error');
-			wrapper.classList.add('unowr-done');
-			this._ajax(select.value, response);
-		}
 	},
 	_ajax: function (val, output) {
 		var data = {
 			"action": "unowr_search"
 		};
-		Array.prototype.forEach.call(this._selects, function(select) {
+		var selects = document.querySelectorAll('.active[data-unowr-choice]');
+		Array.prototype.forEach.call(selects, function(select) {
 			var type = select.getAttribute('data-unowr-taxonomy');
-			data[type] = select.value;
+			data[type] = select.getAttribute('data-value');
 		});
 
 		jQuery.ajax({
@@ -59,23 +41,51 @@ var unowr_form = {
 					this._finish();
 				}else {
 					this._resto = json
-					this._next();
+					this._showNext();
 				}
 			}.bind(this)
 		});
 	},
-	_next: function () {
-		var currentPos = 0;
-		this._pos++;
-		if (this._pos === this._inputsWrapper.length) {
-			this._finish();
+	_showChildren: function (id) {
+		var children = document.querySelector('[data-parent="' + id + '"]');
+		if (children != null) {
+			children.classList.remove('unowr-hidden')
+			return true
+		}
+		return false
+	},
+	_showNext: function (e) {
+		var nextTaxo = document.querySelector('.unowr-taxonomy:not(.unowr-done)');
+		if (nextTaxo != null) {
+			nextTaxo.classList.remove('unowr-hidden')
 		}else {
-			Array.prototype.forEach.call(this._inputsWrapper, function(wrapper) {
-				if (currentPos === this._pos) {
-					wrapper.classList.remove('unowr-hidden');
-				}
-				currentPos++;
-			}.bind(this))
+			this.finish_()
+		}
+	},
+	_next: function (e) {
+		var target = e.currentTarget
+
+		var taxo = target.getAttribute('data-unowr-taxonomy')
+		var parent = target.getAttribute('data-parent')
+		var parentNode = document.querySelector('[data-unowr-taxonomy="' + taxo + '"]')
+		var otherChoices = target.parentNode.querySelectorAll('.unowr-choice')
+		Array.prototype.forEach.call(otherChoices, (other) => {
+			other.classList.remove('active')
+		})
+		target.classList.add('active')
+		var childrens = target.parentNode.querySelectorAll('.children')
+		Array.prototype.forEach.call(childrens, function(children) {
+			children.classList.add('unowr-hidden')
+		})
+
+		if (parent === "true") {
+			if (!this._showChildren(e.currentTarget.getAttribute('data-value'))) {
+				parentNode.classList.add('unowr-done')
+				this._ajax()
+			}
+		}else {
+			parentNode.classList.add('unowr-done')
+			this._ajax()
 		}
 	},
 	_finish: function () {

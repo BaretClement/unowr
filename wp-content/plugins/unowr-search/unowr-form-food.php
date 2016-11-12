@@ -39,6 +39,12 @@ function unowr_search() {
 	global $wpdb; // this is how you get access to the database
 	$search = array();
 	if(isset($_POST)){
+		if(isset($_POST['agenda']) && !empty($_POST['agenda'])){
+			$search['agenda'] = array(
+	        	'taxonomy' => 'agenda',
+	        	'terms'    => $_POST['agenda']
+        	);
+		}
 		if(isset($_POST['ambiance']) && !empty($_POST['ambiance'])){
 			$search['ambiance'] = array(
 	        	'taxonomy' => 'ambiance',

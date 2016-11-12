@@ -23,6 +23,27 @@ $questions = array(
 			"type"
 		)
 	);
+$questions_child = array(
+		'agenda'=> array(
+			"agents du shield",
+			"agen du shiel"
+		),
+		'localisation' => array(
+			"ou",
+			"where",
+			"donde esta la cuisina"
+		),
+		'occasion' => array(
+			"por que ?",
+			"pourquoi faire"
+		),
+		'ambiance' => array(
+			"type"
+		),
+		'type_de_cuisine' => array(
+			"type"
+		)
+	);
 $first = true;
 foreach ($taxonomies as $tkey => $taxonomy) {
 
@@ -56,6 +77,7 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 
 	foreach ($parentHtml as $key => $value) {
 		echo "<div class='children unowr-hidden' data-parent='" . $key . "'>";
+		echo $questions_child[$taxonomy][count($questions_child[$taxonomy]) - 1] . "<br/>";
 		echo $value;
 		echo "</div>";
 	}

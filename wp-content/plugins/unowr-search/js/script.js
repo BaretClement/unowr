@@ -92,6 +92,7 @@ var unowr_form = {
 		var html = "<div class='title'>Resultats:</div>";
 		Array.prototype.forEach.call(this._resto, (resto) => {
 			html += "<div class='unowr_result'>";
+			html += "	<span class='result-id' data-value='" + resto.id + "'></span><br>";
 			html += "	<span class='result-title' data-value='" + escape(resto.title) + "'> Nom: " + resto.title + "</span><br>";
 			html += "	<span class='result-prix_moyen' data-value='" + resto.prix_moyen + "'> Prix: " + resto.prix_moyen + "</span><br>";
 			html += "	<span class='result-adresse' data-value='" + escape(resto.adresse) + "'> Prix: " + resto.adresse + "</span><br>";
@@ -106,7 +107,12 @@ var unowr_form = {
 		var btnBookRestos = document.querySelectorAll('.btn-book-resto');
 		Array.prototype.forEach.call(btnBookRestos, (btnBookResto) => {
 			btnBookResto.addEventListener('click', (e) => {
-				alert('réserver: ' + unescape(e.target.parentNode.querySelector('.result-title').getAttribute('data-value')))
+				var daddy = e.target.parentNode;
+				var name = unescape(daddy.querySelector('.result-title').getAttribute('data-value'));
+				var id = daddy.querySelector('.result-id').getAttribute('data-value');
+				$('#modal1').modal('open');
+				$('#modal1').find('[name="post_title"]').val(name);
+				$('#modal1').find('[name="post_id"]').val(id);
 			})
 		})
 	}

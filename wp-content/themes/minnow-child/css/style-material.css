@@ -462,7 +462,10 @@ div.wpcf7-validation-errors {
     background-repeat: no-repeat;
     background-size: contain;
 }
-
+.unowr-choice{
+	padding: 10px;
+    border-radius: 2px;
+}
 form p:last-child {
     margin-bottom: 10px !important;
 }

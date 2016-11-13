@@ -1,7 +1,7 @@
 <form action="<?php echo esc_url( $_SERVER['REQUEST_URI'] ); ?>" method="post" class="data-unowr-form" data-unowr-form="true">
 
 <?php
-$taxonomies = array('agenda', 'localisation', 'occasion', 'ambiance', 'type_de_cuisine');
+$taxonomies = array('agenda', 'localisation', 'type_de_cuisine', 'occasion', 'ambiance');
 $questions = array(
 		'agenda'=> array(
 			"Quand est-ce que tu souhaites manger ?",

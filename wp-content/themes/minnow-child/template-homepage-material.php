@@ -25,7 +25,29 @@ get_header( 'custom-material' ); ?>
 			<div class="container valign center">
 				<h2><?php the_field('titre_restaurateur'); ?></h2>
 				<p class="margin-bottom"><?php the_field('sous_titre_restaurateur'); ?></p>
-				<p><?php the_field('formulaire_de_contact'); ?></p>	
+
+
+
+
+  <!-- Modal Trigger -->
+  <a class="modal-trigger waves-effect waves-light btn-flat" href="#modal1"><?php the_field('cta_restaurateur'); ?></a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Demande de contact</h4>
+		<p><?php the_field('formulaire_de_contact'); ?></p>	
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Quitter</a>
+    </div>
+  </div>
+
+
+
+
+
+				
 			</div>
 		</div>
 	</div>

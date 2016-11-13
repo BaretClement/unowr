@@ -450,3 +450,15 @@ div.wpcf7-validation-errors {
 	height: 50px; 
 	background: red;
 }
+
+.img-bot{
+    width: 52px;
+    height: 52px;
+    display: inline-block;
+    border: 1px solid grey;
+    margin: 20px 25px 10px 0;
+    vertical-align: top;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

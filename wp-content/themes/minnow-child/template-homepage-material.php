@@ -43,7 +43,7 @@ get_header( 'custom-material' ); ?>
     </div>
   </div>
 
-  <div><i class="ion-ios-arrow-down <?php the_field('couleur_texte_utilisateur') ?>" style="font-size: 2rem"></i></div>
+  <div><i class="ion-ios-arrow-down <?php the_field('couleur_texte_restaurant') ?>" style="font-size: 2rem"></i></div>
 
 
 
@@ -66,7 +66,7 @@ get_header( 'custom-material' ); ?>
 				  <a href="<?php the_field('link_cta_concept'); ?>" class="waves-effect waves-teal btn-flat <?php the_field('couleur_texte_concept') ?>">
 				  	<?php the_field('cta_concept'); ?>
 				  </a>
-				  <div><i class="ion-ios-arrow-down <?php the_field('couleur_texte_utilisateur') ?>" style="font-size: 2rem"></i></div>
+				  <div><i class="ion-ios-arrow-down <?php the_field('couleur_texte_concept') ?>" style="font-size: 2rem"></i></div>
 			</div>
 		</div>
 	</div>
@@ -83,7 +83,7 @@ get_header( 'custom-material' ); ?>
 				  <a href="<?php the_field('link_cta_blog'); ?>" class="waves-effect waves-teal btn disabled <?php the_field('couleur_texte_blog') ?>">
 				  	<?php the_field('cta_blog'); ?>
 				  </a>
-				  <div><i class="ion-ios-arrow-down <?php the_field('couleur_texte_utilisateur') ?>" style="font-size: 2rem"></i></div>
+				  <div><i class="ion-ios-arrow-down <?php the_field('couleur_texte_blog') ?>" style="font-size: 2rem"></i></div>
 			</div>
 		</div>
 	</div>

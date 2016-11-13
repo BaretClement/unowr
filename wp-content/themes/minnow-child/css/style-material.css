@@ -359,6 +359,10 @@ textarea.materialize-textarea {
 .screen-reader-response{display: none !important}
 input{height: 3.5rem !important; padding: 0 !important}
 
+div.wpcf7-validation-errors {
+    border: none !important;
+}
+
 /******************************************************/
 /********************* BACKGROUND *********************/
 /******************************************************/

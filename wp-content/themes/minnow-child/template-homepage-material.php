@@ -96,10 +96,10 @@ get_header( 'custom-material' ); ?>
 				<h2><?php the_field('titre_social'); ?></h2>
 				<p class="margin-bottom"><?php the_field('sous_titre_social'); ?></p>
 
-					<a href="<?php the_field('lien_social_1'); ?>" class="picto-social <?php the_field('couleur_texte_social') ?> <?php the_field('pictogramme_social_1'); ?>"></a>
-					<a href="<?php the_field('lien_social_2'); ?>" class="picto-social <?php the_field('couleur_texte_social') ?> <?php the_field('pictogramme_social_2'); ?>"></a>
-					<a href="<?php the_field('lien_social_3'); ?>" class="picto-social <?php the_field('couleur_texte_social') ?> <?php the_field('pictogramme_social_3'); ?>"></a>
-					<a href="<?php the_field('lien_social_4'); ?>" class="picto-social <?php the_field('couleur_texte_social') ?> <?php the_field('pictogramme_social_4'); ?>"></a>
+					<a href="<?php the_field('lien_social_1'); ?>" class="picto-social <?php the_field('pictogramme_social_1'); ?>" style="<?php the_field('couleur_texte_social') ?>"></a>
+					<a href="<?php the_field('lien_social_2'); ?>" class="picto-social <?php the_field('pictogramme_social_2'); ?>" style="<?php the_field('couleur_texte_social') ?>"></a>
+					<a href="<?php the_field('lien_social_3'); ?>" class="picto-social <?php the_field('pictogramme_social_3'); ?>" style="<?php the_field('couleur_texte_social') ?>"></a>
+					<a href="<?php the_field('lien_social_4'); ?>" class="picto-social <?php the_field('pictogramme_social_4'); ?>" style="<?php the_field('couleur_texte_social') ?>"></a>
 			</div>
 		</div>
 	</div>

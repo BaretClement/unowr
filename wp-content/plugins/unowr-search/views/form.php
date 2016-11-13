@@ -91,7 +91,9 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 
 	foreach ($parentHtml as $key => $value) {
 		echo "<div class='children unowr-hidden' data-parent='" . $key . "'>";
-		echo $questions_child[$taxonomy][rand(0, count($questions_child[$taxonomy]) - 1)] . "<br/>";
+	?>
+	<p class="questions"><?php echo $questions_child[$taxonomy][rand(0, count($questions_child[$taxonomy]) - 1)] . "<br/>"; ?> </p>
+	<?php
 		echo $value;
 		echo "</div>";
 	}

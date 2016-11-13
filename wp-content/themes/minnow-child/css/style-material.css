@@ -367,7 +367,7 @@ div.wpcf7-validation-errors {
 /********************* BACKGROUND *********************/
 /******************************************************/
 
-#utilisateur{background-size: 50% !important; background-repeat: no-repeat; background-position: bottom center !important;}
+#utilisateur{background-size: cover !important; background-repeat: no-repeat; background-position: center !important;}
 
 /******************************************************/
 /*********************** COLORS ***********************/

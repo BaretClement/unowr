@@ -4,29 +4,41 @@
 $taxonomies = array('agenda', 'localisation', 'occasion', 'ambiance', 'type_de_cuisine');
 $questions = array(
 		'agenda'=> array(
-			"1111",
-			"22222"
+			"Quand est-ce que tu souhaites manger ?",
+			"Quel jour souhaites-tu réserver ?",
+			"On mange quand ?"
 		),
 		'localisation' => array(
-			"ou",
-			"where",
-			"donde esta la cuisina"
+			"On se situe où ?",
+			"On te laisse le choix ;-)",
+			"Un endroit favori ?"
+
 		),
 		'occasion' => array(
-			"por que ?",
-			"pourquoi faire"
+			"Une occasion en particulier ?",
+			"Pour quelle occasion ?",
+			"Dans quel contexte ?"
+
 		),
 		'ambiance' => array(
-			"type"
+			"Niveau ambiance, on se situerait sur quoi ?",
+			"Un type d’ambiance favori ?",
+			"C’est quoi ton type d’ambiance ?"
+
 		),
 		'type_de_cuisine' => array(
-			"type"
+			"Ton type de cuisine préféré, c’est plutôt…",
+			"Lequel des 5 continents tu préfères ?",
+			"Dans quel coin on voyage ?"
+
 		)
 	);
 $questions_child = array(
 		'agenda'=> array(
-			"bla bla bla",
-			"test"
+			"Plus précisément, plutôt midi ou soir ?",
+			"Pour déjeuner ou dîner ?",
+			"Midi ou soir ?"
+
 		),
 		'localisation' => array(
 			"ou",
@@ -34,14 +46,16 @@ $questions_child = array(
 			"donde esta la cuisina"
 		),
 		'occasion' => array(
-			"por que ?",
-			"pourquoi faire"
-		),
-		'ambiance' => array(
-			"type"
+			"Tu saurais nous en dire plus ?",
+			"Plus précisément ?",
+			"Un chouïa plus précis ?"
+
 		),
 		'type_de_cuisine' => array(
-			"type"
+			"Et qu’est-ce que tu souhaites manger ?",
+			"Mais dans tout ça, c’est quoi ton plat idéal ?",
+			"La dernière étape avant de manger"
+
 		)
 	);
 $first = true;

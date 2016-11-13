@@ -125,7 +125,7 @@ footer{
 	.height33{height: 33vh !important}
 	.height50{height: 50vh !important}
 	.height75{height: auto !important}
-	.height100{height: 100vh !important}
+	.height100{height: calc(100vh - 64px) !important}
 	.height75-img{height: 50vh !important}
 	.min-height25{min-height: 25vh !important}
 	.min-height33{min-height: 33vh !important}

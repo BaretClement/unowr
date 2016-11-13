@@ -462,3 +462,7 @@ div.wpcf7-validation-errors {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+form p:last-child {
+    margin-bottom: 10px !important;
+}

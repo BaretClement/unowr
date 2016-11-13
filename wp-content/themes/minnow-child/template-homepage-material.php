@@ -105,8 +105,6 @@ get_header( 'custom-material' ); ?>
 	</div>
 
 
-
-	</div> 
 	<script>
 	window.sr = ScrollReveal({duration: 2000});
 sr.reveal('.reveal', {origin: 'center', distance: '100%', scale: 1,});
@@ -115,4 +113,5 @@ sr.reveal('.reveal-right', {origin: 'right', distance: '100%', scale: 1,});
 sr.reveal('.reveal-top', {origin: 'top', distance: '100%', scale: 1,});
 sr.reveal('.reveal-bottom', {origin: 'bottom', distance: '100%', scale: 1,});
 	</script>
+
     <?php get_footer( 'custom-material' ); ?>

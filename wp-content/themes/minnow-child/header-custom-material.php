@@ -14,8 +14,9 @@
 <meta name="HandheldFriendly" content="true">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/style-material.css">
+
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/materialize.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/style-material.css">
 <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
 <?php wp_head(); ?>

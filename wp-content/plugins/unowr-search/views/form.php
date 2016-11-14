@@ -67,11 +67,13 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 // echo $taxonomy; die();
 	$terms = get_terms($taxonomy, $args);
 	?>
-	<div name="<?php echo $taxonomy; ?>" name="unowr-response-title"
-		data-unowr-taxonomy="<?php echo $taxonomy; ?>" class="<?php echo ($first) ? '' : 'unowr-hidden'; ?> unowr-taxonomy">
-
-	<p class="questions"><?php echo $questions[$taxonomy][rand(0, count($questions[$taxonomy]) - 1)]; ?></p>
-	<div>
+	<div class="valign-wrapper">
+		<div name="<?php echo $taxonomy; ?>" name="unowr-response-title"
+			data-unowr-taxonomy="<?php echo $taxonomy; ?>" class="<?php echo ($first) ? '' : 'unowr-hidden'; ?> unowr-taxonomy">
+			<img class="bot-avatar" style="height: 52px; width: 52px; background: red">
+			<p class="questions"><?php echo $questions[$taxonomy][rand(0, count($questions[$taxonomy]) - 1)]; ?></p>
+		<div>
+	</div>
 
 	<?php
 	$parentHtml = [];
@@ -93,7 +95,7 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 		echo "<div class='children unowr-hidden' data-parent='" . $key . "'>";
 	?>
 	<div>
-	<p class="questions"><?php echo $questions_child[$taxonomy][rand(0, count($questions_child[$taxonomy]) - 1)] . "<br/>"; ?> </p>
+	<p class="questions no-margin"><?php echo $questions_child[$taxonomy][rand(0, count($questions_child[$taxonomy]) - 1)] . "<br/>"; ?> </p>
 	</div>
 	<?php
 		echo $value;

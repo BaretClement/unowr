@@ -222,6 +222,7 @@ div.user-avatar{
 
 .answer{
 	float: right !important;
+	margin-top: 0 !important;
 }
 
 /********************** LOADER ************************/

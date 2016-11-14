@@ -177,7 +177,7 @@ p.search{margin: 0 !important}
     border-bottom: 5px solid transparent;
 }
 
-p.questions.search{margin: 0 !important; background: #E0E0E0;}
+p.questions.search{margin: 0 !important; background: #E0E0E0; border: none !important}
 .row.search{
 	border: none !important; 
 	margin-bottom: 25px !important; 

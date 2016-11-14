@@ -474,7 +474,7 @@ div.wpcf7-validation-errors {
 	background: red;
 }
 
-.img-bot{
+img.bot-avatar{
 	width: 52px !important;
 	height: 52px !important;
     min-width: 52px !important;

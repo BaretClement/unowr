@@ -98,7 +98,7 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 	?>
 	<div>
 		<div class="row valign-wrapper search">
-			<img class="bot-avatar">
+			<div class="bot-avatar"></div>
 			<p class="questions search"><?php echo $questions_child[$taxonomy][rand(0, count($questions_child[$taxonomy]) - 1)] . "<br/>"; ?> </p>
 		</div>
 	</div>

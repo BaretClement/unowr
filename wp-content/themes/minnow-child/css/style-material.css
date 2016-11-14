@@ -169,7 +169,7 @@ footer{
 /******************************************************/
 
 p.search{margin: 0 !important}
-form p:last-child{margin: 0 !important}
+p.questions.search{margin: 0 !important}
 .row.search{border: none !important; margin-bottom: 25px;}
 img.bot-avatar{width: 52px; height: 52px; margin-right: 25px;}
 

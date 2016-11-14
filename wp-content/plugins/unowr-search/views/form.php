@@ -82,10 +82,7 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 	foreach ($terms as $terkey => $term) {
 		if ($term->parent == 0) {
 		?>
-		<div class="valign-wrapper right">
-			<div class="unowr-choice" data-unowr-choice="true"  data-unowr-taxonomy="<?php echo $taxonomy; ?>" data-parent="true" data-value="<?php echo $term->term_id; ?>"><?php echo $term->name; ?></div>
-			<div class="bot-user"></div>
-		</div>
+		<div class="unowr-choice" data-unowr-choice="true"  data-unowr-taxonomy="<?php echo $taxonomy; ?>" data-parent="true" data-value="<?php echo $term->term_id; ?>"><?php echo $term->name; ?></div>
 		<?php
 		}else {
 			if ($parentHtml[$term->parent] == null) {

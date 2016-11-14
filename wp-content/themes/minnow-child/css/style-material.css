@@ -169,7 +169,10 @@ footer{
 /******************************************************/
 
 p.search{margin: 0 !important}
-p.questions.search{margin: 0 !important}
+p.questions.search{
+	margin: 0 !important;    
+	position: relative !important;
+    top: -20px !important;}
 .row.search{
 	border: none !important; 
 	margin-bottom: 25px !important; 

@@ -204,7 +204,11 @@ div.bot-avatar{
 /********************** LOADER ************************/
 
 .loader {
-	margin: 0 !important; background: #E0E0E0; border: none !important
+	margin: 0 !important; 
+	background: #E0E0E0; 
+	border: none !important;    
+	padding: 10px 25px;
+	border-radius: 3px;
 }
 .dot {
   width: 10px;

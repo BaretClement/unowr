@@ -170,11 +170,12 @@ footer{
 
 p.search{margin: 0 !important}
 #triangle-left {
-	width: 0;
-	height: 0;
-	border-top: 50px solid transparent;
-	border-right: 100px solid red;
-	border-bottom: 50px solid transparent;}
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-right: 8px solid #000;
+    border-bottom: 5px solid transparent;
+}
 
 p.questions.search{margin: 0 !important;}
 .row.search{

@@ -211,9 +211,9 @@ div.bot-avatar{
 	border-radius: 3px;
 }
 .dot {
-  width: 10px;
-  height: 10px;
-  border: 2px solid black;
+  width: 6px;
+  height: 6px;
+  border: 1px solid black;
   border-radius: 50%;
   float: left;
   margin: 0 5px;

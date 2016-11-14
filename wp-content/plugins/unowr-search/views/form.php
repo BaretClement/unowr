@@ -71,7 +71,7 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 		<div name="<?php echo $taxonomy; ?>" name="unowr-response-title"
 			data-unowr-taxonomy="<?php echo $taxonomy; ?>" class="<?php echo ($first) ? '' : 'unowr-hidden'; ?> unowr-taxonomy">
 			<div class="row valign-wrapper search">
-				<img class="bot-avatar" src="<?php echo get_template_directory_uri(); ?>/../../../themes/minnow-child/css/img/professor.png">
+				<div class="bot-avatar"></div>
 				<p class="questions search"><?php echo $questions[$taxonomy][rand(0, count($questions[$taxonomy]) - 1)]; ?></p>
 			</div>
 		<div>

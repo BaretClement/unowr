@@ -179,7 +179,7 @@ p.questions.search{
 	margin-left: 0 !important;
     margin-right: 0 !important;
 }
-img.bot-avatar{
+div.bot-avatar{
 	width: 52px !important;
 	height: 52px !important;
     min-width: 52px !important;
@@ -189,6 +189,7 @@ img.bot-avatar{
 	background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    background-image: url(/css/img/profesor.png);
 }
 
 .unowr-taxonomy{min-width: 100% !important}

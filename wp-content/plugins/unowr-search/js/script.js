@@ -46,6 +46,7 @@ var unowr_form = {
 			}.bind(this)
 		});
 	},
+
 	_showChildren: function (id) {
 		var children = document.querySelector('[data-parent="' + id + '"]');
 		if (children != null) {

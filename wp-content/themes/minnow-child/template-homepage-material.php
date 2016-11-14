@@ -26,7 +26,7 @@ get_header( 'custom-material' ); ?>
 				<h2><?php the_field('titre_restaurateur'); ?></h2>
 				<p class="margin-bottom"><?php the_field('sous_titre_restaurateur'); ?></p>
 				  <!-- Modal Trigger -->
-				  <a class="modal-trigger waves-effect waves-light btn-flat" style="color: <?php the_field('couleur_texte_restaurant') ?>; border-color: style="color: <?php the_field('couleur_texte_restaurant') ?> !important" href="#modal1"><?php the_field('cta_restaurateur'); ?></a>
+				  <a class="modal-trigger waves-effect waves-light btn-flat" style="color: <?php the_field('couleur_texte_restaurant') ?>; border-color: <?php the_field('couleur_texte_restaurant') ?> !important" href="#modal1"><?php the_field('cta_restaurateur'); ?></a>
 
 				  <!-- Modal Structure -->
 				  <div id="modal1" class="modal modal-fixed-footer">

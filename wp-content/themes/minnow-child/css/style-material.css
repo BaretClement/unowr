@@ -178,6 +178,7 @@ p.search{margin: 0 !important}
 }
 
 p.questions.search{margin: 0 !important; background: #E0E0E0; border: none !important}
+p.answer.search{margin: 0 !important; background: #E0E0E0; border: none !important}
 .row.search{
 	border: none !important; 
 	margin-bottom: 25px !important; 
@@ -186,6 +187,18 @@ p.questions.search{margin: 0 !important; background: #E0E0E0; border: none !impo
     margin-right: 0 !important;
 }
 div.bot-avatar{
+	width: 52px !important;
+	height: 52px !important;
+    min-width: 52px !important;
+    min-height: 52px !important;
+	margin-right: 25px; 
+	border-radius: 3px;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(img/professor.png);
+}
+div.user-avatar{
 	width: 52px !important;
 	height: 52px !important;
     min-width: 52px !important;
@@ -538,12 +551,6 @@ div.wpcf7-validation-errors {
     padding: 10px 25px;
     border-radius: 3px;
     display: inline-block;
-}
-.questions:before{
-	content: ' ';
-	width: 50px; 
-	height: 50px; 
-	background: red;
 }
 .unowr-choice{
 	padding: 10px !important;

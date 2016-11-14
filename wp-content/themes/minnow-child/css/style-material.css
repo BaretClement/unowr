@@ -220,7 +220,7 @@ div.user-avatar{
 .unowr-taxonomy{min-width: 100% !important}
 .children{margin-top: 25px;}
 
-.answer{
+.row.valign-wrapper.search.answer{
 	float: right !important;
 	margin-top: 0 !important;
 }

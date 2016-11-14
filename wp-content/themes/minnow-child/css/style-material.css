@@ -214,7 +214,7 @@ div.user-avatar{
 .unowr-taxonomy{min-width: 100% !important}
 .children{margin-top: 25px;}
 
-.row.valign-wrapper.search.answer{
+.answer{
 	float: right !important;
 	display: inline-block;
 }

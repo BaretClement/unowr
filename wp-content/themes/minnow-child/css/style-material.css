@@ -189,6 +189,7 @@ img.bot-avatar{
 	background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    background-image: url(/css/img/professor.png);
 }
 
 .unowr-taxonomy{min-width: 100% !important}

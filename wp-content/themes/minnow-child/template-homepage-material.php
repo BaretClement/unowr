@@ -11,7 +11,7 @@ get_header( 'custom-material' ); ?>
 			<div class="container valign center">
 				<h1><?php the_field('titre_utilisateur'); ?></h1>
 				<p><?php the_field('sous_titre_utilisateur'); ?></p>
-				  <a href="<?php the_field('link_cta_utilisateur'); ?>" class="waves-effect waves-teal btn-flat" style="color: <?php the_field('couleur_texte_utilisateur') ?>; border-color: <?php the_field('couleur_texte_utilisateur') ?>">
+				  <a href="<?php the_field('link_cta_utilisateur'); ?>" class="waves-effect waves-teal btn-flat" style="color: <?php the_field('couleur_texte_utilisateur') ?>; border-color: <?php the_field('couleur_texte_utilisateur') ?> !important">
 				  	<?php the_field('cta_utilisateur'); ?>
 				  </a>
 				  <div><i class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_utilisateur') ?>; font-size: 2rem"></i></div>
@@ -53,7 +53,7 @@ get_header( 'custom-material' ); ?>
 			<div id="concept-text" class="container valign center">
 				<h2><?php the_field('titre_concept'); ?></h2>
 				<p><?php the_field('sous_titre_concept'); ?></p>
-				  <a href="<?php the_field('link_cta_concept'); ?>" class="waves-effect waves-teal btn-flat" style="color: <?php the_field('couleur_texte_concept') ?>; border-color: <?php the_field('couleur_texte_utilisateur') ?>">
+				  <a href="<?php the_field('link_cta_concept'); ?>" class="waves-effect waves-teal btn-flat" style="color: <?php the_field('couleur_texte_concept') ?>; border-color: <?php the_field('couleur_texte_utilisateur') ?> !important">
 				  	<?php the_field('cta_concept'); ?>
 				  </a>
 				  <div><i class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_concept') ?>; font-size: 2rem"></i></div>

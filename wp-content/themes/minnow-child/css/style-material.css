@@ -204,6 +204,7 @@ div.bot-avatar{
 /********************** LOADER ************************/
 
 .loader {
+	display: none;
 	margin: 0 !important; 
 	background: #E0E0E0; 
 	border: none !important;    

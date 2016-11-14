@@ -100,7 +100,7 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 	echo '<div id="triangle-right"></div><div class="user-avatar"></div></p></div>';
 
 	foreach ($parentHtml as $key => $value) {
-		echo "<div class='children unowr-hidden' data-parent='" . $key . "'><div id='triangle-right'></div><div class='user-avatar'></div></p></div>";
+		echo "<div class='children unowr-hidden' data-parent='" . $key . "'>";
 	?>
 
 	<div>

@@ -8,7 +8,7 @@ get_header( 'custom-material' ); ?>
 
 <div class="row">
 	<div class="col s12 min-height100">
-		<div class="container">
+		<div class="container search">
 						
 		<?php the_field(formulaire_de_recherche); ?>
 		

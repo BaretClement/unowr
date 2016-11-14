@@ -172,6 +172,13 @@ p.search{margin: 0 !important}
 p.questions.search{
 	margin: 0 !important;    
 }
+p.questions.search:before{	
+	top: 10px;
+    bottom: auto;
+    left: -30px;
+    border-width: 15px 30px 15px 0;
+    border-color: transparent #5a8f00;
+}
 .row.search{
 	border: none !important; 
 	margin-bottom: 25px !important; 

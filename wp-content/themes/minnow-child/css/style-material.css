@@ -177,7 +177,7 @@ p.questions.search{margin: 0 !important}
 	margin-left: 0 !important;
     margin-right: 0 !important;
 }
-img.bot-avatar{width: 52px; height: 52px; margin-right: 25px;}
+img.bot-avatar{width: 52px; height: 52px; margin-right: 25px; border-radius: 3px;}
 .unowr-taxonomy{min-width: 100% !important}
 
 /******************************************************/

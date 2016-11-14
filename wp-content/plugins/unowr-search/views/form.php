@@ -80,7 +80,7 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 		<div>
 	</div>
 
-	<div class="valign-wrapper right">
+	<div class="row valign-wrapper search answers">
 	<?php
 	$parentHtml = [];
 	foreach ($terms as $terkey => $term) {

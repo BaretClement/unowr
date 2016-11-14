@@ -97,7 +97,10 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 		echo "<div class='children unowr-hidden' data-parent='" . $key . "'>";
 	?>
 	<div>
-	<p class="questions no-margin"><?php echo $questions_child[$taxonomy][rand(0, count($questions_child[$taxonomy]) - 1)] . "<br/>"; ?> </p>
+		<div class="row valign-wrapper search">
+			<p class="questions no-margin"><?php echo $questions_child[$taxonomy][rand(0, count($questions_child[$taxonomy]) - 1)] . "<br/>"; ?> </p>
+			<img class="user-avatar"><!-- add by clem -->
+		</div>
 	</div>
 	<?php
 		echo $value;

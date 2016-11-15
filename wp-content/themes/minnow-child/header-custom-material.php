@@ -59,10 +59,10 @@
                 <a href="<?php echo get_site_url(); ?>/resto-recherche" class="waves-effect waves-light btn-flat red">Recherche restaurant</a>
 
                     <!-- Modal Trigger -->
-                    <a class="modal-trigger waves-effect waves-light btn-flat red" href="#modal-inscription">INSCRIPTION PARTENAIRE</a>
+                    <a class="modal-trigger waves-effect waves-light btn-flat red" href="#modal1">INSCRIPTION PARTENAIRE</a>
 
                     <!-- Modal Structure -->
-                    <div id="modal-inscription" class="modal modal-fixed-footer">
+                    <div id="modal1" class="modal modal-fixed-footer">
                         <div class="modal-content">
                             <h4>Demande de contact</h4>
                             <div role="form" class="wpcf7" id="wpcf7-f1684-o1" lang="fr-FR" dir="ltr">

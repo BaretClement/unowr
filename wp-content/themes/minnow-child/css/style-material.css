@@ -571,3 +571,18 @@ div.wpcf7-validation-errors {
 form p:last-child {
     margin-bottom: 10px !important;
 }
+
+/******************************************************/
+/*********************** BOUTONS  *********************/
+/******************************************************/
+
+a.btn-flat.red{
+	border: 1px solid #f2152b !important;
+	color: #f2152b !important;
+	background: transparent !important;
+	font-weight: 700
+}
+a.btn-flat.red:hover{
+	color: #ffffff !important;
+	background: #f2152b !important;
+}

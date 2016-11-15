@@ -29,15 +29,52 @@
 
 	<nav>
 	    <div class="nav-wrapper">
-    		<a href="<?php echo get_home_url(); ?>" class="brand-logo"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/css/img/unowr_black.png"></a>
-      		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="ion-navicon color_black valign"></i></a>
-      		<ul class="right hide-on-med-and-down">
-				    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-      		</ul>
-      		<ul class="side-nav" id="mobile-demo">
-				    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-            <li><img style="width:100%;" src="<?php echo get_template_directory_uri(); ?>/css/img/P1030167.jpg"></li>
-      		</ul>
+              <a href="<?php echo get_home_url(); ?>" class="brand-logo"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/css/img/unowr_black.png"></a>
+          		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="ion-navicon color_black valign"></i></a>
+              
+              <!-- Menu desktop -->
+          		<ul class="right hide-on-med-and-down" style="margin-top: 12px">
+                    <a href="<?php echo get_site_url(); ?>/resto-recherche" class="waves-effect waves-light btn-flat red">Recherche restaurant</a>
+
+                    <!-- Modal Trigger -->
+                    <a class="modal-trigger waves-effect waves-light btn-flat red" href="#modal1">INSCRIPTION PARTENAIRE</a>
+
+                    <!-- Modal Structure -->
+                    <div id="modal1" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <h4>Demande de contact</h4>
+                            <p><?php the_field('formulaire_de_contact'); ?></p> 
+                        </div>
+
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat red ">Quitter</a>
+                        </div>
+                    </div>
+          		</ul>
+              
+              <!-- Menu burger -->
+          		<ul class="side-nav" id="mobile-demo">
+    				    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+                <li><img style="width:100%;" src="<?php echo get_template_directory_uri(); ?>/css/img/P1030167.jpg"></li>
+                <a href="<?php echo get_site_url(); ?>/resto-recherche" class="waves-effect waves-light btn-flat red">Recherche restaurant</a>
+
+                    <!-- Modal Trigger -->
+                    <a class="modal-trigger waves-effect waves-light btn-flat red" href="#modal1">INSCRIPTION PARTENAIRE</a>
+
+                    <!-- Modal Structure -->
+                    <div id="modal1" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <h4>Demande de contact</h4>
+                            <p><?php the_field('formulaire_de_contact'); ?></p> 
+                        </div>
+
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat red ">Quitter</a>
+                        </div>
+                    </div>
+          		</ul>
+
+
     	</div>
   	</nav>
 

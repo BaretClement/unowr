@@ -95,7 +95,7 @@ var unowr_form = {
 			html += "<div class='row valign-wrapper search result'><div class='unowr_result'><p class='questions search'>";
 			html += "	<p class='result-id question search' data-value='>" + resto.id + "'></p>";
 			html += "	<p class='result-title' data-value='" + escape(resto.title) + "'>" + resto.title + "</p>";
-			html += "	<span class='result-adresse' data-value='" + escape(resto.adresse) + "'>" + resto.adresse + "</span><br>";
+			html += "	<span class='result-adresse' data-value='" + escape(resto.adresse) + "'>" + resto.adresse + "</span><br><br>";
 			html += "	<span class='result-prix_moyen' data-value='" + resto.prix_moyen + "'>Prix : " + resto.prix_moyen + "</span><br>";
 			html += "	<span class='result-subcategory' data-value='" + resto.category + ", " + resto.subcategory + "'>Type de cuisine : <div class='chip'>" + resto.category + "</div> <div class='chip'>" + resto.subcategory + "</div></span><br>";
 			html += "	<span class='result-ambiances' data-value='" + resto.ambiances.join(' ') + "'>Ambiances : <div class='chip'>" + resto.ambiances.join('</div><div class="chip">') + "</div></span><br>";

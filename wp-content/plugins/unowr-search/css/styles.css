@@ -80,4 +80,5 @@
 }
 p.result-title{
 	text-transform: uppercase !important;
+	margin-top: 0 !important;
 }

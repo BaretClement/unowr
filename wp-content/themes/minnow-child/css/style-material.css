@@ -523,6 +523,11 @@ span.wpcf7-not-valid-tip {
 /******************************************************/
 
 #utilisateur{background-size: cover !important; background-repeat: no-repeat; background-position: center !important;}
+#unowr, #idea, #principle, #objectives, #team{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
 /******************************************************/
 /*********************** COLORS ***********************/

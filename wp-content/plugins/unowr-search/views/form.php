@@ -117,7 +117,7 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 	<div class="bubble-answer"> 
 	<?php
 		echo $value;
-		echo "</div></div></div>";
+		echo "</div><div id='triangle-right'></div><div class='user-avatar'></div></div></div>";
 	}
 	?>
 	</div>

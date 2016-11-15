@@ -484,8 +484,8 @@ div.wpcf7-validation-errors {
 
 span.wpcf7-not-valid-tip {
     position: relative !important;
-    top: -57px !important;
-    left: 85% !important;
+	float: right !important;
+    margin-right: 10px !important;
 }
 
 

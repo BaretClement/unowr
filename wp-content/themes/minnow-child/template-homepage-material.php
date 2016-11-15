@@ -82,7 +82,7 @@ get_header( 'custom-material' ); ?>
 	<div class="row" style="background-color: <?php the_field('citation') ?>; color: <?php the_field('couleur_text_citation') ?>" >
 		<div class="col s12">
 			<div class="container">
-				<h3 class="center"><sup class="ion-quote big-icon"></sup> <?php the_field('citation') ?></h3>
+				<h3 class="center"><sup class="ion-quote social-icon"></sup> <?php the_field('citation') ?></h3>
 				<p class="right"><?php the_field('auteur_de_la_citation') ?></p>
 			</div>
 		</div>

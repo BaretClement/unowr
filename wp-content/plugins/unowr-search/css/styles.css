@@ -64,7 +64,7 @@
 	border: 1px solid grey !important; margin: 25px 0;
 }
 .result-title{
-	text-transform: uppercase;
+	text-transform: uppercase !important;
 }
 .result-adresse{
 	font-size: 1rem;

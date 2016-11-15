@@ -86,8 +86,8 @@ p.result-title{
 p.result-prix_moyen{
 	margin: 0;
     position: relative;
-    bottom: -2rem !important;
-    right: -3rem !important;
+    bottom: -1rem !important;
+    right: 0rem !important;
     font-size: 2rem !important;
 }
 p.questions.search{

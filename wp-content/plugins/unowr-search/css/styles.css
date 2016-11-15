@@ -65,3 +65,6 @@
 	float: right !important;
 	border: 1px solid grey !important; margin: 25px 0;
 }
+.result-adresse{
+	font-size: 1rem;
+}

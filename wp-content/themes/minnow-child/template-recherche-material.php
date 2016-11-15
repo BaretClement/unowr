@@ -11,20 +11,6 @@ get_header( 'custom-material' ); ?>
 		<div class="container search">
 						
 		<?php the_field(formulaire_de_recherche); ?>
-		
-			  <!-- Modal Trigger -->
-			  <a class="waves-effect waves-light btn" href="#modal-reservation" style="display: none">Modal</a>
-
-			  <!-- Modal Structure -->
-			  <div id="modalreservation" class="modal">
-			    <div class="modal-content">
-			      <h4>Modal Header</h4>
-					<?php the_field(formulaire_de_reservation); ?>	
-			    </div>
-			    <div class="modal-footer">
-			      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-			    </div>
-			  </div>
 
 		</div>
   	</div>

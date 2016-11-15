@@ -60,3 +60,8 @@
 .children .unowr-choice {
 	background: #CCC;
 }
+.btn-book-resto{
+	margin-bottom: 0 !important;
+	float: right !important;
+	border: 1px solid grey !important; margin: 25px 0;
+}

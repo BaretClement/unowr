@@ -99,7 +99,7 @@ var unowr_form = {
 			html += "	<span class='result-adresse' data-value='" + escape(resto.adresse) + "'>Adresse : " + resto.adresse + "</span><br>";
 			html += "	<span class='result-subcategory' data-value='" + resto.category + ", " + resto.subcategory + "'>Type de cuisine : " + resto.category + ", " + resto.subcategory + "</span><br>";
 			html += "	<span class='result-ambiances' data-value='" + resto.ambiances.join(', ') + "'>Ambiances : " + resto.ambiances.join(', ') + "</span><br>";
-			html += "<button class='btn-book-resto waves-effect waves-light btn-flat'>Réserver</button>";
+			html += "<button class='btn-book-resto waves-effect waves-light btn-flat result'>Réserver</button>";
 			html += "</p></div></div>";
 		})
 

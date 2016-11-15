@@ -81,7 +81,7 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 	</div>
 
 	<div class="row valign-wrapper search answer">
-	<div class="bubble-answer" style="background: red"> 
+	<div class="answer"> 
 	<?php
 	$parentHtml = [];
 	foreach ($terms as $terkey => $term) {

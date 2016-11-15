@@ -89,3 +89,8 @@ p.result-prix_moyen{
     right: -3rem !important;
     font-size: 2rem !important;
 }
+.answer{
+	background: #2196F3;
+	border-radius: 3px;
+	color: #ffffff;
+}

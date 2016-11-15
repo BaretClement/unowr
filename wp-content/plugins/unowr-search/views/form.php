@@ -93,8 +93,8 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 			if ($parentHtml[$term->parent] == null) {
 				$parentHtml[$term->parent] = "";
 			}
-			$parentHtml[$term->parent] .= '<div class="unowr-choice" data-unowr-choice="true" data-value="'
-				. $term->term_id . '" data-unowr-taxonomy="' . $taxonomy . '">' . $term->name . '</div>';
+			$parentHtml[$term->parent] .= '<p class="unowr-choice" data-unowr-choice="true" data-value="'
+				. $term->term_id . '" data-unowr-taxonomy="' . $taxonomy . '">' . $term->name . '</p>';
 		}
 	}
 	echo '</div><div id="triangle-right"></div><div class="user-avatar"></div>';

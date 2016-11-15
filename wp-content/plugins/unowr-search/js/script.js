@@ -90,7 +90,7 @@ var unowr_form = {
 		}
 	},
 	_finish: function () {
-		var html = "<div class='title'>Resultats:</div>";
+		var html = "<div class='title'>Je peux te proposer les trois restaurants suivants :</div>";
 		Array.prototype.forEach.call(this._resto, (resto) => {
 			html += "<div class='unowr_result'>";
 			html += "	<span class='result-id' data-value='" + resto.id + "'></span><br>";

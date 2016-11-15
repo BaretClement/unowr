@@ -93,8 +93,8 @@ var unowr_form = {
 		var html = "<div class='row valign-wrapper search'><div class='bot-avatar'></div><div id='triangle-left'></div><p class='questions search'>Je peux te proposer les trois restaurants suivants :</p></div>";
 		Array.prototype.forEach.call(this._resto, (resto) => {
 			html += "<div class='row valign-wrapper search result'><div class='unowr_result'><p class='questions search'>";
-			html += "	<p class='result-id question search' data-value='" + resto.id + "'></p>";
-			html += "	<span class='result-title' data-value='" + escape(resto.title) + "'>Nom : " + resto.title + "</span><br>";
+			html += "	<p class='result-id question search' data-value='>" + resto.id + "'></p>";
+			html += "	<p class='result-title' data-value='" + escape(resto.title) + "'>" + resto.title + "</span><br>";
 			html += "	<span class='result-prix_moyen' data-value='" + resto.prix_moyen + "'>Prix : " + resto.prix_moyen + "</span><br>";
 			html += "	<span class='result-adresse' data-value='" + escape(resto.adresse) + "'>Adresse : " + resto.adresse + "</span><br>";
 			html += "	<span class='result-subcategory' data-value='" + resto.category + ", " + resto.subcategory + "'>Type de cuisine : " + resto.category + ", " + resto.subcategory + "</span><br>";

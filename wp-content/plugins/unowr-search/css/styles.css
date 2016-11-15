@@ -59,9 +59,9 @@
 	background: #CCC;
 }
 .btn-book-resto{
-	margin-bottom: 0 !important;
 	float: right !important;
-	border: 1px solid grey !important; margin: 25px 0;
+	border: 1px solid grey !important; 
+	margin: 0 !important;
 }
 .result-adresse{
 	font-size: 1rem;
@@ -85,6 +85,7 @@ p.result-title{
 p.result-prix_moyen{
 	margin: 0;
     position: relative;
-    bottom: -6rem !important;
+    bottom: -2rem !important;
+    right: -3rem !important;
     font-size: 2rem !important;
 }

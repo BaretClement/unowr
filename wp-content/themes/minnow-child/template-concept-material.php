@@ -6,7 +6,7 @@ Template Name: Concept - material
 get_header( 'custom-material' ); ?>
 
   <!-- BLOC UNOWR -->
-  <div class="row <?php the_field('couleur_texte_unowr'); ?>" style="background-color: <?php the_field('background_unowr'); ?>; background-img: url(<?php the_field('background_image_unowr'); ?>);">
+  <div class="row <?php the_field('couleur_texte_unowr'); ?>" style="background-color: <?php the_field('background_unowr'); ?>; background-image: url(<?php the_field('background_image_unowr'); ?>);">
     <div class="col s12 min-height100 valign-wrapper">
       <div class="container valign center">
         <h1><?php the_field('titre_unowr'); ?></h1>

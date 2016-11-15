@@ -186,7 +186,7 @@ p.search, .title, .unowr_result {margin: 0 !important}
 p.answer.search{margin: 0 !important; background: #E0E0E0; border: none !important}
 .row.search{
 	border: none !important; 
-	margin-bottom: 25px !important; 
+	margin-bottom: 0 !important; 
 	margin-top: 25px !important;     
 	margin-left: 0 !important;
     margin-right: 0 !important;

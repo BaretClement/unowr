@@ -100,7 +100,7 @@ var unowr_form = {
 			html += "	<span class='result-ambiances' data-value='" + resto.ambiances.join(' ') + "'>Ambiances : <div class='chip'>" + resto.ambiances.join('</div><div class="chip">') + "</div></span><br>";
 			html += "	<p class='result-prix_moyen' data-value='" + resto.prix_moyen + "'>" + resto.prix_moyen + "€</p><br>";
 			html += "<button class='btn-book-resto btn-flat right'>Réserver</button>";
-			html += "</p></div></div>";
+			html += "</div></div>";
 		})
 
 		this._resultWrapper.innerHTML = html

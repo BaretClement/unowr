@@ -225,6 +225,12 @@ div.user-avatar{
 	margin-top: 0 !important;
 }
 
+.unowr-result-wrapper {
+    color: #000;
+    background: #FFF;
+    margin: 0 !important;
+}
+
 /********************** LOADER ************************/
 
 .loader {

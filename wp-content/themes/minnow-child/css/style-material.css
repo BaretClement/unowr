@@ -248,6 +248,9 @@ div.unowr_result{
 	padding: 19px 25px !important;
     border-radius: 3px;
 }
+.row.valign-wrapper.search.result{
+	margin-top: 0 !important
+}
 /********************** LOADER ************************/
 
 .loader {

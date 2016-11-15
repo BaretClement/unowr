@@ -94,9 +94,27 @@ p.result-prix_moyen{
 	background: #1f89f5 !important;
 	border-radius: 3px !important;
 	color: #ffffff !important;
-	max-width: 60%;
-    margin-left: auto;
+	margin-left: auto;
 }
+/* mobile */
+@media (max-width: 600px){
+	.bubble-answer{
+		max-width: 100%;
+	}
+}
+/* tablet */
+@media (min-width: 601px) and (max-width: 992px) {
+	.bubble-answer{
+		max-width: 80%;
+	}
+}
+/* desktop */
+@media (min-width: 992px) {
+	.bubble-answer{
+		max-width: 60%;
+	}
+}
+
 #triangle-right{
 	border-left: 8px solid #1f89f5 !important;
 }

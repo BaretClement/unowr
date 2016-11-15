@@ -12,9 +12,7 @@ get_header( 'custom-material' ); ?>
 						
 			<?php the_field(formulaire_de_recherche); ?>	
 
-		</div>
-  	</div>
-</div>
+
 
 <!-- Modal Structure -->                    
 <div id="modal-inscription" class="modal modal-fixed-footer">
@@ -28,8 +26,12 @@ get_header( 'custom-material' ); ?>
 </div>
 </div>
 
+
+<!-- Modal Trigger -->
+<a class="waves-effect waves-light btn" href="#modal-reservation" style="display: none">Modal</a>
+
 <!-- Modal Structure -->                    
-<div id="modalreservation" class="modal modal-fixed-footer">
+<div id="modal-reservation" class="modal modal-fixed-footer">
 <div class="modal-content">
 <h4>Demande de contact</h4>
 <p><?php the_field('formulaire_de_reservation'); ?></p> 
@@ -40,5 +42,8 @@ get_header( 'custom-material' ); ?>
 </div>
 </div>
 
+		</div>
+  	</div>
+</div>
 
 <?php get_footer( 'custom-material' ); ?>

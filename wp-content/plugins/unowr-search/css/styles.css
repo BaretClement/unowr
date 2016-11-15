@@ -91,6 +91,6 @@ p.result-prix_moyen{
 }
 .answer{
 	background: #2196F3 !important;
-	border-radius: 3px;
-	color: #ffffff;
+	border-radius: 3px !important;
+	color: #ffffff !important;
 }

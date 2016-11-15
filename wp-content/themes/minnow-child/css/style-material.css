@@ -244,7 +244,9 @@ div.unowr_result{
 	margin: 0 !important; 
 	background: #E0E0E0; 
 	border: none !important;
-	margin-right: 85px !important;
+	margin-left: 85px !important;
+	padding: 19px 25px !important;
+    border-radius: 3px;
 }
 /********************** LOADER ************************/
 

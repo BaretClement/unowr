@@ -526,8 +526,8 @@ span.wpcf7-not-valid-tip {
 #unowr, #idea, #principle, #objectives, #team{
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
 }
+#unowr{background-position: top}
 
 /******************************************************/
 /*********************** COLORS ***********************/

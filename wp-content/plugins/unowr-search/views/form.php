@@ -111,9 +111,13 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 			<p class="questions search"><?php echo $questions_child[$taxonomy][rand(0, count($questions_child[$taxonomy]) - 1)] . "<br/>"; ?> </p>
 		</div>
 	</div>
+
+
+	<div class="row valign-wrapper search answer">
+	<div class="bubble-answer"> 
 	<?php
 		echo $value;
-		echo "</div>";
+		echo "</div></div></div>";
 	}
 	?>
 	</div>

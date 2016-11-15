@@ -94,3 +94,6 @@ p.result-prix_moyen{
 	border-radius: 3px !important;
 	color: #ffffff !important;
 }
+#triangle-right{
+	border-left: 8px solid #1f89f5 !important;
+}

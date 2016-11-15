@@ -183,7 +183,6 @@ p.search, .title, .unowr_result {margin: 0 !important}
 	border-left: 8px solid #E0E0E0;
 	border-bottom: 5px solid transparent;
 }
-p.questions.search{margin: 0 !important; background: #E0E0E0; border: none !important}
 p.answer.search{margin: 0 !important; background: #E0E0E0; border: none !important}
 .row.search{
 	border: none !important; 

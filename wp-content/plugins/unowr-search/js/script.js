@@ -97,7 +97,7 @@ var unowr_form = {
 			html += "	<span class='result-title' data-value='" + escape(resto.title) + "'>Nom : " + resto.title + "</span><br>";
 			html += "	<span class='result-prix_moyen' data-value='" + resto.prix_moyen + "'>Prix : " + resto.prix_moyen + "</span><br>";
 			html += "	<span class='result-adresse' data-value='" + escape(resto.adresse) + "'>Adresse : " + resto.adresse + "</span><br>";
-			html += "	<span class='result-subcategory' data-value='" + resto.category + ", " + resto.subcategory + "'>Type de cuisine : " + resto.category + ", " + resto.subcategory + "</span><br>";
+			html += "	<span class='result-subcategory' data-value='" + resto.category + ", " + resto.subcategory + "'>Type de cuisine : <div class='chip'>" + resto.category + "</div>, <div class='chip'>" + resto.subcategory + "</div></span><br>";
 			html += "	<span class='result-ambiances' data-value='" + resto.ambiances.join(', ') + "'>Ambiances : " + resto.ambiances.join(', ') + "</span><br>";
 			html += "<button href='#modal-reservation' class='btn-book-resto'>Réserver</button>";
 			html += "</p></div></div>";

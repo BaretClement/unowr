@@ -48,9 +48,7 @@
 	margin: 5px;
 	cursor: pointer;
 }
-.children .unowr-choice {
-	background: #1565C0;
-}
+
 
 .children .unowr-choice.active,
 .unowr-choice.active {
@@ -59,7 +57,7 @@
 }
 
 .children .unowr-choice {
-	background: #CCC;
+	background: #1565C0;
 }
 .btn-book-resto{
 	float: right !important;

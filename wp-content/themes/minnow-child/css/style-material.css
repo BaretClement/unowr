@@ -230,7 +230,17 @@ div.user-avatar{
     background: #FFF !important;
     margin: 0 !important;
 }
-
+.unowr-result-wrapper div {
+    padding: 0 !important; 
+    display: inline-block !important; 
+    vertical-align: middle !important; 
+}
+.unowr_results{
+	margin: 0 !important; 
+	background: #E0E0E0; 
+	border: none !important;
+	margin-right: 77px !important;
+}
 /********************** LOADER ************************/
 
 .loader {

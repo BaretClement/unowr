@@ -101,3 +101,25 @@ p.result-prix_moyen{
 .row.valign-wrapper.search.answer{
 	width: auto !important
 }
+
+/* mobile */
+@media (max-width: 600px){
+	.container.search{
+		width: 100%;
+	}
+}
+
+/* tablet */
+@media (min-width: 601px) and (max-width: 992px) {
+	.container.search{
+		width: 70%;
+	}
+}
+
+/* desktop */
+@media (min-width: 992px) {
+	.container.search{
+		width: 50%;
+	}
+}
+

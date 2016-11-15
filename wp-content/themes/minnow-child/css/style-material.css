@@ -235,7 +235,7 @@ div.user-avatar{
     display: inline-block !important; 
     vertical-align: middle !important; 
 }
-.unowr_results{
+.unowr-result-wrapper .unowr_result{
 	margin: 0 !important; 
 	background: #E0E0E0; 
 	border: none !important;

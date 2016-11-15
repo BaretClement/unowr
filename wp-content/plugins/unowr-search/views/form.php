@@ -97,7 +97,7 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 				. $term->term_id . '" data-unowr-taxonomy="' . $taxonomy . '">' . $term->name . '</div>';
 		}
 	}
-	echo '<div id="triangle-right"></div><div class="user-avatar"></div></div>';
+	echo '</div></div><div id="triangle-right"></div><div class="user-avatar">';
 
 	foreach ($parentHtml as $key => $value) {
 		echo "<div class='children unowr-hidden' data-parent='" . $key . "'>";

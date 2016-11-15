@@ -6,7 +6,7 @@ Template Name: Concept - material
 get_header( 'custom-material' ); ?>
 
   <!-- BLOC UNOWR -->
-  <div class="row <?php the_field('couleur_texte_unowr'); ?>" style="background-color: <?php the_field('background_unowr'); ?>; background-image: url(<?php the_field('background_image_unowr'); ?>);">
+  <div class="row" style="color: <?php the_field('couleur_texte_unowr'); ?>"; background-color: <?php the_field('background_unowr'); ?>; background-image: url(<?php the_field('background_image_unowr'); ?>);">
     <div class="col s12 min-height100 valign-wrapper">
       <div class="container valign center">
         <h1><?php the_field('titre_unowr'); ?></h1>
@@ -16,7 +16,7 @@ get_header( 'custom-material' ); ?>
   </div>
 
   <!-- BLOC IDEA -->
-  <div class="row <?php the_field('couleur_texte_idea'); ?>" style="background-color: <?php the_field('background_idea'); ?>; background-image: url(<?php the_field('background_image_idea'); ?>);">
+  <div class="row" style="color: <?php the_field('couleur_texte_idea'); ?>"; background-color: <?php the_field('background_idea'); ?>; background-image: url(<?php the_field('background_image_idea'); ?>);">
     <div class="col s12 min-height100 valign-wrapper">
       <div class="container valign center">
         <h2><?php the_field('titre_idea'); ?></h2>
@@ -27,7 +27,7 @@ get_header( 'custom-material' ); ?>
   </div>
 
   <!-- BLOC PRINCIPLE -->
-  <div class="row <?php the_field('couleur_texte_principle'); ?>" style="background-color: <?php the_field('background_principle'); ?>; background-image: url(<?php the_field('background_image_principle'); ?>);">
+  <div class="row" style="color: <?php the_field('couleur_texte_principle'); ?>"; background-color: <?php the_field('background_principle'); ?>; background-image: url(<?php the_field('background_image_principle'); ?>);">
       
     <div class="col s12 valign-wrapper">
       <div class="container valign center">
@@ -63,7 +63,7 @@ get_header( 'custom-material' ); ?>
   </div>
 
   <!-- BLOC OBJECTIVES -->
-  <div class="row <?php the_field('couleur_texte_objective'); ?>" style="background-color: <?php the_field('background_objective'); ?>; background-image: url(<?php the_field('background_image_objective'); ?>);">  
+  <div class="row" style="color: <?php the_field('couleur_texte_objective'); ?>"; background-color: <?php the_field('background_objective'); ?>; background-image: url(<?php the_field('background_image_objective'); ?>);">  
     
     <div class="col s12 valign-wrapper">
       <div class="container valign center">
@@ -103,7 +103,7 @@ get_header( 'custom-material' ); ?>
   </div>
 
   <!-- BLOC TEAM -->
-  <div class="row <?php the_field('couleur_texte_equipe'); ?>" style="background-color: <?php the_field('background_equipe'); ?>; background-image: url(<?php the_field('background_image_equipe'); ?>);"> 
+  <div class="row" style="color: <?php the_field('couleur_texte_equipe'); ?>"; background-color: <?php the_field('background_equipe'); ?>; background-image: url(<?php the_field('background_image_equipe'); ?>);"> 
     <div class="col s12 min-height100 valign-wrapper">
       <div class="container valign center">
         <h2><?php the_field('titre_equipe') ?></h2>

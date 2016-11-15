@@ -221,6 +221,7 @@ div.user-avatar{
 
 .row.valign-wrapper.search.answer{
 	float: right !important;
+	margin-top: 0 !important;
 }
 
 .unowr-result-wrapper {

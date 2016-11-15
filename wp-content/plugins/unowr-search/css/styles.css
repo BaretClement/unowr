@@ -90,7 +90,7 @@ p.result-prix_moyen{
     font-size: 2rem !important;
 }
 .answer{
-	background: #2196F3;
+	background: #2196F3 !important;
 	border-radius: 3px;
 	color: #ffffff;
 }

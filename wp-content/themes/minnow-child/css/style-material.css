@@ -168,7 +168,7 @@ footer{
 /*********************** SEARCH ***********************/
 /******************************************************/
 
-p.search{margin: 0 !important}
+p.search, .title, .unowr_result {margin: 0 !important}
 #triangle-left {
     width: 0;
     height: 0;

@@ -33,11 +33,9 @@
 
 .unowr-result-wrapper .title {
 	width: 100%;
-	text-transform: uppercase;
 }
 
 .unowr-result-wrapper .unowr_result {
-	text-transform: uppercase;
     border: 2px solid #fff;
     margin: 10px;
     box-sizing: border-box;

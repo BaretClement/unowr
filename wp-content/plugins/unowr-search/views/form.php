@@ -81,7 +81,6 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 	</div>
 
 	<div class="row valign-wrapper search answer">
-	<p class="answers search">
 	<?php
 	$parentHtml = [];
 	foreach ($terms as $terkey => $term) {
@@ -98,7 +97,7 @@ foreach ($taxonomies as $tkey => $taxonomy) {
 				. $term->term_id . '" data-unowr-taxonomy="' . $taxonomy . '">' . $term->name . '</div>';
 		}
 	}
-	echo '<div id="triangle-right"></div><div class="user-avatar"></div></p></div>';
+	echo '<div id="triangle-right"></div><div class="user-avatar"></div></div>';
 
 	foreach ($parentHtml as $key => $value) {
 		echo "<div class='children unowr-hidden' data-parent='" . $key . "'>";

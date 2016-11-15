@@ -482,6 +482,14 @@ div.wpcf7-validation-errors {
     border: none !important;
 }
 
+span.wpcf7-not-valid-tip {
+    position: relative !important;
+    top: -57px !important;
+    left: 85% !important;
+}
+
+
+
 /******************************************************/
 /********************* BACKGROUND *********************/
 /******************************************************/

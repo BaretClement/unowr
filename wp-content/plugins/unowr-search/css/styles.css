@@ -98,3 +98,6 @@ p.result-prix_moyen{
 #triangle-right{
 	border-left: 8px solid #1f89f5 !important;
 }
+.row.valign-wrapper.search.answer{
+	width: auto !important
+}

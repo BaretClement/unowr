@@ -113,10 +113,10 @@ var unowr_form = {
 				var id = daddy.querySelector('.result-id').getAttribute('data-value');
 				var agenda = document.querySelector('[data-unowr-taxonomy="agenda"] .active').textContent + " "  +
 											$('[data-unowr-taxonomy="agenda"] .children:not(.unowr-hidden) .active').text();
-				$('#modal-reservation').modal('open');
-				$('#modal-reservation').find('[name="post_title"]').val(name);
-				$('#modal-reservation').find('[name="post_id"]').val(id);
-				$('#modal-reservation').find('[name="agenda"]').val(agenda);
+				$('#modal1').modal('open');
+				$('#modal1').find('[name="post_title"]').val(name);
+				$('#modal1').find('[name="post_id"]').val(id);
+				$('#modal1').find('[name="agenda"]').val(agenda);
 			})
 		})
 	}

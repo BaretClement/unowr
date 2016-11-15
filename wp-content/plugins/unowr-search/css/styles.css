@@ -48,6 +48,9 @@
 	margin: 5px;
 	cursor: pointer;
 }
+.children .unowr-choice {
+	background: #1565C0;
+}
 
 .children .unowr-choice.active,
 .unowr-choice.active {

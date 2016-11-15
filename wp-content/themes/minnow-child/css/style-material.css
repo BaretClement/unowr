@@ -629,12 +629,6 @@ p.result-subcategory, p.result-ambiances{
 p.result-title{
 	font-family: "Coves Bold";
 }
-p.result-prix_moyen{
-	margin: 0;
-    position: relative;
-    bottom: -6rem !important;
-    font-size: 2rem !important;
-}
 /******************************************************/
 /*********************** BOUTONS  *********************/
 /******************************************************/

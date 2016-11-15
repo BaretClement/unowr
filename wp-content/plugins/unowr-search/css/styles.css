@@ -82,3 +82,9 @@ p.result-title{
 	text-transform: uppercase !important;
 	margin-top: 0 !important;
 }
+p.result-prix_moyen{
+	margin: 0;
+    position: relative;
+    bottom: -6rem !important;
+    font-size: 2rem !important;
+}

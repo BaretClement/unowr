@@ -92,7 +92,8 @@ p.result-prix_moyen{
 }
 p.questions.search{
 	background: #E0E0E0; 
-	border: none !important
+	border: none !important;
+	margin-bottom: 0 !important;
 }
 .bubble-answer{
 	background: #1f89f5 !important;

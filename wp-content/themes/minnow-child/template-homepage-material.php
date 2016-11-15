@@ -79,6 +79,14 @@ get_header( 'custom-material' ); ?>
 		</div>
 	</div>
 
+	<div class="row" style="background-color: <?php the_field('citation') ?>; color: <?php the_field('couleur_text_citation') ?>" >
+		<div class="col s12">
+			<div class="container">
+				<h3><i class="ion-quote big-icon"></i> <?php the_field('citation') ?></h3>
+				<p><?php the_field('auteur_de_la_citation') ?></p>
+			</div>
+		</div>
+	</div>
 	<!-- BLOC SOCIAL -->
 	<div class="row" style="color: <?php the_field('couleur_texte_social') ?>; background-color: <?php the_field('background_social'); ?>; background-image: url(<?php the_field('background_image_social'); ?>);">
 		<div class="col s12 height50 valign-wrapper">

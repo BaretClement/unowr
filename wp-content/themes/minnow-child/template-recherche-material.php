@@ -13,10 +13,10 @@ get_header( 'custom-material' ); ?>
 		<?php the_field(formulaire_de_recherche); ?>
 		
 			  <!-- Modal Trigger -->
-			  <a class="waves-effect waves-light btn" href="#modal1" style="display: none">Modal</a>
+			  <a class="waves-effect waves-light btn" href="#modal-reservation" style="display: none">Modal</a>
 
 			  <!-- Modal Structure -->
-			  <div id="modal1" class="modal">
+			  <div id="modalreservation" class="modal">
 			    <div class="modal-content">
 			      <h4>Modal Header</h4>
 					<?php the_field(formulaire_de_reservation); ?>	

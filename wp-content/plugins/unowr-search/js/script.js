@@ -98,7 +98,7 @@ var unowr_form = {
 			html += "	<span class='result-adresse' data-value='" + escape(resto.adresse) + "'>" + resto.adresse + "</span><br>";
 			html += "	<span class='result-prix_moyen' data-value='" + resto.prix_moyen + "'>Prix : " + resto.prix_moyen + "</span><br>";
 			html += "	<span class='result-subcategory' data-value='" + resto.category + ", " + resto.subcategory + "'>Type de cuisine : <div class='chip'>" + resto.category + "</div> <div class='chip'>" + resto.subcategory + "</div></span><br>";
-			html += "	<span class='result-ambiances' data-value='" + resto.ambiances.join(' ') + "'>Ambiances : <div class='chip'>" + resto.ambiances.join(' ') + "</div></span><br>";
+			html += "	<span class='result-ambiances' data-value='" + resto.ambiances.join(' ') + "'>Ambiances : <div class='chip'>" + resto.ambiances.join('</div><div class="chip">') + "</div></span><br>";
 			html += "<button class='btn-book-resto btn-flat right'>Réserver</button>";
 			html += "</p></div></div>";
 		})

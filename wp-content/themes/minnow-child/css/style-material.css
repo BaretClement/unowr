@@ -577,10 +577,9 @@ form p:last-child {
 /******************************************************/
 
 a.btn-flat.red{
-	border: 1px solid #f2152b !important;
-	color: #f2152b !important;
-	background: transparent !important;
-	font-weight: 700
+	font-weight: 700;
+	background-color: transparent!important;
+	border-color: transparent !important;
 }
 a.btn-flat.red:hover{
 	color: #ffffff !important;

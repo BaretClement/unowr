@@ -226,8 +226,8 @@ div.user-avatar{
 }
 
 .unowr-result-wrapper {
-    color: #000;
-    background: #FFF;
+    color: #000 !important;
+    background: #FFF !important;
     margin: 0 !important;
 }
 

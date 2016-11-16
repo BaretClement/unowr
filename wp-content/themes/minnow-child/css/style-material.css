@@ -133,10 +133,10 @@ footer{
 	.height75{height: auto !important}
 	.height100{height: calc(100vh - 64px) !important}
 	.height75-img{height: 50vh !important}
-	.min-height25{min-height: calc(25vh - 64px) !important}
-	.min-height33{min-height: calc(33vh - 64px) !important}
-	.min-height50{min-height: calc(50vh - 64px) !important}
-	.min-height75{min-height: calc(50vh - 64px) !important}
+	.min-height25{min-height: 25vh !important}
+	.min-height33{min-height: 33vh !important}
+	.min-height50{min-height: 50vh !important}
+	.min-height75{min-height: 50vh !important}
 	.min-height100{min-height: calc(100vh - 64px) !important}
 }
 
@@ -148,10 +148,10 @@ footer{
 	.height75{min-height: 75vh !important}
 	.height100{min-height: 100vh !important}
 	.height75-img{height: 75vh !important}
-	.min-height25{min-height: calc(25vh - 64px) !important}
-	.min-height33{min-height: calc(33vh - 64px) !important}
-	.min-height50{min-height: calc(50vh - 64px) !important}
-	.min-height75{min-height: calc(75vh - 64px) !important}
+	.min-height25{min-height: 25vh !important}
+	.min-height33{min-height: 33vh !important}
+	.min-height50{min-height: 50vh !important}
+	.min-height75{min-height: 75vh !important}
 	.min-height100{min-height: calc(100vh - 64px) !important}
 }
 
@@ -163,10 +163,10 @@ footer{
 	.height75{min-height: 75vh !important}
 	.height100{min-height: 100vh !important}
 	.height75-img{height: 75vh !important}
-	.min-height25{min-height: calc(25vh - 64px) !important}
-	.min-height33{min-height: calc(33vh - 64px) !important}
-	.min-height50{min-height: calc(50vh - 64px) !important}
-	.min-height75{min-height: calc(75vh - 64px) !important}
+	.min-height25{min-height: 25vh !important}
+	.min-height33{min-height: 33vh !important}
+	.min-height50{min-height: 50vh !important}
+	.min-height75{min-height: 75vh !important}
 	.min-height100{min-height: calc(100vh - 64px) !important}
 }
 

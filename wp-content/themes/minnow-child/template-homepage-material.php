@@ -55,7 +55,8 @@ get_header( 'custom-material' ); ?>
 	</div>
 
 	<!-- Transition -->
-	<div class="col s12" style="height: 100px; width: 100%; background-color: black; background: linear-gradient(to right bottom, #FFF 50%, #000 51%);"></div>
+	<div class="col s12" style="height: 100px; background-color: black; background: linear-gradient(to right bottom, #FFF 50%, #000 51%);"></div>
+
 	<!-- BLOC CONCEPT  -->
 	<div id="concept" class="row" style="color: <?php the_field('couleur_texte_concept') ?>; background-color: <?php the_field('background_concept'); ?>;">
 
@@ -90,6 +91,9 @@ get_header( 'custom-material' ); ?>
 			</div>
 		</div>
 	</div>
+
+	<!-- Transition -->
+	<div class="col s12" style="height: 100px; background-color: black; background: linear-gradient(to right bottom, #FFF 50%, #000 51%);"></div>
 
 	<!-- BLOC SOCIAL -->
 	<div class="row" style="color: <?php the_field('couleur_texte_social') ?>; background-color: <?php the_field('background_social'); ?>; background-image: url(<?php the_field('background_image_social'); ?>);">

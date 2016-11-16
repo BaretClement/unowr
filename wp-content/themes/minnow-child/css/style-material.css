@@ -201,7 +201,7 @@ div.bot-avatar{
 	background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(img/professor.png);
+    background-image: url(img/bot-avatar.png);
 }
 div.user-avatar{
 	width: 52px !important;
@@ -213,7 +213,7 @@ div.user-avatar{
 	background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(img/professor.png);
+    background-image: url(img/user.png);
 }
 
 .unowr-taxonomy{min-width: 100% !important}

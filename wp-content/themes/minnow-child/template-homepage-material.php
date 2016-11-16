@@ -118,7 +118,7 @@ get_header( 'custom-material' ); ?>
 </div>
 
 <div class="modal-footer">
-<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat red ">Quitter</a>
+<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Quitter</a>
 </div>
 </div>
 

@@ -26,10 +26,10 @@ get_header( 'custom-material' ); ?>
 				<h2><?php the_field('titre_restaurateur'); ?></h2>
 				<p class="margin-bottom"><?php the_field('sous_titre_restaurateur'); ?></p>
 				  <!-- Modal Trigger -->
-				  <a class="modal-trigger waves-effect waves-light btn-flat" href="#modal-inscription"><?php the_field('cta_restaurateur'); ?></a>
+				  <a class="modal-trigger waves-effect waves-light btn-flat" style="color: <?php the_field('couleur_texte_restaurant') ?>;" href="#modal-inscription"><?php the_field('cta_restaurateur'); ?></a>
 
 				  <!-- Modal Structure -->
-				  <div id="modal-inscription" class="modal modal-fixed-footer" style="color: <?php the_field('couleur_texte_restaurant') ?>;">
+				  <div id="modal-inscription" class="modal modal-fixed-footer">
 				    <div class="modal-content">
 				      <h4>Demande de contact</h4>
 						<p><?php the_field('formulaire_de_contact'); ?></p>	

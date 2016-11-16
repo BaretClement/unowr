@@ -522,7 +522,8 @@ span.wpcf7-not-valid-tip {
 /********************* BACKGROUND *********************/
 /******************************************************/
 
-#utilisateur{background-size: cover !important; background-repeat: no-repeat; background-position: center !important;}
+#utilisateur{background-size: cover !important; background-repeat: no-repeat; background-position: bottom !important;}
+#restaurateur{background-size: cover !important; background-repeat: no-repeat; background-position: top !important;}
 #unowr, #idea, #principle, #objectives, #team{
 	background-size: cover;
 	background-repeat: no-repeat;

@@ -20,7 +20,7 @@ get_header( 'custom-material' ); ?>
 	</div>
 
 	<!-- BLOC RESTAURATEUR -->
-	<div class="row" style="color: <?php the_field('couleur_texte_restaurant') ?>; background-color: <?php the_field('background_restaurateur'); ?>; background-image: url(<?php the_field('background_image_restaurateur'); ?>);">
+	<div id="restaurateur" class="row" style="color: <?php the_field('couleur_texte_restaurant') ?>; background-color: <?php the_field('background_restaurateur'); ?>; background-image: url(<?php the_field('background_image_restaurateur'); ?>);">
 		<div class="col s12 height100 valign-wrapper">
 			<div class="container valign center">
 				<h2><?php the_field('titre_restaurateur'); ?></h2>

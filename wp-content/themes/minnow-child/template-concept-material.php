@@ -26,7 +26,7 @@ get_header( 'custom-material' ); ?>
   <!-- BLOC CTAs-->
   <div class="row" style="background: <?php the_field('background_cta') ?>; color: <?php the_field('couleur_texte_cta') ?>">
     <div class="col s6 right-align"><a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat red ">test</a></div>
-    <div class="col s6"><a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat red ">Quitter</a></div>
+    <div class="col s6"><a href="modal-inscription" class="modal-action modal-close waves-effect waves-green btn-flat red ">Inscription restaurant</a></div>
   </div>
 
   <!-- BLOC IDEA -->

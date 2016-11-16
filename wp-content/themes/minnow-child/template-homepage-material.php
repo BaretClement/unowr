@@ -35,7 +35,7 @@ get_header( 'custom-material' ); ?>
 						<p><?php the_field('formulaire_de_contact'); ?></p>	
 				    </div>
 				    <div class="modal-footer">
-				      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Quitter</a>
+				      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Quitter</a>
 				    </div>
 				  </div>
 

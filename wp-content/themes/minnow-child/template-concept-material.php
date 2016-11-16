@@ -26,8 +26,8 @@ get_header( 'custom-material' ); ?>
   <!-- BLOC CTAs-->
   <div class="row" style="background: <?php the_field('background_cta') ?>; color: <?php the_field('couleur_texte_cta') ?>">
     <div class="col s12 center-align">
-      <a href="<?php echo get_site_url(); ?>/resto-recherche" class="waves-effect waves-light btn-flat red" style="margin:50px 10px 0 0 !important; border: 1px solid <?php the_field('couleur_texte_cta') ?> !important">Recherche restaurant</a>
-      <a class="modal-trigger waves-effect waves-light btn-flat red" style="margin:50px 0 0 10px !important; border: 1px solid <?php the_field('couleur_texte_cta') ?> !important" href="#modal-inscription">INSCRIPTION PARTENAIRE</a></div>
+      <a href="<?php echo get_site_url(); ?>/resto-recherche" class="waves-effect waves-light btn-flat red" style="margin:25px 10px 0 0 !important; border: 1px solid <?php the_field('couleur_texte_cta') ?> !important">Recherche restaurant</a>
+      <a class="modal-trigger waves-effect waves-light btn-flat red" style="margin:25px 0 0 10px !important; border: 1px solid <?php the_field('couleur_texte_cta') ?> !important" href="#modal-inscription">INSCRIPTION PARTENAIRE</a></div>
   </div>
   <!-- Transition -->
   <div class="col s12" style="height: 100px; background-color: black; background: linear-gradient(to right bottom, #000 50%, #FFF 51%);"></div>

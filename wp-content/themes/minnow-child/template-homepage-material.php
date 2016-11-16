@@ -29,13 +29,13 @@ get_header( 'custom-material' ); ?>
 				  <a class="modal-trigger waves-effect waves-light btn-flat" href="#modal-inscription"><?php the_field('cta_restaurateur'); ?></a>
 
 				  <!-- Modal Structure -->
-				  <div id="modal-inscription" class="modal modal-fixed-footer">
+				  <div id="modal-inscription" class="modal modal-fixed-footer" style="color: <?php the_field('couleur_texte_restaurant') ?>;">
 				    <div class="modal-content">
 				      <h4>Demande de contact</h4>
 						<p><?php the_field('formulaire_de_contact'); ?></p>	
 				    </div>
 				    <div class="modal-footer">
-				      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Quitter</a>
+				      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Quitter</a>
 				    </div>
 				  </div>
 

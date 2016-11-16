@@ -7,7 +7,7 @@ get_header( 'custom-material' ); ?>
 
   <!-- BLOC UNOWR -->
   <div id="unowr" class="row" style="color: <?php the_field('couleur_texte_unowr'); ?>; background-color: <?php the_field('background_unowr'); ?>; background-image: url(<?php the_field('background_image_unowr'); ?>);">
-    <div class="col s12 min-height100 valign-wrapper">
+    <div class="col s12 height100 valign-wrapper">
       <div class="container valign center">
         <h1>
           <span style="background: rgba(255, 255, 255, 0.6); padding: 0 10px">

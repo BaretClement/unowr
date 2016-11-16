@@ -14,7 +14,7 @@ get_header( 'custom-material' ); ?>
 				  <a href="<?php the_field('link_cta_utilisateur'); ?>" class="waves-effect waves-light btn-flat" style="color: <?php the_field('couleur_texte_utilisateur') ?>; border-color: <?php the_field('couleur_texte_utilisateur') ?> !important">
 				  	<?php the_field('cta_utilisateur'); ?>
 				  </a>
-				  <div><i href="#restaurateur" class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_utilisateur') ?>; font-size: 2rem"></i></div>
+				  <div><a href="#restaurateur" class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_utilisateur') ?>; font-size: 2rem"></a></div>
 			</div>
 		</div>
 	</div>
@@ -39,7 +39,7 @@ get_header( 'custom-material' ); ?>
 				    </div>
 				  </div>
 
-				  <div><i href="#citation" class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_restaurant') ?>; font-size: 2rem"></i></div>
+				  <div><a href="#citation" class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_restaurant') ?>; font-size: 2rem"></a></div>
 			</div>
 		</div>
 	</div>
@@ -69,7 +69,7 @@ get_header( 'custom-material' ); ?>
 				  <a href="<?php the_field('link_cta_concept'); ?>" class="waves-effect waves-light btn-flat" style="color: <?php the_field('couleur_texte_concept') ?>; border-color: <?php the_field('couleur_texte_utilisateur') ?> !important">
 				  	<?php the_field('cta_concept'); ?>
 				  </a>
-				  <div><i href="#blog" class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_concept') ?>; font-size: 2rem"></i></div>
+				  <div><a href="#blog" class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_concept') ?>; font-size: 2rem"></a></div>
 			</div>
 		</div>
 	</div>
@@ -87,7 +87,7 @@ get_header( 'custom-material' ); ?>
 				  <a href="<?php the_field('link_cta_blog'); ?>" style="margin-bottom: 25px;" class="waves-effect waves-light btn disabled <?php the_field('couleur_texte_blog') ?>">
 				  	<?php the_field('cta_blog'); ?>
 				  </a>
-				  <div><i href="#social" class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_blog') ?>; font-size: 2rem"></i></div>
+				  <div><a href="#social" class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_blog') ?>; font-size: 2rem"></a></div>
 			</div>
 		</div>
 	</div>

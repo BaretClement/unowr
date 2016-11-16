@@ -56,7 +56,7 @@
           		<ul class="side-nav" id="mobile-demo">
     				    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
                     <!-- Modal Trigger -->
-                    <li><a class="modal-trigger waves-effect waves-light btn-flat red" href="#modal-inscription">INSCRIPTION PARTENAIRE</a></li>
+                    <li><a class="modal-trigger waves-effect waves-light" href="#modal-inscription">INSCRIPTION PARTENAIRE</a></li>
                     <li><img style="width:100%;" src="<?php echo get_template_directory_uri(); ?>/css/img/P1030167.jpg"></li>
 
                     <!-- Modal Structure -->

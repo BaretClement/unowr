@@ -26,6 +26,9 @@ get_header( 'custom-material' ); ?>
     </div>
   </div>
 
+  <!-- Transition -->
+  <div class="col s12" style="height: 100px; background-color: black; background: linear-gradient(to right bottom, #FFF 50%, #000 51%);"></div>
+
   <!-- BLOC PRINCIPLE -->
   <div id="principle" class="row" style="color: <?php the_field('couleur_texte_principle'); ?>; background-color: <?php the_field('background_principle'); ?>; background-image: url(<?php the_field('background_image_principle'); ?>);">
       
@@ -61,6 +64,9 @@ get_header( 'custom-material' ); ?>
       </div>
 
   </div>
+
+  <!-- Transition -->
+  <div class="col s12" style="height: 100px; background-color: black; background: linear-gradient(to left bottom, #FFF 50%, #000 51%);"></div>
 
   <!-- BLOC OBJECTIVES -->
   <div id="objectives" class="row" style="color: <?php the_field('couleur_texte_objective'); ?>; background-color: <?php the_field('background_objective'); ?>; background-image: url(<?php the_field('background_image_objective'); ?>);">  

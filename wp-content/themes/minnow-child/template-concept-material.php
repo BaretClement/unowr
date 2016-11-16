@@ -79,28 +79,28 @@ get_header( 'custom-material' ); ?>
     </div>
 
     <div class="col s12 l6 min-height33 valign-wrapper top-left">
-      <div class="container objective valign">
+      <div class="container objective valign" style="background: <?php the_field('background_objectif1') ?>">
         <h3><?php the_field('titre_objectif_1') ?></h3>
         <p><?php the_field('contenu_objectif_1') ?></p>
       </div>
     </div>
 
     <div class="col s12 l6 min-height33 valign-wrapper top-right">
-      <div class="container objective valign">
+      <div class="container objective valign" style="background: <?php the_field('background_objectif2') ?>">
         <h3><?php the_field('titre_objectif_2') ?></h3>
         <p><?php the_field('contenu_objectif_2') ?></p>
       </div>
     </div>
 
     <div class="col s12 l6 min-height33 valign-wrapper bottom-left">
-      <div class="container objective valign">
+      <div class="container objective valign" style="background: <?php the_field('background_objectif3') ?>">
         <h3><?php the_field('titre_objectif_3') ?></h3>
         <p><?php the_field('contenu_objectif_3') ?></p>
       </div>
     </div>
 
     <div class="col s12 l6 min-height33 valign-wrapper bottom-right">
-      <div class="container objective valign">
+      <div class="container objective valign" style="background: <?php the_field('background_objectif4') ?>">
         <h3><?php the_field('titre_objectif_4') ?></h3>
         <p><?php the_field('contenu_objectif_4') ?></p>
       </div>

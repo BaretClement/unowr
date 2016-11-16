@@ -29,8 +29,6 @@ get_header( 'custom-material' ); ?>
       <a href="<?php echo get_site_url(); ?>/resto-recherche" class="waves-effect waves-light btn-flat red" style="margin:25px 10px 0 10px !important; border: 1px solid <?php the_field('couleur_texte_cta') ?> !important">Recherche restaurant</a>
       <a class="modal-trigger waves-effect waves-light btn-flat red" style="margin:25px 10px 0 10px !important; border: 1px solid <?php the_field('couleur_texte_cta') ?> !important" href="#modal-inscription">INSCRIPTION PARTENAIRE</a></div>
   </div>
-  <!-- Transition -->
-  <div class="col s12" style="height: 100px; background-color: black; background: linear-gradient(to right bottom, #000 50%, #FFF 51%);"></div>
 
   <!-- BLOC IDEA -->
   <div id="idea" class="row" style="color: <?php the_field('couleur_texte_idea'); ?>; background-color: <?php the_field('background_idea'); ?>; background-image: url(<?php the_field('background_image_idea'); ?>);">

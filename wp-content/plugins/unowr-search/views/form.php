@@ -4,40 +4,44 @@
 $taxonomies = array('agenda', 'localisation', 'type_de_cuisine', 'occasion', 'ambiance');
 $questions = array(
 		'agenda'=> array(
-			"Quand est-ce que tu souhaites manger ?",
-			"Quel jour souhaites-tu réserver ?",
-			"On mange quand ?"
+			"Bien le bonjour ! Quand est-ce que tu souhaites manger ?",
+			"Salut, j’espère que tu vas bien ! Quel jour souhaites-tu réserver ?",
+			"Hello, alors quand est-ce qu’on mange ?"
+		
 		),
 		'localisation' => array(
 			"On se situe où ?",
-			"On te laisse le choix ;-)",
-			"Un endroit favori ?"
-
+			"Pour le lieu on te laisse le choix ;-)",
+			"Un endroit favori ?",
+			"Un endroit en particulier ?"
+		
 		),
 		'occasion' => array(
-			"Une occasion en particulier ?",
+			"C’est pour une occasion en particulier ?",
 			"Pour quelle occasion ?",
-			"Dans quel contexte ?"
+			"Quel est le contexte ?"
 
 		),
 		'ambiance' => array(
-			"Niveau ambiance, on se situerait sur quoi ?",
-			"Un type d’ambiance favori ?",
-			"C’est quoi ton type d’ambiance ?"
+			"Niveau ambiance, on se situe où ?",
+			"Un type d’ambiance en particulier ?",
+			"C’est quoi ton type d’ambiance ?",
+			"Quelle ambiance serait idéale ?",
+			"Quelle ambiance tu souhaites ?"
 
 		),
 		'type_de_cuisine' => array(
-			"Ton type de cuisine préféré, c’est plutôt…",
-			"Lequel des 5 continents tu préfères ?",
-			"Dans quel coin on voyage ?"
+			"Quel type de cuisine tu préfères ?",
+			"Niveau cuisine, tu préfères ?",
+			"Qu’est-ce que tu veux manger ?"
 
 		)
 	);
 $questions_child = array(
 		'agenda'=> array(
-			"Plus précisément, plutôt midi ou soir ?",
-			"Pour déjeuner ou dîner ?",
-			"Midi ou soir ?"
+			"Ça marche ! Et plus précisément : midi ou soir ?",
+			"C’est noté ! Ce serait pour déjeuner ou dîner ?",
+			"Ok ! Midi ou soir ?"
 
 		),
 		'localisation' => array(
@@ -48,13 +52,13 @@ $questions_child = array(
 		'occasion' => array(
 			"Tu saurais nous en dire plus ?",
 			"Plus précisément ?",
-			"Un chouïa plus précis ?"
+			"Tu peux être plus précis ?"
 
 		),
 		'type_de_cuisine' => array(
-			"Et qu’est-ce que tu souhaites manger ?",
-			"Mais dans tout ça, c’est quoi ton plat idéal ?",
-			"La dernière étape avant de manger"
+			"Alright ! Et plus précisément ?",
+			"Super ! Et dans tout ça, on mange quoi ?",
+			"Et qu’est-ce qui te ferait le plus plaisir ?"
 
 		)
 	);

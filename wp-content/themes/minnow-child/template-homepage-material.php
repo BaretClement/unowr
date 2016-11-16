@@ -54,6 +54,8 @@ get_header( 'custom-material' ); ?>
 		</div>
 	</div>
 
+	<!-- Transition -->
+	<div class="col s12" style="height: 100px; width: 100%; background-color: black; background: linear-gradient(to right bottom, #FFF 50%, #000 51%);"></div>
 	<!-- BLOC CONCEPT  -->
 	<div id="concept" class="row" style="color: <?php the_field('couleur_texte_concept') ?>; background-color: <?php the_field('background_concept'); ?>;">
 
@@ -71,7 +73,7 @@ get_header( 'custom-material' ); ?>
 		</div>
 	</div>
 
-
+	<div class="col s12" style="height: 100px; width: 100%; background-color: black; background: linear-gradient(to right bottom, #000 50%, #FFF 51%);"></div>
 	<!-- BLOC BLOG  -->
 	<div class="row" style="color: <?php the_field('couleur_texte_blog') ?>; background-color: <?php the_field('background_blog'); ?>;">
 

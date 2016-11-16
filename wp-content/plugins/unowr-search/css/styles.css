@@ -26,7 +26,6 @@
 	color: #fff;
 	background: #000;
 	margin: 10px 0px;
-	min-width: 424px;
 }
 
 .unowr-result-wrapper div {
@@ -50,7 +49,9 @@
 	cursor: pointer;
 }
 
-
+.unowr_result{
+	min-width: 424px !important;
+}
 .children .unowr-choice.active,
 .unowr-choice.active {
 	background: #000;

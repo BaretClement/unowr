@@ -338,9 +338,9 @@ div.unowr_result{
 
 /* mobile */
 @media (max-width: 600px) {
-	h1{font-size: 3rem !important;}
-	h2{font-size: 2.5rem !important;}
-	h3{font-size: 1.8rem !important;}
+	h1{font-size: 3rem !important; text-transform: uppercase;}
+	h2{font-size: 2.5rem !important; text-transform: uppercase;}
+	h3{font-size: 1.8rem !important; text-transform: uppercase;}
 	h4{font-size: 1.5rem !important;}
 	h5{font-size: 1.2rem;}
 }

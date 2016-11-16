@@ -352,7 +352,7 @@ div.unowr_result{
 /********************* CONTAINERS *********************/
 /******************************************************/
 
-.row{margin-bottom: 0 !important; border-bottom: 1px solid #E0E0E0; }
+.row{margin-bottom: 0 !important;}
 .blog{border-bottom: 1px solid #E0E0E0; border-right: none; background-size: contain !important; background-repeat: no-repeat !important; background-position: middle !important;}
 .concept{background-size: contain !important; background-repeat: no-repeat !important; background-position: middle !important;}
 .margin-top{margin-top: 50px;}

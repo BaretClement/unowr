@@ -24,8 +24,8 @@ get_header( 'custom-material' ); ?>
   </div>
 
   <!-- BLOC CTAs-->
-  <div class="row center" style="background: <?php the_field('background_cta') ?>; color: <?php the_field('couleur_texte_cta') ?>">
-    <div class="col s6"><a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat red ">Quitter</a></div>
+  <div class="row" style="background: <?php the_field('background_cta') ?>; color: <?php the_field('couleur_texte_cta') ?>">
+    <div class="col s6 right"><a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat red ">Quitter</a></div>
     <div class="col s6"><a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat red ">Quitter</a></div>
   </div>
 

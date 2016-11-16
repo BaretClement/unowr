@@ -66,7 +66,7 @@ get_header( 'custom-material' ); ?>
   </div>
 
   <!-- Transition -->
-  <div class="col s12" style="height: 100px; background-color: black; background: linear-gradient(to left bottom, #000 50%, #FFF 51%);"></div>
+  <div class="col s12" style="height: 100px; background-color: black; background: linear-gradient(to right bottom, #000 50%, #FFF 51%);"></div>
 
   <!-- BLOC OBJECTIVES -->
   <div id="objectives" class="row" style="color: <?php the_field('couleur_texte_objective'); ?>; background-color: <?php the_field('background_objective'); ?>; background-image: url(<?php the_field('background_image_objective'); ?>);">  

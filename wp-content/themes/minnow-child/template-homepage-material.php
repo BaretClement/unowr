@@ -14,7 +14,7 @@ get_header( 'custom-material' ); ?>
 				  <a href="<?php the_field('link_cta_utilisateur'); ?>" class="waves-effect waves-light btn-flat" style="color: <?php the_field('couleur_texte_utilisateur') ?>; border-color: <?php the_field('couleur_texte_utilisateur') ?> !important">
 				  	<?php the_field('cta_utilisateur'); ?>
 				  </a>
-				  <div><i class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_utilisateur') ?>; font-size: 2rem"></i></div>
+				  <div><i href="#restaurateur" class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_utilisateur') ?>; font-size: 2rem"></i></div>
 			</div>
 		</div>
 	</div>
@@ -39,13 +39,13 @@ get_header( 'custom-material' ); ?>
 				    </div>
 				  </div>
 
-				  <div><i class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_restaurant') ?>; font-size: 2rem"></i></div>
+				  <div><i href="#citation" class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_restaurant') ?>; font-size: 2rem"></i></div>
 			</div>
 		</div>
 	</div>
 	
 	<!-- BLOC CITATION -->
-	<div class="row" style="background-color: <?php the_field('citation') ?>; color: <?php the_field('couleur_text_citation') ?>" >
+	<div id="citation" class="row" style="background-color: <?php the_field('citation') ?>; color: <?php the_field('couleur_text_citation') ?>" >
 		<div class="col s12">
 			<div class="container">
 				<h3 class="center"><sup class="ion-quote social-icon"></sup> <?php the_field('citation') ?></h3>
@@ -69,14 +69,14 @@ get_header( 'custom-material' ); ?>
 				  <a href="<?php the_field('link_cta_concept'); ?>" class="waves-effect waves-light btn-flat" style="color: <?php the_field('couleur_texte_concept') ?>; border-color: <?php the_field('couleur_texte_utilisateur') ?> !important">
 				  	<?php the_field('cta_concept'); ?>
 				  </a>
-				  <div><i class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_concept') ?>; font-size: 2rem"></i></div>
+				  <div><i href="#blog" class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_concept') ?>; font-size: 2rem"></i></div>
 			</div>
 		</div>
 	</div>
 
 	<div class="col s12" style="height: 100px; width: 100%; background-color: black; background: linear-gradient(to right bottom, #000 50%, #FFF 51%);"></div>
 	<!-- BLOC BLOG  -->
-	<div class="row" style="color: <?php the_field('couleur_texte_blog') ?>; background-color: <?php the_field('background_blog'); ?>;">
+	<div id="blog" class="row" style="color: <?php the_field('couleur_texte_blog') ?>; background-color: <?php the_field('background_blog'); ?>;">
 
 		<div class="col s12 m6 push-m6 height75-img valign-wrapper" style="background-image: url(<?php the_field('background_image_blog'); ?>); background-repeat: no-repeat; background-position: center; background-size: contain;"></div>
 
@@ -87,7 +87,7 @@ get_header( 'custom-material' ); ?>
 				  <a href="<?php the_field('link_cta_blog'); ?>" style="margin-bottom: 25px;" class="waves-effect waves-light btn disabled <?php the_field('couleur_texte_blog') ?>">
 				  	<?php the_field('cta_blog'); ?>
 				  </a>
-				  <div><i class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_blog') ?>; font-size: 2rem"></i></div>
+				  <div><i href="#social" class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_blog') ?>; font-size: 2rem"></i></div>
 			</div>
 		</div>
 	</div>
@@ -96,7 +96,7 @@ get_header( 'custom-material' ); ?>
 	<div class="col s12" style="height: 100px; background-color: black; background: linear-gradient(to right bottom, #FFF 50%, #000 51%);"></div>
 
 	<!-- BLOC SOCIAL -->
-	<div class="row" style="color: <?php the_field('couleur_texte_social') ?>; background-color: <?php the_field('background_social'); ?>; background-image: url(<?php the_field('background_image_social'); ?>);">
+	<div id="social" class="row" style="color: <?php the_field('couleur_texte_social') ?>; background-color: <?php the_field('background_social'); ?>; background-image: url(<?php the_field('background_image_social'); ?>);">
 		<div class="col s12 height50 valign-wrapper">
 			<div class="container center valign">	
 				<h2><?php the_field('titre_social'); ?></h2>

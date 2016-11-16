@@ -336,14 +336,14 @@ div.unowr_result{
 /*********************** TITLES ***********************/
 /******************************************************/
 
-/* mobile */
-@media (max-width: 600px) {
 	h1{font-size: 3rem !important; text-transform: uppercase !important;}
 	h2{font-size: 2.5rem !important; text-transform: uppercase !important;}
 	h3{font-size: 1.8rem !important; text-transform: uppercase !important;}
 	h4{font-size: 1.5rem !important;}
 	h5{font-size: 1.2rem;}
-}
+
+/* mobile */
+@media (max-width: 600px) {}
 
 /* tablet */
 @media (min-width: 601px) and (max-width: 992px) {}

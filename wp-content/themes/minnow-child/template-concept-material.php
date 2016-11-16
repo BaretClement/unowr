@@ -16,8 +16,9 @@ get_header( 'custom-material' ); ?>
         </h1> 
         <p>
           <span style="background: rgba(255, 255, 255, 0.6); padding: 0 10px">
-            <?php the_field('sous_titre_unowr'); ?></p>
+            <b><?php the_field('sous_titre_unowr'); ?></b>
           </span>
+        </p>
       </div>
     </div>
   </div>
@@ -27,7 +28,7 @@ get_header( 'custom-material' ); ?>
     <div class="col s12 min-height100 valign-wrapper">
       <div class="container valign center">
         <h2><?php the_field('titre_idea'); ?></h2>
-        <p><?php the_field('sous_titre_idea') ?></p>
+        <p><b><?php the_field('sous_titre_idea') ?></p></b>
         <p><?php the_field('contenu_idea') ?></p>
       </div>
     </div>
@@ -42,7 +43,7 @@ get_header( 'custom-material' ); ?>
     <div class="col s12 valign-wrapper">
       <div class="container valign center">
         <h2><?php the_field('titre_principle') ?></h2>
-        <p><?php the_field('sous_titre_principle') ?></p>
+        <p><b><?php the_field('sous_titre_principle') ?></p></b>
       </div>
     </div>
     
@@ -81,7 +82,7 @@ get_header( 'custom-material' ); ?>
     <div class="col s12 valign-wrapper">
       <div class="container valign center">
         <h2><?php the_field('titre_objectif') ?></h2>
-        <p><?php the_field('sous_titre_objectif') ?></p>
+        <p><b><?php the_field('sous_titre_objectif') ?></p></b>
       </div>
     </div>
 
@@ -120,7 +121,7 @@ get_header( 'custom-material' ); ?>
     <div class="col s12 min-height100 valign-wrapper">
       <div class="container valign center">
         <h2><?php the_field('titre_equipe') ?></h2>
-        <p><?php the_field('sous_titre_equipe') ?></p>
+        <p><b><?php the_field('sous_titre_equipe') ?></p></b>
       </div>
     </div>
   </div>

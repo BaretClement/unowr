@@ -652,6 +652,8 @@ a.btn-flat.red{
 	background-color: transparent!important;
 	border-color: transparent !important;
 	color: #FFF !important;
+	margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 a.btn-flat.red:hover{
 	color: #ffffff !important;

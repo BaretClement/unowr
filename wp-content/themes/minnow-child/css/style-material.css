@@ -441,6 +441,7 @@ textarea.materialize-textarea {
     height: 3.5rem !important;
     -webkit-appearance: none !important;
     box-shadow: none !important;
+    margin: 0 !important;
 }
 
 .materialize-textarea {

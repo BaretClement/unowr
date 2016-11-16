@@ -23,6 +23,12 @@ get_header( 'custom-material' ); ?>
     </div>
   </div>
 
+  <!-- BLOC CTAs-->
+  <div class="row">
+    <div class="col s6"><a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat red ">Quitter</a></div>
+    <div class="col s6"><a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat red ">Quitter</a></div>
+  </div>
+
   <!-- BLOC IDEA -->
   <div id="idea" class="row" style="color: <?php the_field('couleur_texte_idea'); ?>; background-color: <?php the_field('background_idea'); ?>; background-image: url(<?php the_field('background_image_idea'); ?>);">
     <div class="col s12 min-height100 valign-wrapper">

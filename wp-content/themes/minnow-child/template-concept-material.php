@@ -46,7 +46,7 @@ get_header( 'custom-material' ); ?>
         <p><b><?php the_field('sous_titre_principle') ?></p></b>
       </div>
     </div>
-    
+    <div class="container">
       <div class="col s12 l4 valign-wrapper">
         <div class="container principle valign center">
           <i class="big-icon <?php the_field('pictogramme_principle_1') ?>"></i>
@@ -70,7 +70,7 @@ get_header( 'custom-material' ); ?>
           <p><?php the_field('contenu_principle_3') ?></p>
         </div>
       </div>
-
+    </div>
   </div>
 
   <!-- Transition -->

@@ -52,6 +52,9 @@ img.logo{
 }
 
 .valign-wrapper{width: 100%}
+
+.hidden{display: none !important}
+
 /* mobile */
 @media (max-width: 600px){
 	nav{

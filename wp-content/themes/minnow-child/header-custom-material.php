@@ -55,11 +55,9 @@
               <!-- Menu burger -->
           		<ul class="side-nav" id="mobile-demo">
     				    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-                <li><img style="width:100%;" src="<?php echo get_template_directory_uri(); ?>/css/img/P1030167.jpg"></li>
-                <a href="<?php echo get_site_url(); ?>/resto-recherche" class="waves-effect waves-light btn-flat red">Recherche restaurant</a>
-
                     <!-- Modal Trigger -->
-                    <a class="modal-trigger waves-effect waves-light btn-flat red" href="#modal-inscription">INSCRIPTION PARTENAIRE</a>
+                    <li><a class="modal-trigger waves-effect waves-light btn-flat red" href="#modal-inscription">INSCRIPTION PARTENAIRE</a></li>
+                    <li><img style="width:100%;" src="<?php echo get_template_directory_uri(); ?>/css/img/P1030167.jpg"></li>
 
                     <!-- Modal Structure -->
                     <div id="modal-inscription" class="modal modal-fixed-footer">

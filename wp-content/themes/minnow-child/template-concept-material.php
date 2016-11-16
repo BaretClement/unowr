@@ -9,7 +9,11 @@ get_header( 'custom-material' ); ?>
   <div id="unowr" class="row" style="color: <?php the_field('couleur_texte_unowr'); ?>; background-color: <?php the_field('background_unowr'); ?>; background-image: url(<?php the_field('background_image_unowr'); ?>);">
     <div class="col s12 min-height100 valign-wrapper">
       <div class="container valign center">
-        <h1><?php the_field('titre_unowr'); ?></h1>
+        <h1>
+          <span style="background: rgba(FFF, FFF, FFF, 0.2)">
+            <?php the_field('titre_unowr'); ?>
+          </span>
+        </h1> 
         <p><?php the_field('sous_titre_unowr'); ?></p>
       </div>
     </div>

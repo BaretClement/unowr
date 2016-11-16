@@ -34,7 +34,7 @@
               
               <!-- Menu desktop -->
           		<ul class="right hide-on-med-and-down" style="margin-top: 12px">
-                    <a href="<?php echo get_site_url(); ?>/recherche_restaurant" class="waves-effect waves-light btn-flat red">Recherche restaurant</a>
+                    <a href="<?php echo get_site_url(); ?>/rechercher_restaurant" class="waves-effect waves-light btn-flat red">Recherche restaurant</a>
 
                     <!-- Modal Trigger -->
                     <a class="modal-trigger waves-effect waves-light btn-flat red" href="#modal-inscription">INSCRIPTION PARTENAIRE</a>

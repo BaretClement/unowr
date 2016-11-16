@@ -15,7 +15,7 @@ get_header( 'custom-material' ); ?>
           </span>
         </h1> 
         <p>
-          <span style="background: rgba(255, 255, 255, 0.6); padding: 5px 10px">
+          <span style="background: rgba(255, 255, 255, 0.6); padding: 4px 10px">
             <b><?php the_field('sous_titre_unowr'); ?></b>
           </span>
         </p>

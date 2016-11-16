@@ -30,6 +30,7 @@ get_header( 'custom-material' ); ?>
 <!-- Modal Trigger -->
 <a class="waves-effect waves-light btn" href="#modal-reservation" style="display: none">Modal</a>
 
+
 <!-- Modal Structure -->                    
 <div id="modal-reservation" class="modal modal-fixed-footer">
 <div class="modal-content">

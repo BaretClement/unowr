@@ -10,7 +10,7 @@ get_header( 'custom-material' ); ?>
     <div class="col s12 min-height100 valign-wrapper">
       <div class="container valign center">
         <h1>
-          <span style="background: rgba(FFF, FFF, FFF, 0.2)">
+          <span style="background: rgba(255, 255, 255, 0.3)">
             <?php the_field('titre_unowr'); ?>
           </span>
         </h1> 

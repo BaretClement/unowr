@@ -25,8 +25,8 @@ get_header( 'custom-material' ); ?>
 
   <!-- BLOC CTAs-->
   <div class="row" style="background: <?php the_field('background_cta') ?>; color: <?php the_field('couleur_texte_cta') ?>">
-    <div class="col s6 right-align"><a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat red ">test</a></div>
-    <div class="col s6"><a href="modal-inscription" class="modal-action modal-close waves-effect waves-green btn-flat red ">Inscription restaurant</a></div>
+    <div class="col s6 right-align"><a href="<?php echo get_site_url(); ?>/resto-recherche" class="waves-effect waves-light btn-flat red">Recherche restaurant</a></div>
+    <div class="col s6"><a class="modal-trigger waves-effect waves-light btn-flat red" href="#modal-inscription">INSCRIPTION PARTENAIRE</a></div>
   </div>
 
   <!-- BLOC IDEA -->

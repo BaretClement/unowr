@@ -86,28 +86,28 @@ get_header( 'custom-material' ); ?>
       </div>
     </div>
 
-    <div class="col s12 l6 min-height33 valign-wrapper top-left" style="background: <?php the_field('background_objectif1') ?>">
+    <div class="col s12 l6 height-objective valign-wrapper top-left" style="background: <?php the_field('background_objectif1') ?>">
       <div class="container objective valign">
         <h3><?php the_field('titre_objectif_1') ?></h3>
         <p><?php the_field('contenu_objectif_1') ?></p>
       </div>
     </div>
 
-    <div class="col s12 l6 min-height33 valign-wrapper top-right" style="background: <?php the_field('background_objectif2') ?>">
+    <div class="col s12 l6 height-objective valign-wrapper top-right" style="background: <?php the_field('background_objectif2') ?>">
       <div class="container objective valign">
         <h3><?php the_field('titre_objectif_2') ?></h3>
         <p><?php the_field('contenu_objectif_2') ?></p>
       </div>
     </div>
 
-    <div class="col s12 l6 min-height33 valign-wrapper bottom-left" style="background: <?php the_field('background_objectif3') ?>">
+    <div class="col s12 l6 height-objective valign-wrapper bottom-left" style="background: <?php the_field('background_objectif3') ?>">
       <div class="container objective valign">
         <h3><?php the_field('titre_objectif_3') ?></h3>
         <p><?php the_field('contenu_objectif_3') ?></p>
       </div>
     </div>
 
-    <div class="col s12 l6 min-height33 valign-wrapper bottom-right" style="background: <?php the_field('background_objectif4') ?>">
+    <div class="col s12 l6 height-objective valign-wrapper bottom-right" style="background: <?php the_field('background_objectif4') ?>">
       <div class="container objective valign">
         <h3><?php the_field('titre_objectif_4') ?></h3>
         <p><?php the_field('contenu_objectif_4') ?></p>

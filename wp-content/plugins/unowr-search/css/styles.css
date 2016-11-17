@@ -188,5 +188,5 @@ p.questions.search{
 	display: block !important;
 }
 .hidden{
-	display: none;
+	display: none !important;
 }

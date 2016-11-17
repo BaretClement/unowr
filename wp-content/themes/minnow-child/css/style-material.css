@@ -752,9 +752,10 @@ a.btn-flat.red:hover{
 	.transition-bottom-restaurant{
 		height: 50px !important; 
 		width: 100% !important;
-	    background: -webkit-linear-gradient(bottom left, transparent 50%, #EEEEEE 51%);
-	    background: -o-linear-gradient(bottom left, transparent 50%, #EEEEEE 51%);
-	    background: linear-gradient(to top right, transparent 50%, #EEEEEE 51%);
+		background-color: black; 
+	    background: -webkit-linear-gradient(bottom left, #EEE 50%, transparent 51%);
+	    background: -o-linear-gradient(bottom left, #EEE 50%, transparent 51%);
+	    background: linear-gradient(to top right, #EEE 50%, transparent 51%);
 	}
 }
 @media (min-width: 601px) and (max-width: 992px) {
@@ -798,9 +799,10 @@ a.btn-flat.red:hover{
 	.transition-bottom-restaurant{
 		height: 75px !important; 
 		width: 100% !important;
-	    background: -webkit-linear-gradient(bottom left, transparent 50%, #EEEEEE 51%);
-	    background: -o-linear-gradient(bottom left, transparent 50%, #EEEEEE 51%);
-	    background: linear-gradient(to top right, transparent 50%, #EEEEEE 51%);
+		background-color: black; 
+	    background: -webkit-linear-gradient(bottom left, #EEE 50%, transparent 51%);
+	    background: -o-linear-gradient(bottom left, #EEE 50%, transparent 51%);
+	    background: linear-gradient(to top right, #EEE 50%, transparent 51%);
 	}
 
 }
@@ -846,9 +848,10 @@ a.btn-flat.red:hover{
 	.transition-bottom-restaurant{
 		height: 100px !important; 
 		width: 100% !important;
-	    background: -webkit-linear-gradient(top left, transparent 50%, #EEEEEE 51%);
-	    background: -o-linear-gradient(top left, transparent 50%, #EEEEEE 51%);
-	    background: linear-gradient(to bottom right, transparent 50%, #EEEEEE 51%);
+		background-color: black; 
+	    background: -webkit-linear-gradient(bottom left, #EEE 50%, transparent 51%);
+	    background: -o-linear-gradient(bottom left, #EEE 50%, transparent 51%);
+	    background: linear-gradient(to top right, #EEE 50%, transparent 51%);
 	}
 }
 

@@ -5,7 +5,7 @@
  * @package Minnow
  */
 
-get_header(); ?>
+get_header('custom-material'); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -26,4 +26,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_footer(); ?>
+<?php get_footer('custom-material'); ?>

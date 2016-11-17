@@ -43,6 +43,7 @@ get_header( 'custom-material' ); ?>
 				  <div><a href="#concept" class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_restaurant') ?>; font-size: 2rem"></a></div>
 			</div>
 		</div>
+		<div class="col s12 transition-bottom"></div>
 	</div>
 	
 	<!-- BLOC CITATION -->

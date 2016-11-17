@@ -73,7 +73,7 @@
 	}	
 }
 
-#modal-resevation{
+.modal{
     position: fixed;
     top: 74px !important;
     left: 0;

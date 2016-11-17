@@ -71,7 +71,7 @@ var unowr_form = {
 		other.classList.add('hidden')
 		})
 		
-		var target.classList.add(‘show’);
+		var target.classList.add(‘active’);
 
 		var taxo = target.getAttribute('data-unowr-taxonomy')
 		var parent = target.getAttribute('data-parent')

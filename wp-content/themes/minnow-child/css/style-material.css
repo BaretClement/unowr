@@ -823,9 +823,7 @@ a.btn-flat.red:hover{
 	.transition-bottom-restaurant{
 		height: 100px !important; 
 		width: 100% !important;
-		background: -webkit-linear-gradient(top left, #EEEEEE 50%, #FFF 51%);
-		background: -o-linear-gradient(top left, #EEEEEE 50%, #FFF 51%);
-		background: linear-gradient(to bottom right, #EEEEEE 50%, #FFF 51%);
+		background: linear-gradient(to bottom right, #fff 0%, #fff 50%, #999 50%, #999 100%);
 	}
 }
 

@@ -186,6 +186,7 @@ p.questions.search{
 
 .active{
 	display: inline-block !important;
+	background: #1f89f5 !important;
 }
 .hidden{
 	display: none;

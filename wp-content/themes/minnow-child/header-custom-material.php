@@ -29,7 +29,7 @@
       <script src="https://use.fontawesome.com/956fe3a490.js"></script>
 
 	<nav>
-	    <div class="nav-wrapper valign-wrapper" style="width: 100%; float: right">
+	    <div class="nav-wrapper">
               <a href="<?php echo get_home_url(); ?>" class="brand-logo"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/css/img/unowr-white.png"></a>
           		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="ion-navicon color_white valign"></i></a>
               

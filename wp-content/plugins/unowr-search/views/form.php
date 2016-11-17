@@ -4,7 +4,7 @@
 $taxonomies = array('agenda', 'localisation', 'type_de_cuisine', 'occasion', 'ambiance');
 $questions = array(
 		'agenda'=> array(
-			"Bien le bonjour ! Quand est-ce que tu souhaites manger ?",
+			"Bien le bonjour ! Quand est-ce que tu souhaites manger ? 😉",
 			"Salut, j’espère que tu vas bien ! Quel jour souhaites-tu réserver ?",
 			"Hello, alors quand est-ce qu’on mange ?"
 		

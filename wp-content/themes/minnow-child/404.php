@@ -7,23 +7,15 @@
 
 get_header('custom-material'); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'minnow' ); ?></h1>
-				</header><!-- .page-header -->
-
-				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'minnow' ); ?></p>
-
-					<?php get_search_form(); ?>
-
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+<div class="row">
+	<div class="col s12 valign-wrapper height404 center">
+		<div class="container valign">
+			<h1>Page non trouvée...</h1>
+				<a href="<?php echo get_site_url(); ?>" class="waves-effect waves-light btn-flat">Retourner à l'accueil</a><br>
+				<a href="<?php echo get_site_url(); ?>/rechercher_restaurant" class="waves-effect waves-light btn-flat">Rechercher un restaurant</a><br>
+				<a href="<?php echo get_site_url(); ?>/le-concept-unowr" class="waves-effect waves-light btn-flat">Découvrir le concept UNOWR</a><br>
+		</div>
+	</div>
+</div>
 
 <?php get_footer('custom-material'); ?>

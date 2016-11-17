@@ -4,21 +4,21 @@
 $taxonomies = array('agenda', 'localisation', 'type_de_cuisine', 'occasion', 'ambiance');
 $questions = array(
 		'agenda'=> array(
-			"Bien le bonjour ! Quand est-ce que tu souhaites manger ? 😉",
-			"Salut, j’espère que tu vas bien ! Quel jour souhaites-tu réserver ?",
-			"Hello, alors quand est-ce qu’on mange ?"
+			"Bien le bonjour ! Quand est-ce que tu souhaites manger ? 🙃",
+			"Salut, j’espère que tu vas bien ! Quel jour souhaites-tu réserver ? 🙂",
+			"Hello ! 👋 Alors quand est-ce qu’on mange ?"
 		
 		),
 		'localisation' => array(
 			"On se situe où ?",
-			"Pour le lieu on te laisse le choix ;-)",
+			"Pour le lieu on te laisse le choix 😅",
 			"Un endroit favori ?",
 			"Un endroit en particulier ?"
 		
 		),
 		'occasion' => array(
 			"C’est pour une occasion en particulier ?",
-			"Pour quelle occasion ?",
+			"Pour quelle occasion ? 🤔",
 			"Quel est le contexte ?"
 
 		),
@@ -39,8 +39,8 @@ $questions = array(
 	);
 $questions_child = array(
 		'agenda'=> array(
-			"Ça marche ! Et plus précisément : midi ou soir ?",
-			"C’est noté ! Ce serait pour déjeuner ou dîner ?",
+			"Ça marche ! Et plus précisément : midi ou soir ? 🤔",
+			"C’est noté ! 👍 Ce serait pour déjeuner ou dîner ?",
 			"Ok ! Midi ou soir ?"
 
 		),
@@ -57,7 +57,7 @@ $questions_child = array(
 		),
 		'type_de_cuisine' => array(
 			"Alright ! Et plus précisément ?",
-			"Super ! Et dans tout ça, on mange quoi ?",
+			"Super ! 👌 Et dans tout ça, on mange quoi ?",
 			"Et qu’est-ce qui te ferait le plus plaisir ?"
 
 		)

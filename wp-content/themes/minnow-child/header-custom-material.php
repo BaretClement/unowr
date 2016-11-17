@@ -28,9 +28,9 @@
       <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
 
 	<nav>
-	    <div class="nav-wrapper">
+	    <div class="nav-wrapper valign-wrapper">
               <a href="<?php echo get_home_url(); ?>" class="brand-logo"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/css/img/unowr-white.png"></a>
-          		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="ion-navicon color_white valign" style="margin-top:13.5px"></i></a>
+          		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="ion-navicon color_white valign"></i></a>
               
               <!-- Menu desktop -->
           		<ul class="right hide-on-med-and-down" style="margin-top: 12px">

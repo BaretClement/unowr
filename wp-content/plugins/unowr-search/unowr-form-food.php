@@ -14,7 +14,7 @@ function load_unowr_css_and_js() {
 	wp_enqueue_style( 'unowr', plugin_dir_url( __FILE__ ) . 'css/styles.css', array(), '1.0', 'all' );
 	wp_enqueue_script( 'unowr', plugin_dir_url( __FILE__ ) . 'js/script.js', array( 'jquery' ), '1.0', true );
 	wp_localize_script( 'unowr', 'unowr_config',
-		array( 'ajax_url' => get_site_url( 'admin-ajax.php' ))
+		array( 'ajax_url' => admin_url( 'admin-ajax.php' ))
 	);
 }
 

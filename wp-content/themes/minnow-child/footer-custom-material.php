@@ -10,7 +10,7 @@
 
 <footer class="valign-wrapper">
 	<div class="center">
-		WE <i class="ion-heart" style="color: #ec1d25"></i> YOU
+		WE <i class="ion-heart" style="color: #ec1d25"></i> YOU <span class="right" style="margin-right:10px">V 1.0.0</span>
 	</div>
 </footer>
 

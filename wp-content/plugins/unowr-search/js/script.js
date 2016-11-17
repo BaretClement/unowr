@@ -66,7 +66,7 @@ var unowr_form = {
 	_next: function (e) {
 		var target = e.currentTarget
 
-
+		target.classList.add(‘active’);
 
 var others = target.parentNode.querySelectorAll('.unowr-choice')
 Array.prototype.forEach.call(others, (other) => {

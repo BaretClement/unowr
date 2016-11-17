@@ -184,6 +184,9 @@ p.questions.search{
 	}
 }
 
+.active{
+	display: block !important;
+}
 .hidden{
-	display: none !important
+	display: none;
 }

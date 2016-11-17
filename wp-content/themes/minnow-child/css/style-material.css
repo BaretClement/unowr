@@ -129,6 +129,7 @@ footer{
 /******************************************************/
 
 .width50{width: 50% !important}
+.width100{width: 100% !important}
 
 /* mobile */
 @media (max-width: 600px){

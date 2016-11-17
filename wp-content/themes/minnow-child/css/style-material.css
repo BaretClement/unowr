@@ -789,3 +789,10 @@ a.btn-flat.red:hover{
 .modal{
 	max-height: 100% !important;
 }
+
+div.wpcf7-response-output {
+    position: relative !important;
+    top: -35px !important;
+    width: 100% !important;
+    text-align: center !important;
+}

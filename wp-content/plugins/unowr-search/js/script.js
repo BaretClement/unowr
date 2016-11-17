@@ -67,6 +67,7 @@ var unowr_form = {
 		var target = e.currentTarget
 
 
+
 var others = target.parentNode.querySelectorAll('.unowr-choice')
 Array.prototype.forEach.call(others, (other) => {
 other.classList.add('hidden')

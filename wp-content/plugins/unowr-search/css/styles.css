@@ -49,9 +49,23 @@
 	cursor: pointer;
 }
 
-.unowr_result{
-	min-width: 424px !important;
+
+@media (max-width: 600px){
+	.unowr_result{
+		min-width: auto !important;
+	}
 }
+@media (min-width: 601px) and (max-width: 992px) {
+	.unowr_result{
+		min-width: auto !important;
+	}	
+}
+@media (min-width: 992px) {
+	.unowr_result{
+		min-width: 424px !important;
+	}	
+}
+
 .children .unowr-choice.active,
 .unowr-choice.active {
 	background: #000;

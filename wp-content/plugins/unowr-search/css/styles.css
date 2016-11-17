@@ -39,6 +39,9 @@
     border: 2px solid #fff;
     margin: 10px;
     box-sizing: border-box;
+    margin: 0 !important;
+    width: 100%;
+    margin-top: 20px !important;
 }
 
 .unowr-choice {

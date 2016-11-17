@@ -719,7 +719,7 @@ a.btn-flat.red:hover{
 	    background: -o-linear-gradient(top left, #FFF 50%, #000 51%);
 	    background: linear-gradient(to bottom right, #FFF 50%, #000 51%);
 	}
-	.transition-social{
+	.transition-top-social{
 		height: 50px !important; 
 		width: 100% !important;
 		background-color: black; 
@@ -766,7 +766,7 @@ a.btn-flat.red:hover{
 	    background: -o-linear-gradient(top left, #FFF 50%, #000 51%);
 	    background: linear-gradient(to bottom right, #FFF 50%, #000 51%);
 	}
-	.transition-social{
+	.transition-top-social{
 		height: 75px !important; 
 		width: 100% !important;
 		background-color: black; 
@@ -814,7 +814,7 @@ a.btn-flat.red:hover{
 	    background: -o-linear-gradient(top left, #FFF 50%, #000 51%);
 	    background: linear-gradient(to bottom right, #FFF 50%, #000 51%);
 	}
-	.transition-social{
+	.transition-top-social{
 		height: 100px !important; 
 		width: 100% !important;
 		background-color: black; 

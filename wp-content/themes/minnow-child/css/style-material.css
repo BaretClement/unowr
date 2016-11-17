@@ -773,6 +773,14 @@ a.btn-flat.red:hover{
 		background: -o-linear-gradient(top left, transparent 50%, #000 51%);
 		background: linear-gradient(to bottom right, transparent 50%, #000 51%);
 	}
+	.transition-bottom-restaurant{
+		height: 75px !important; 
+		width: 100% !important;
+		background: -webkit-linear-gradient(top left, #000 50%, #transparent 51%);
+		background: -o-linear-gradient(top left, #000 50%, #transparent 51%);
+		background: linear-gradient(to bottom right, #000 50%, #transparent 51%);
+	}
+
 }
 @media (min-width: 992px) {
 	.transition-top{

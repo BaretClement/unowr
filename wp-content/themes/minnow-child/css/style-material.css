@@ -689,9 +689,9 @@ a.btn-flat.red:hover{
 		height: 50px !important; 
 		width: 100% !important;
 		background-color: black; 
-		background: -webkit-linear-gradient(top left, #FFF 50%, #000 51%);
-		background: -o-linear-gradient(top left, #FFF 50%, #000 51%);
-		background: linear-gradient(to bottom right, #FFF 50%, #000 51%);
+		background: -webkit-linear-gradient(top left, #000 50%, #fff 51%);
+		background: -o-linear-gradient(top left, #000 50%, #fff 51%);
+		background: linear-gradient(to bottom right, #000 50%, #fff 51%);
 	}
 }
 @media (min-width: 601px) and (max-width: 992px) {
@@ -707,9 +707,9 @@ a.btn-flat.red:hover{
 		height: 75px !important; 
 		width: 100% !important;
 		background-color: black; 
-		background: -webkit-linear-gradient(top left, #FFF 50%, #000 51%);
-		background: -o-linear-gradient(top left, #FFF 50%, #000 51%);
-		background: linear-gradient(to bottom right, #FFF 50%, #000 51%);
+		background: -webkit-linear-gradient(top left, #000 50%, #fff 51%);
+		background: -o-linear-gradient(top left, #000 50%, #fff 51%);
+		background: linear-gradient(to bottom right, #000 50%, #fff 51%);
 	}
 }
 @media (min-width: 992px) {
@@ -725,9 +725,9 @@ a.btn-flat.red:hover{
 		height: 100px !important; 
 		width: 100% !important;
 		background-color: black; 
-		background: -webkit-linear-gradient(top left, #FFF 50%, #000 51%);
-		background: -o-linear-gradient(top left, #FFF 50%, #000 51%);
-		background: linear-gradient(to bottom right, #FFF 50%, #000 51%);
+		background: -webkit-linear-gradient(top left, #000 50%, #fff 51%);
+		background: -o-linear-gradient(top left, #000 50%, #fff 51%);
+		background: linear-gradient(to bottom right, #000 50%, #fff 51%);
 	}
 }
 

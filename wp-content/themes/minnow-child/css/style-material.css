@@ -746,9 +746,9 @@ a.btn-flat.red:hover{
 	.transition-bottom-unowr{
 		height: 100px !important; 
 		width: 100% !important;
-		background: -webkit-linear-gradient(top left, transparent 50%, #000 51%) !important;
-		background: -o-linear-gradient(top left, transparent 50%, #000 51%) !important;
-		background: linear-gradient(to bottom right, transparent 50%, #000 51%) !important;
+		background: -webkit-linear-gradient(top left, transparent 50%, #000 51%);
+		background: -o-linear-gradient(top left, transparent 50%, #000 51%);
+		background: linear-gradient(to bottom right, transparent 50%, #000 51%);
 	}
 }
 

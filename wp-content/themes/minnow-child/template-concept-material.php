@@ -29,6 +29,7 @@ get_header( 'custom-material' ); ?>
     <div class="col s12 center-align">
       <a href="<?php echo get_site_url(); ?>/resto-recherche" class="waves-effect waves-light btn-flat red" style="border: 1px solid <?php the_field('couleur_texte_cta') ?> !important">Recherche restaurant</a>
       <a class="modal-trigger waves-effect waves-light btn-flat red" style="border: 1px solid <?php the_field('couleur_texte_cta') ?> !important" href="#modal-inscription">INSCRIPTION PARTENAIRE</a></div>
+      <div class="col s12 transition-bottom"></div>
   </div>
 
   <!-- BLOC IDEA -->

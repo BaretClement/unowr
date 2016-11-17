@@ -97,7 +97,7 @@ get_header( 'custom-material' ); ?>
 
 	<!-- BLOC SOCIAL -->
 	<div id="social" class="row" style="color: <?php the_field('couleur_texte_social') ?>; background-color: <?php the_field('background_social'); ?>; background-image: url(<?php the_field('background_image_social'); ?>);">
-		<div class="col s12 height50 valign-wrapper">
+		<div class="col s12 valign-wrapper">
 			<div class="container center valign">	
 				<h2><?php the_field('titre_social'); ?></h2>
 				<p class="margin-bottom"><?php the_field('sous_titre_social'); ?></p>

@@ -14,7 +14,11 @@ get_header( 'custom-material' ); ?>
 						<?php the_field('titre_utilisateur'); ?>
 					</span>
 				</h1>
-				<p><?php the_field('sous_titre_utilisateur'); ?></p>
+				<p>
+					<span style="background: rgba(255, 255, 255, 0.6); padding: 4px 10px">
+						<?php the_field('sous_titre_utilisateur'); ?>
+					</span>
+				</p>
 				  <a href="<?php the_field('link_cta_utilisateur'); ?>" class="waves-effect waves-light btn-flat" style="color: <?php the_field('couleur_texte_utilisateur') ?>; border-color: <?php the_field('couleur_texte_utilisateur') ?> !important">
 				  	<?php the_field('cta_utilisateur'); ?>
 				  </a>

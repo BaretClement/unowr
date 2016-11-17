@@ -682,7 +682,6 @@ p.result-title{
 }
 
 div.wpcf7-mail-sent-ok {
-div.wpcf7-mail-sent-ok {
     border: 2px solid #398f14;
     height: 68% !important;
     width: 100% !important;
@@ -706,7 +705,9 @@ a.btn-flat.red:hover{
 	color: #ffffff !important;
 	background: #f2152b !important;
 }
-
+.btn-flat.submit{
+	margin: 0 !important
+}
 /******************************************************/
 /********************* TRANSITIONS  *******************/
 /******************************************************/

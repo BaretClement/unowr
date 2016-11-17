@@ -93,7 +93,7 @@ get_header( 'custom-material' ); ?>
 	</div>
 
 	<!-- Transition -->
-	<div class="col s12 transition-bottom"></div>
+	<div class="col s12 transition-top"></div>
 
 	<!-- BLOC SOCIAL -->
 	<div id="social" class="row" style="color: <?php the_field('couleur_texte_social') ?>; background-color: <?php the_field('background_social'); ?>; background-image: url(<?php the_field('background_image_social'); ?>);">

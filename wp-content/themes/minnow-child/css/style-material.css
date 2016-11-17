@@ -679,6 +679,7 @@ a.btn-flat.red:hover{
 @media (max-width: 600px){
 	.transition-top{
 		height: 50px !important; 
+		width: 100% !important;
 		background-color: black; 
 	    background: -webkit-linear-gradient(top left, #FFF 50%, #000 51%);
 	    background: -o-linear-gradient(top left, #FFF 50%, #000 51%);
@@ -686,6 +687,7 @@ a.btn-flat.red:hover{
 	}
 	.transition-bottom{
 		height: 50px !important; 
+		width: 100% !important;
 		background-color: black; 
 		background: -webkit-linear-gradient(top left, #FFF 50%, #000 51%);
 		background: -o-linear-gradient(top left, #FFF 50%, #000 51%);
@@ -695,6 +697,7 @@ a.btn-flat.red:hover{
 @media (min-width: 601px) and (max-width: 992px) {
 	.transition-top{
 		height: 75px !important; 
+		width: 100% !important;
 		background-color: black; 
 	    background: -webkit-linear-gradient(top left, #FFF 50%, #000 51%);
 	    background: -o-linear-gradient(top left, #FFF 50%, #000 51%);
@@ -702,6 +705,7 @@ a.btn-flat.red:hover{
 	}
 	.transition-bottom{
 		height: 75px !important; 
+		width: 100% !important;
 		background-color: black; 
 		background: -webkit-linear-gradient(top left, #FFF 50%, #000 51%);
 		background: -o-linear-gradient(top left, #FFF 50%, #000 51%);
@@ -711,6 +715,7 @@ a.btn-flat.red:hover{
 @media (min-width: 992px) {
 	.transition-top{
 		height: 100px !important; 
+		width: 100% !important;
 		background-color: black; 
 	    background: -webkit-linear-gradient(top left, #FFF 50%, #000 51%);
 	    background: -o-linear-gradient(top left, #FFF 50%, #000 51%);
@@ -718,6 +723,7 @@ a.btn-flat.red:hover{
 	}
 	.transition-bottom{
 		height: 100px !important; 
+		width: 100% !important;
 		background-color: black; 
 		background: -webkit-linear-gradient(top left, #FFF 50%, #000 51%);
 		background: -o-linear-gradient(top left, #FFF 50%, #000 51%);

@@ -36,6 +36,7 @@ function cf_shortcode() {
 }
 
 add_action( 'wp_ajax_unowr_search', 'unowr_search' );
+add_action( 'wp_ajax_nopriv_unowr_search', 'unowr_search' );
 function unowr_search() {
 	global $wpdb; // this is how you get access to the database
 	$search = array();

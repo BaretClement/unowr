@@ -70,7 +70,7 @@ var others = target.parentNode.querySelectorAll('.unowr-choice')
 Array.prototype.forEach.call(others, (other) => {
 other.classList.add('hidden')
 })
-var target.classList.add(‘show’);
+target.classList.add(‘show’);
 
 		var taxo = target.getAttribute('data-unowr-taxonomy')
 		var parent = target.getAttribute('data-parent')

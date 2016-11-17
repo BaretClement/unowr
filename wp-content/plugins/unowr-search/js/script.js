@@ -66,7 +66,12 @@ var unowr_form = {
 	_next: function (e) {
 		var target = e.currentTarget
 
-		$( ".unowr-choice:not(:active)" ).css( "display", "none" );
+		var others = target.parentNode.querySelectorAll('.unowr-choice')
+		Array.prototype.forEach.call(others, (other) => {
+		other.classList.add('hidden')
+		})
+		
+		var target.classList.add(‘show’);
 
 		var taxo = target.getAttribute('data-unowr-taxonomy')
 		var parent = target.getAttribute('data-parent')

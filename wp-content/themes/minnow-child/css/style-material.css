@@ -138,6 +138,7 @@ footer{
 	.height50{height: 50vh !important}
 	.height75{height: auto !important}
 	.height100{height: calc(100vh - 64px) !important}
+	.height120{height: calc(120vh - 64px) !important}
 	.height75-img{height: 50vh !important}
 	.height-objective{min-height: 33vh !important}
 	.height404{height: calc(100vh - 64px) !important}
@@ -155,6 +156,7 @@ footer{
 	.height50{min-height: 50vh !important}
 	.height75{min-height: 75vh !important}
 	.height100{min-height: 100vh !important}
+	.height120{height: calc(100vh - 64px) !important}
 	.height75-img{height: 75vh !important}
 	.height-objective{min-height: 33vh !important}
 	.height404{height: calc(100vh - 64px) !important}
@@ -172,6 +174,7 @@ footer{
 	.height50{min-height: 50vh !important}
 	.height75{min-height: 75vh !important}
 	.height100{min-height: 100vh !important}
+	.height120{height: calc(100vh - 64px) !important}
 	.height75-img{height: 75vh !important}
 	.height-objective{height: 50vh !important}
 	.height404{height: calc(100vh - 64px) !important}

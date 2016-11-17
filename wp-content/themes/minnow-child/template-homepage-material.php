@@ -7,7 +7,7 @@ get_header( 'custom-material' ); ?>
 
 	<!-- BLOC UTILISATEUR -->
 	<div id="utilisateur" class="row" style="color: <?php the_field('couleur_texte_utilisateur') ?>; background-color: <?php the_field('background_utilisateur'); ?>; background-image: url(<?php the_field('background_image_utilisateur'); ?>);">
-		<div class="col s12 height100 valign-wrapper">
+		<div class="col s12 height120 valign-wrapper">
 			<div class="container valign center">
 				<h1>
 					<span style="background: rgba(255, 255, 255, 0.6);">

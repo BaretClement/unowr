@@ -110,16 +110,11 @@ get_header( 'custom-material' ); ?>
 		</div>
 	</div>
 
-<!-- Modal Structure -->
-<div id="modal-inscription" class="modal modal-fixed-footer">
-<div class="modal-content">
-<h4>Demande de contact</h4>
-<p><?php the_field('formulaire_de_contact'); ?></p> 
-</div>
-
-<div class="modal-footer">
-<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Quitter</a>
-</div>
-</div>
+	<!-- Modal Structure -->
+	<div id="modal-inscription" class="modal modal-fixed-footer">
+	<div class="modal-content">
+	<h4>Demande de contact</h4>
+	<p><?php the_field('formulaire_de_contact'); ?></p> 
+	</div>
 
     <?php get_footer( 'custom-material' ); ?>

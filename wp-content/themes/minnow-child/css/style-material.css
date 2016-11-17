@@ -470,6 +470,7 @@ textarea.materialize-textarea {
 
 .btn.submit{
 	margin: 5px 0 !important;
+	height: 36px !important;
 }
 
 .materialize-textarea {

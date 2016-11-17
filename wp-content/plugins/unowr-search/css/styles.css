@@ -73,6 +73,10 @@
 	}	
 }
 
+.modal{
+	max-width: 90% !important;
+}
+
 .children .unowr-choice.active,
 .unowr-choice.active {
 	background: #000;

@@ -664,6 +664,7 @@ div.wpcf7-mail-sent-ok {
     border: none !important;
     height: 88% !important;
     position: absolute !important;
+    padding-top: 100px !important;
     z-index: 100000 !important;
     top: 26px !important;
     left: 0 !important;

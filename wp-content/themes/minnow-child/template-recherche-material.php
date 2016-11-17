@@ -21,12 +21,6 @@ get_header( 'custom-material' ); ?>
 <p><?php the_field('formulaire_de_contact'); ?></p> 
 </div>
 
-<div class="modal-footer">
-<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Quitter</a>
-</div>
-</div>
-
-
 <!-- Modal Trigger -->
 <a class="waves-effect waves-light btn" href="#modal-reservation" style="display: none">Modal</a>
 
@@ -36,11 +30,6 @@ get_header( 'custom-material' ); ?>
 <div class="modal-content">
 <h4>Demande de réservation</h4>
 <?php the_field('formulaire_de_reservation'); ?>
-</div>
-
-<div class="modal-footer">
-<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Quitter</a>
-</div>
 </div>
 
 		</div>

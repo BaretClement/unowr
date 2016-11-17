@@ -729,5 +729,12 @@ a.btn-flat.red:hover{
 		background: -o-linear-gradient(top left, #000 50%, #fff 51%);
 		background: linear-gradient(to bottom right, #000 50%, #fff 51%);
 	}
+	.transition-bottom-unowr{
+		height: 100px !important; 
+		width: 100% !important;
+		background: -webkit-linear-gradient(top left, #000 50%, transparent 51%);
+		background: -o-linear-gradient(top left, #000 50%, transparent 51%);
+		background: linear-gradient(to bottom right, #000 50%, transparent 51%);
+	}
 }
 

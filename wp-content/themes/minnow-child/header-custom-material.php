@@ -26,6 +26,7 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/materialize.min.js"></script>
       <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
+      <script src="https://use.fontawesome.com/956fe3a490.js"></script>
 
 	<nav>
 	    <div class="nav-wrapper valign-wrapper">

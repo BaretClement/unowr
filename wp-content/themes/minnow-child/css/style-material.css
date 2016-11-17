@@ -752,9 +752,9 @@ a.btn-flat.red:hover{
 	.transition-bottom-restaurant{
 		height: 50px !important; 
 		width: 100% !important;
-		background: -webkit-linear-gradient(top left, #fff 0%, #fff 50%, #000 50%, #000 100%);
-		background: -o-linear-gradient(top left, #fff 0%, #fff 50%, #000 50%, #000 100%);
-		background: linear-gradient(to bottom right, #fff 0%, #fff 50%, #000 50%, #000 100%);
+	    background: -webkit-linear-gradient(bottom left, transparent 50%, #EEEEEE 51%);
+	    background: -o-linear-gradient(bottom left, transparent 50%, #EEEEEE 51%);
+	    background: linear-gradient(to top right, transparent 50%, #EEEEEE 51%);
 	}
 }
 @media (min-width: 601px) and (max-width: 992px) {
@@ -769,7 +769,6 @@ a.btn-flat.red:hover{
 	.transition-top-social{
 		height: 75px !important; 
 		width: 100% !important;
-		background-color: black; 
 	    background: -webkit-linear-gradient(bottom left, #000 50%, #FFF 51%);
 	    background: -o-linear-gradient(bottom left, #000 50%, #FFF 51%);
 	    background: linear-gradient(to top right, #000 50%, #FFF 51%);
@@ -799,9 +798,9 @@ a.btn-flat.red:hover{
 	.transition-bottom-restaurant{
 		height: 75px !important; 
 		width: 100% !important;
-		background: -webkit-linear-gradient(top left, #fff 0%, #fff 50%, #000 50%, #000 100%);
-		background: -o-linear-gradient(top left, #fff 0%, #fff 50%, #000 50%, #000 100%);
-		background: linear-gradient(to bottom right, #fff 0%, #fff 50%, #000 50%, #000 100%);
+	    background: -webkit-linear-gradient(bottom left, transparent 50%, #EEEEEE 51%);
+	    background: -o-linear-gradient(bottom left, transparent 50%, #EEEEEE 51%);
+	    background: linear-gradient(to top right, transparent 50%, #EEEEEE 51%);
 	}
 
 }
@@ -847,9 +846,9 @@ a.btn-flat.red:hover{
 	.transition-bottom-restaurant{
 		height: 100px !important; 
 		width: 100% !important;
-		background: -webkit-linear-gradient(top left, #fff 0%, #fff 50%, #000 50%, #000 100%);
-		background: -o-linear-gradient(top left, #fff 0%, #fff 50%, #000 50%, #000 100%);
-		background: linear-gradient(to bottom right, #fff 0%, #fff 50%, #000 50%, #000 100%);
+	    background: -webkit-linear-gradient(bottom left, transparent 50%, #EEEEEE 51%);
+	    background: -o-linear-gradient(bottom left, transparent 50%, #EEEEEE 51%);
+	    background: linear-gradient(to top right, transparent 50%, #EEEEEE 51%);
 	}
 }
 

@@ -32,7 +32,7 @@ get_header( 'custom-material' ); ?>
 
 
 <!-- Modal Structure -->                    
-<div id="modal-reservation" class="modal modal">
+<div id="modal-reservation" class="modal">
 <div class="modal-content">
 <h4>Demande de réservation</h4>
 <?php the_field('formulaire_de_reservation'); ?>

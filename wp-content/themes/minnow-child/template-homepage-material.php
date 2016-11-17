@@ -19,11 +19,9 @@ get_header( 'custom-material' ); ?>
 						<?php the_field('sous_titre_utilisateur'); ?>
 					</span>
 				</p>
-				<span style="background: rgba(255, 255, 255, 0.6);">
-				  <a href="<?php the_field('link_cta_utilisateur'); ?>" class="waves-effect waves-light btn-flat" style="color: <?php the_field('couleur_texte_utilisateur') ?>; border-color: <?php the_field('couleur_texte_utilisateur') ?> !important">
+				  <a href="<?php the_field('link_cta_utilisateur'); ?>" class="waves-effect waves-light btn-flat" style="color: <?php the_field('couleur_texte_utilisateur') ?>; border-color: <?php the_field('couleur_texte_utilisateur'); ?> !important; background: rgba(255, 255, 255, 0.6)">
 				  	<?php the_field('cta_utilisateur'); ?>
 				  </a>
-				 </span>
 				  <div><a href="#restaurateur" class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_utilisateur') ?>; font-size: 2rem"></a></div>
 			</div>
 		</div>

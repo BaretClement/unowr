@@ -184,7 +184,7 @@ p.questions.search{
 	}
 }
 
-.show{
+.active{
 	display: block !important;
 }
 .hidden{

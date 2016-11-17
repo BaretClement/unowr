@@ -127,7 +127,7 @@ p.questions.search{
 /* mobile */
 @media (max-width: 600px){
 	p.questions.search{
-		max-width: 100%;
+		max-width: 75%;
 	}
 	.bubble-answer{
 		max-width: 100%;

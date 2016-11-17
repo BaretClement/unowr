@@ -12,25 +12,24 @@ get_header( 'custom-material' ); ?>
 						
 			<?php the_field(formulaire_de_recherche); ?>	
 
+				<!-- Modal Structure -->                    
+				<div id="modal-inscription" class="modal modal-fixed-footer">
+					<div class="modal-content">
+						<h4>Demande de contact</h4>
+						<p><?php the_field('formulaire_de_contact'); ?></p> 
+					</div>
+				</div>
 
+				<!-- Modal Trigger -->
+				<a class="waves-effect waves-light btn" href="#modal-reservation" style="display: none">Modal</a>
 
-<!-- Modal Structure -->                    
-<div id="modal-inscription" class="modal modal-fixed-footer">
-<div class="modal-content">
-<h4>Demande de contact</h4>
-<p><?php the_field('formulaire_de_contact'); ?></p> 
-</div>
-
-<!-- Modal Trigger -->
-<a class="waves-effect waves-light btn" href="#modal-reservation" style="display: none">Modal</a>
-
-
-<!-- Modal Structure -->                    
-<div id="modal-reservation" class="modal">
-<div class="modal-content">
-<h4>Demande de réservation</h4>
-<?php the_field('formulaire_de_reservation'); ?>
-</div>
+				<!-- Modal Structure -->                    
+				<div id="modal-reservation" class="modal">
+					<div class="modal-content">
+						<h4>Demande de réservation</h4>
+						<?php the_field('formulaire_de_reservation'); ?>
+					</div>
+				</div>
 
 		</div>
   	</div>

@@ -137,9 +137,10 @@ get_header( 'custom-material' ); ?>
 
 <!-- Modal Structure -->
 <div id="modal-inscription" class="modal">
-<div class="modal-content">
-<h4>Demande de contact</h4>
-<p><?php the_field('formulaire_de_contact'); ?></p> 
+  <div class="modal-content">
+    <h4>Demande de contact</h4>
+    <p><?php the_field('formulaire_de_contact'); ?></p> 
+  </div>
 </div>
 
 <?php get_footer( 'custom-material' ); ?>

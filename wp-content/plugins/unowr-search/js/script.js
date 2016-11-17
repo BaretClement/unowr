@@ -90,7 +90,7 @@ var unowr_form = {
 		}
 	},
 	_finish: function () {
-		var html = "<div class='row valign-wrapper search'><div class='bot-avatar'></div><div id='triangle-left'></div><p class='questions search'>Je peux te proposer les trois restaurants suivants :</p></div>";
+		var html = "<div class='children'><div><div class='row valign-wrapper search'><div class='bot-avatar'></div><div id='triangle-left'></div><p class='questions search'>Je peux te proposer les trois restaurants suivants :</p></div>";
 		Array.prototype.forEach.call(this._resto, (resto) => {
 			html += "<div class='row valign-wrapper search result'><div class='unowr_result'><p class='questions search'>";
 			html += "	<p class='result-id question search' data-value='>" + resto.id + "'></p>";
@@ -100,7 +100,7 @@ var unowr_form = {
 			html += "	<span class='result-ambiances' data-value='" + resto.ambiances.join(' ') + "'>Ambiances : <div class='chip'>" + resto.ambiances.join('</div><div class="chip">') + "</div></span><br>";
 			html += "	<p class='result-prix_moyen' data-value='" + resto.prix_moyen + "'>" + resto.prix_moyen + "€*</p><span style='font-size:0.6rem'>*prix moyen pour un menu</span><br>";
 			html += "<button class='btn-book-resto btn-flat right'>Réserver</button>";
-			html += "</div></div>";
+			html += "</div></div></div></div>";
 		})
 
 		this._resultWrapper.innerHTML = html

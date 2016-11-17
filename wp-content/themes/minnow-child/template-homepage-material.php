@@ -9,7 +9,11 @@ get_header( 'custom-material' ); ?>
 	<div id="utilisateur" class="row" style="color: <?php the_field('couleur_texte_utilisateur') ?>; background-color: <?php the_field('background_utilisateur'); ?>; background-image: url(<?php the_field('background_image_utilisateur'); ?>);">
 		<div class="col s12 height100 valign-wrapper">
 			<div class="container valign center">
-				<h1><?php the_field('titre_utilisateur'); ?></h1>
+				<h1>
+					<span style="background: rgba(255, 255, 255, 0.6);">
+						<?php the_field('titre_utilisateur'); ?>
+					</span>
+				</h1>
 				<p><?php the_field('sous_titre_utilisateur'); ?></p>
 				  <a href="<?php the_field('link_cta_utilisateur'); ?>" class="waves-effect waves-light btn-flat" style="color: <?php the_field('couleur_texte_utilisateur') ?>; border-color: <?php the_field('couleur_texte_utilisateur') ?> !important">
 				  	<?php the_field('cta_utilisateur'); ?>

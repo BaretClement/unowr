@@ -66,6 +66,8 @@ var unowr_form = {
 	_next: function (e) {
 		var target = e.currentTarget
 
+		$( ".unowr-choice:not(:active)" ).css( "display", "none" );
+
 		var taxo = target.getAttribute('data-unowr-taxonomy')
 		var parent = target.getAttribute('data-parent')
 		var parentNode = document.querySelector('[data-unowr-taxonomy="' + taxo + '"]')

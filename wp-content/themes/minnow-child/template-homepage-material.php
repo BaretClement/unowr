@@ -10,16 +10,16 @@ get_header( 'custom-material' ); ?>
 		<div class="col s12 height120 valign-wrapper">
 			<div class="container valign center">
 				<h1>
-					<span style="background: rgba(255, 255, 255, 0.6);">
+					<!-- <span style="background: rgba(255, 255, 255, 0.6);"> -->
 						<?php the_field('titre_utilisateur'); ?>
-					</span>
+					<!-- </span> -->
 				</h1>
 				<p>
-					<span style="background: rgba(255, 255, 255, 0.6); padding: 4px 10px">
+					<!-- <span style="background: rgba(255, 255, 255, 0.6); padding: 4px 10px"> -->
 						<?php the_field('sous_titre_utilisateur'); ?>
-					</span>
+					<!-- </span> -->
 				</p>
-				  <a href="<?php the_field('link_cta_utilisateur'); ?>" class="waves-effect waves-light btn-flat" style="color: <?php the_field('couleur_texte_utilisateur') ?>; border-color: <?php the_field('couleur_texte_utilisateur'); ?> !important; background: rgba(255, 255, 255, 0.6)">
+				  <a href="<?php the_field('link_cta_utilisateur'); ?>" class="waves-effect waves-light btn-flat" style="color: <?php the_field('couleur_texte_utilisateur') ?>; border-color: <?php the_field('couleur_texte_utilisateur'); ?>">
 				  	<?php the_field('cta_utilisateur'); ?>
 				  </a>
 				  <div><a href="#restaurateur" class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_utilisateur') ?>; font-size: 2rem"></a></div>
@@ -126,5 +126,14 @@ get_header( 'custom-material' ); ?>
 			<p><?php the_field('formulaire_de_contact'); ?></p> 
 		</div>
 	</div>
-
+	
+	<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-86120720-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
     <?php get_footer( 'custom-material' ); ?>

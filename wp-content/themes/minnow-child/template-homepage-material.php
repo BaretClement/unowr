@@ -25,7 +25,7 @@ get_header( 'custom-material' ); ?>
 				  <div><a href="#restaurateur" class="ion-ios-arrow-down" style="color: <?php the_field('couleur_texte_utilisateur') ?>; font-size: 2rem"></a></div>
 			</div>
 		</div>
-		<div class="col s12 transition-bottom-user"></div>
+		<!-- <div class="col s12 transition-bottom-user"></div> -->
 	</div>
 
 	<!-- BLOC RESTAURATEUR -->

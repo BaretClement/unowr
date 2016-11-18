@@ -111,10 +111,10 @@ get_header( 'custom-material' ); ?>
 				<h2><?php the_field('titre_social'); ?></h2>
 				<p class="margin-bottom"><?php the_field('sous_titre_social'); ?></p>
 
-					<a href="<?php the_field('lien_social_1'); ?>" class="picto-social <?php the_field('pictogramme_social_1'); ?>" style="color: <?php the_field('couleur_texte_social') ?>"></a>
-					<a href="<?php the_field('lien_social_2'); ?>" class="picto-social <?php the_field('pictogramme_social_2'); ?>" style="color: <?php the_field('couleur_texte_social') ?>"></a>
-					<a href="<?php the_field('lien_social_3'); ?>" class="picto-social <?php the_field('pictogramme_social_3'); ?>" style="color: <?php the_field('couleur_texte_social') ?>"></a>
-					<a href="<?php the_field('lien_social_4'); ?>" class="picto-social <?php the_field('pictogramme_social_4'); ?>" style="color: <?php the_field('couleur_texte_social') ?>"></a>
+					<a href="<?php the_field('lien_social_1'); ?>" class="picto-social <?php the_field('pictogramme_social_1'); ?>" target="_blank" style="color: <?php the_field('couleur_texte_social') ?>"></a>
+					<a href="<?php the_field('lien_social_2'); ?>" class="picto-social <?php the_field('pictogramme_social_2'); ?>" target="_blank" style="color: <?php the_field('couleur_texte_social') ?>"></a>
+					<a href="<?php the_field('lien_social_3'); ?>" class="picto-social <?php the_field('pictogramme_social_3'); ?>" target="_blank" style="color: <?php the_field('couleur_texte_social') ?>"></a>
+					<a href="<?php the_field('lien_social_4'); ?>" class="picto-social <?php the_field('pictogramme_social_4'); ?>" target="_blank" style="color: <?php the_field('couleur_texte_social') ?>"></a>
 			</div>
 		</div>
 	</div>

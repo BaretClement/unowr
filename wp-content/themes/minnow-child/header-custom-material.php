@@ -36,6 +36,7 @@
               <!-- Menu desktop -->
           		<ul class="right hide-on-med-and-down" style="margin-top: 12px">
                     <a href="<?php echo get_site_url(); ?>/rechercher_restaurant" class="waves-effect waves-light btn-flat red">Recherche restaurant</a>
+                    
 
                     <!-- Modal Trigger -->
                     <a class="modal-trigger waves-effect waves-light btn-flat red" href="#modal-inscription">INSCRIPTION PARTENAIRE</a>
@@ -78,6 +79,18 @@
   	</nav>
 
   	<script>$(".button-collapse").sideNav();</script>
+
+    <script>
+(function (d, s, id){
+  var js, params, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  params = "c2c_token=9ed811bb-c167-4d50-9675-4d72bb2abe35";
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://cdn.aircall.io/c2c/v1/c2c.min.js#"+params;
+  fjs.parentNode.insertBefore(js,fjs);
+}(document, "script", "aircall-ajs"))
+</script>
 
 
 

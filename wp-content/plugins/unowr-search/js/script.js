@@ -104,7 +104,7 @@ target.classList.add('active');
 			html += "	<span class='result-adresse' data-value='" + escape(resto.adresse) + "'>" + resto.adresse + " </span>";
 			html += "	<span class='result-code_postal' data-value='" + escape(resto.code_postal) + "'>" + resto.code_postal + " </span>";
 			html += "	<span class='result-ville' data-value='" + escape(resto.ville) + "'>" + resto.ville + " </span><br><br>";
-			html += "	<span class='result-subcategory' data-value='" + resto.category + ", " + resto.subcategory + "'>Type de cuisine : <div class='chip'>" + resto.category + "</div> <div class='chip'>" + resto.subcategory + "</div></span><br><br>";
+			html += "	<span class='result-subcategory' data-value='" + resto.category + ", " + resto.subcategory + "'>Type de cuisine : <div class='chip'>" + resto.category + "</div> <div class='chip'>" + (resto.subcategory != null) ? + "</div></span><br><br>";
 			html += "	<span class='result-ambiances' data-value='" + resto.ambiances.join(' ') + "'>Ambiances : <div class='chip'>" + resto.ambiances.join('</div><div class="chip">') + "</div></span><br>";
 			html += "	<p class='result-prix_moyen' data-value='" + resto.prix_moyen + "'>" + resto.prix_moyen + "€*</p><span style='font-size:0.6rem'>*prix moyen pour un menu</span><br>";
 			html += "<button class='btn-book-resto btn-flat right'>Réserver</button>";

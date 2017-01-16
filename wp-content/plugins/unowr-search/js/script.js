@@ -107,7 +107,7 @@ target.classList.add('active');
 			html += "	<span class='result-subcategory' data-value='" + resto.category + ", " + resto.subcategory + "'>Type de cuisine : <div class='chip'>" + resto.category + "</div> <div class='chip'>" + resto.subcategory + "</div></span><br><br>";
 			html += "	<span class='result-ambiances' data-value='" + resto.ambiances.join(' ') + "'>Ambiances : <div class='chip'>" + resto.ambiances.join('</div><div class="chip">') + "</div></span><br>";
 			html += "	<p class='result-prix_moyen' data-value='" + resto.prix_moyen + "'>" + resto.prix_moyen + "€*</p><span style='font-size:0.6rem'>*prix moyen pour un menu</span><br>";
-			html += "<button class='btn-book-resto btn-flat right'>Réserver</button>";
+			html += "<button class='btn-book-resto btn-flat right'>Réserver gratuitement</button>";
 			html += "</div></div>";
 		})
 
